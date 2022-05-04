@@ -14,7 +14,7 @@ html{
 }
 
 li{
-    line-height: normal;
+    margin: 10px 0;
     max-width: 80%;
 }
 
