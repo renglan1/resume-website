@@ -1,0 +1,43 @@
+html{
+    height: 100%; 
+    background-color: #f1f1f1;
+
+    color: #181818;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+    padding-left: 50px;
+    padding-right: 50px; 
+
+    line-height: 18px;
+}
+
+li{
+    line-height: normal;
+    max-width: 80%;
+}
+
+a{
+    line-height:normal;
+}
+
+h1{
+    margin: 0;
+    min-width: fit-content;
+    padding-top: 50px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-weight: 300;
+}
+
+i{
+    font-size: 14px;
+}
+
+strong{
+    font-weight: 500;
+}
