@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link href="styles/style.css" rel="stylesheet">
 
-        <!--Importing fonts from Google Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <link href="styles/style.css" rel="stylesheet">
 
-        <title>Robert England</title>
-    </head>
-    <body>
+    <!--Importing fonts from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,300&display=swap"
+        rel="stylesheet">
+
+    <title>Robert England</title>
+</head>
+
+<body>
+    <div class="page_layout">
         <h1>Robert England</h1>
         <h2>Faculty of Computer Science Co-op Program</h2>
-        <center>
-            <a href="https://www.linkedin.com/in/robert-england-1a648922b/"><strong>LinkedIn</strong></a>
-            <a> | </a>
-            <a href="references.html"><strong>References</strong></a>
-        </center> 
+        <!--The div tag is a container for a block of elements-->
+        <!--The class attribute can be styled by CSS in the same way as a normal element (e.g. can style .subsection)-->
+        <div class="contact_info">
+            <a href="https://www.linkedin.com/in/robert-england-1a648922b/">LinkedIn</a>
+            <span> | </span>
+            <a href="references.html">References</a>
+        </div>
 
         <!--Education-->
-        <h3></br><u><strong>Education</strong></u></h3>
+        <h3><br>Education</h3>
 
-        <span class="univ">University of New Brunswick</span><span>, Fredericton, NB</span>
-        <a style="float: right"><strong>September 2018 - Present</strong></a>
+        <!--The span tag creates an inline element (no automatic line break)-->
+        <span class="subsection">University of New Brunswick</span><span>, Fredericton, NB</span>
+        <span class="applicable_period">September 2018 - Present</span>
         <ul>
-            <li>Fourth year BSC Biology student taking Computer Science courses to pursue a BCS degree after graduation</li>
+            <li>Fourth year BSC Biology student taking Computer Science courses to pursue a BCS degree after graduation
+            </li>
             <li>4.0 cumulative GPA</li>
         </ul>
 
-        <a><strong>Kennebecasis Valley High School</strong>, Quispamsis, NB</a>
-        <a style="float: right"><strong>September 2014 - June 2018</strong></a>
+        <span class="subsection">Kennebecasis Valley High School</span><span>, Quispamsis, NB</span>
+        <span class="applicable_period">September 2014 - June 2018</span>
 
         <!--Work Experience-->
-        <h3></br><u><strong>Work Experience</strong></u></h3>
+        <h3><br>Work Experience</h3>
 
-        <a><strong>Tim Hortons Restaurant</strong>, Calgary, AB</a>
-        <a style="float: right"><strong>July 2021 - August 2021</strong></a>
-        <p><i>Restaurant Team Member</i></p>
+        <span class="subsection">Tim Hortons Restaurant</span><span>, Calgary, AB</span>
+        <span class="applicable_period">July 2021 - August 2021</span>
+        <p class="work_role">Restaurant Team Member</p>
         <ul>
             <li>Provided enthusiastic & professional service</li>
-            <li>Maintained efficiency & accuracy in filling customer orders while working in a fast-paced work environment</li>
+            <li>Maintained efficiency & accuracy in filling customer orders while working in a fast-paced work
+                environment
+            </li>
             <li>Upheld customer service & stringent cleanliness standards during the pandemic</li>
             <li>Consistently worked well under pressure and contributed as a member of a team</li>
         </ul>
 
-        <a><strong>Pur & Simple Restaurant</strong>, Saint John, NB</a>
-        <a style="float: right"><strong>June 2019 - August 2021</strong></a>
-        <p><i>Host, Busser, & Dishwasher</i></p>
+        <span class="subsection">Pur & Simple Restaurant</span><span>, Saint John, NB</span>
+        <span class="applicable_period">June 2019 - August 2021</span>
+        <p class="work_role">Host, Busser, & Dishwasher</p>
         <ul>
             <li>Provided enthusiastic & professional service</li>
             <li>Maintained a keen organizational mind necessary to most efficiently seat customers</li>
@@ -57,29 +67,33 @@
         </ul>
 
         <!--School Experience-->
-        <h3></br><u><strong>School Experience</strong></u></h3>
+        <h3><br>School Experience</h3>
 
-        <a><strong>CS2063: Intro. to Mobile App. Development</strong></a>
-        <a style="float: right"><strong>January 2022-present</strong></a>
+        <span class="subsection">CS2063: Intro. to Mobile App. Development</span>
+        <span class="applicable_period">January 2022-present</span>
         <ul>
-            <li>Introduces fundamentals of Android mobile application development, with a focus on design principles & programming common application functionalities</li>
-            <li>Includes a team-based mobile application development project, which requires implementation of Android application development best practices</li>
+            <li>Introduces fundamentals of Android mobile application development, with a focus on design principles &
+                programming common application functionalities</li>
+            <li>Includes a team-based mobile application development project, which requires implementation of Android
+                application development best practices</li>
         </ul>
 
         <!--Skills-->
-        <h3></br><u><strong>Skills</strong></u></h3>
+        <h3><br>Skills</h3>
 
-        <p><strong>Languages:</strong> Java, C, MATLAB, R</p>
-        <p><strong>Operating Systems:</strong> Windows, Mac OSX</p>
+        <span class="subsection">Skills:</span><span> Java, C, MATLAB, R</span>
+        <span class="subsection"><br>Operating Systems:</span><span> Windows, Mac OSX</span>
 
         <!--Hobbies-->
-        <h3></br><u><strong>Hobbies</strong></u></h3>
-        <ul style="padding-bottom: 50px">
+        <h3><br>Hobbies</h3>
+        <ul>
             <li>Online gaming</li>
             <li>Creative writing</li>
             <li>Reading</li>
             <li>Programming</li>
             <li>Badminton</li>
         </ul>
-    </body>
+    </div>
+</body>
+
 </html>
