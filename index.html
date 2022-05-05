@@ -22,86 +22,106 @@
 
 <body>
     <div class="page-layout">
-        <h1>Robert England</h1>
-        <h2>Faculty of Computer Science Co-op Program</h2>
+        <header>
+            <h1>Robert England</h1>
+        </header>
+        <h2 id="main-subheading">Faculty of Computer Science Co-op Program</h2>
         <!--The div tag is a container for a block of elements-->
         <!--The class attribute can be styled by CSS in the same way as a normal element (e.g. can style .subsection)-->
-        <div class="nav-menu">
+        <nav>
             <span>Home | </span>
             <!--"target=_blank" allows this link to open in a new tab-->
-            <a href="https://www.linkedin.com/in/robert-england-1a648922b/" title="View my LinkedIn!" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/robert-england-1a648922b/" title="View my LinkedIn!"
+                target="_blank">LinkedIn</a>
             <span> | </span>
             <a href="references.html" title="View my references!">References</a>
-        </div>
+        </nav>
         <hr>
 
-        <!--Education-->
-        <h3 id="education"><br>Education</h3>
+        <main>
+            <!--The aside tag is reserved for the sidebar of a website-->
+            <aside>
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#work-experience">Work Experience</a></li>
+                    <li><a href="#school-experience">School Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                </ul>
+            </aside>
+            
+            <!--Education-->
+            <h3 id="education"><br>Education</h3>
 
-        <!--The span tag creates an inline element (no automatic line break)-->
-        <span class="subsection">University of New Brunswick</span><span>, Fredericton, NB</span>
-        <span class="applicable-period">September 2018 - Present</span>
-        <ul>
-            <li>Fourth year BSC Biology student taking Computer Science courses to pursue a BCS degree after graduation
-            </li>
-            <li>4.0 cumulative GPA</li>
-        </ul>
+            <!--The span tag creates an inline element (no automatic line break)-->
+            <span class="subsection">University of New Brunswick</span><span>, Fredericton, NB</span>
+            <span class="applicable-period">September 2018 - Present</span>
+            <ul>
+                <li>Fourth year BSC Biology student taking Computer Science courses to pursue a BCS degree after
+                    graduation
+                </li>
+                <li>4.0 cumulative GPA</li>
+            </ul>
 
-        <span class="subsection">Kennebecasis Valley High School</span><span>, Quispamsis, NB</span>
-        <span class="applicable_period">September 2014 - June 2018</span>
+            <span class="subsection">Kennebecasis Valley High School</span><span>, Quispamsis, NB</span>
+            <span class="applicable_period">September 2014 - June 2018</span>
 
-        <!--Work Experience-->
-        <h3 id="work_experience"><br>Work Experience</h3>
+            <!--Work Experience-->
+            <h3 id="work-experience"><br>Work Experience</h3>
 
-        <span class="subsection">Tim Hortons Restaurant</span><span>, Calgary, AB</span>
-        <span class="applicable-period">July 2021 - August 2021</span>
-        <p class="work-role">Restaurant Team Member</p>
-        <ul>
-            <li>Provided enthusiastic & professional service</li>
-            <li>Maintained efficiency & accuracy in filling customer orders while working in a fast-paced work
-                environment
-            </li>
-            <li>Upheld customer service & stringent cleanliness standards during the pandemic</li>
-            <li>Consistently worked well under pressure and contributed as a member of a team</li>
-        </ul>
+            <span class="subsection">Tim Hortons Restaurant</span><span>, Calgary, AB</span>
+            <span class="applicable-period">July 2021 - August 2021</span>
+            <p class="work-role">Restaurant Team Member</p>
+            <ul>
+                <li>Provided enthusiastic & professional service</li>
+                <li>Maintained efficiency & accuracy in filling customer orders while working in a fast-paced work
+                    environment
+                </li>
+                <li>Upheld customer service & stringent cleanliness standards during the pandemic</li>
+                <li>Consistently worked well under pressure and contributed as a member of a team</li>
+            </ul>
 
-        <span class="subsection">Pur & Simple Restaurant</span><span>, Saint John, NB</span>
-        <span class="applicable-period">June 2019 - August 2021</span>
-        <p class="work-role">Host, Busser, & Dishwasher</p>
-        <ul>
-            <li>Provided enthusiastic & professional service</li>
-            <li>Maintained a keen organizational mind necessary to most efficiently seat customers</li>
-            <li>Consistently worked well under pressure and contributed as a member of a team</li>
-            <li>Served as my introduction to a fast-paced & team-oriented work environment</li>
-        </ul>
+            <span class="subsection">Pur & Simple Restaurant</span><span>, Saint John, NB</span>
+            <span class="applicable-period">June 2019 - August 2021</span>
+            <p class="work-role">Host, Busser, & Dishwasher</p>
+            <ul>
+                <li>Provided enthusiastic & professional service</li>
+                <li>Maintained a keen organizational mind necessary to most efficiently seat customers</li>
+                <li>Consistently worked well under pressure and contributed as a member of a team</li>
+                <li>Served as my introduction to a fast-paced & team-oriented work environment</li>
+            </ul>
 
-        <!--School Experience-->
-        <h3 id="school_experience"><br>School Experience</h3>
+            <!--School Experience-->
+            <h3 id="school-experience"><br>School Experience</h3>
 
-        <span class="subsection">CS2063: Intro. to Mobile App. Development</span>
-        <span class="applicable-period">January 2022-present</span>
-        <ul>
-            <li>Introduces fundamentals of Android mobile application development, with a focus on design principles &
-                programming common application functionalities</li>
-            <li>Includes a team-based mobile application development project, which requires implementation of Android
-                application development best practices</li>
-        </ul>
+            <span class="subsection">CS2063: Intro. to Mobile App. Development</span>
+            <span class="applicable-period">January 2022-present</span>
+            <ul>
+                <li>Introduces fundamentals of Android mobile application development, with a focus on design principles
+                    &
+                    programming common application functionalities</li>
+                <li>Includes a team-based mobile application development project, which requires implementation of
+                    Android
+                    application development best practices</li>
+            </ul>
 
-        <!--Skills-->
-        <h3 id="skills"><br>Skills</h3>
+            <!--Skills-->
+            <h3 id="skills"><br>Skills</h3>
 
-        <span class="subsection">Skills:</span><span> Java, C, MATLAB, R</span>
-        <span class="subsection"><br>Operating Systems:</span><span> Windows, Mac OSX</span>
+            <span class="subsection">Skills:</span><span> Java, C, MATLAB, R</span>
+            <span class="subsection"><br>Operating Systems:</span><span> Windows, Mac OSX</span>
 
-        <!--Hobbies-->
-        <h3 id="hobbies"><br>Hobbies</h3>
-        <ul>
-            <li>Online gaming</li>
-            <li>Creative writing</li>
-            <li>Reading</li>
-            <li>Programming</li>
-            <li>Badminton</li>
-        </ul>
+            <!--Hobbies-->
+            <h3 id="hobbies"><br>Hobbies</h3>
+            <ul>
+                <li>Online gaming</li>
+                <li>Creative writing</li>
+                <li>Reading</li>
+                <li>Programming</li>
+                <li>Badminton</li>
+            </ul>
+        </main>
     </div>
 </body>
 
