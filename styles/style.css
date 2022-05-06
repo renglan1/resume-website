@@ -41,7 +41,7 @@ h3{
     text-decoration: underline;
 }
 
-.page-layout{
+.root{
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -56,14 +56,23 @@ nav{
     text-align: center;
 }
 
-.applicable-period{
+.entry-time-period{
     font-weight: bold;
     float: right;
+}
+
+.name{
+    font-weight: bold;
 }
 
 .work-role{
     margin: 0;
     font-size: 14px;
+}
+
+.main-wrapper{
+    display: grid;
+    grid-gap: 1em;
 }
 
 footer{

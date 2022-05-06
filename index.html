@@ -21,107 +21,158 @@
 </head>
 
 <body>
-    <div class="page-layout">
+    <div class="root">
         <header>
             <h1>Robert England</h1>
+            <h2 id="main-subheading">Faculty of Computer Science Co-op Program</h2>
+            <!--The div tag is a container for a block of elements-->
+            <!--The class attribute can be styled by CSS in the same way as a normal element (e.g. can style .subsection)-->
+            <nav>
+                <span>
+                    Home |
+                    <a href="https://www.linkedin.com/in/robert-england-1a648922b/" title="View my LinkedIn!"
+                        target="_blank">LinkedIn</a>
+                    |
+                    <a href="references.html" title="View my references!">References</a>
+                </span>
+            </nav>
+            <hr>
         </header>
-        <h2 id="main-subheading">Faculty of Computer Science Co-op Program</h2>
-        <!--The div tag is a container for a block of elements-->
-        <!--The class attribute can be styled by CSS in the same way as a normal element (e.g. can style .subsection)-->
-        <nav>
-            <span>Home | </span>
-            <!--"target=_blank" allows this link to open in a new tab-->
-            <a href="https://www.linkedin.com/in/robert-england-1a648922b/" title="View my LinkedIn!"
-                target="_blank">LinkedIn</a>
-            <span> | </span>
-            <a href="references.html" title="View my references!">References</a>
-        </nav>
-        <hr>
 
-        <main>
-            <!--The aside tag is reserved for the sidebar of a website-->
-            <aside>
-                <h2>Table of Contents</h2>
-                <ul>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#work-experience">Work Experience</a></li>
-                    <li><a href="#school-experience">School Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                </ul>
-            </aside>
-            
-            <!--Education-->
-            <h3 id="education"><br>Education</h3>
+        <div class="main-wrapper">
+            <main>
+                <!--The aside tag is reserved for the sidebar of a website-->
+                <aside>
+                    <h2>Table of Contents</h2>
+                    <ul>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#work-experience">Work Experience</a></li>
+                        <li><a href="#school-experience">School Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#hobbies">Hobbies</a></li>
+                    </ul>
+                </aside>
 
-            <!--The span tag creates an inline element (no automatic line break)-->
-            <span class="subsection">University of New Brunswick</span><span>, Fredericton, NB</span>
-            <span class="applicable-period">September 2018 - Present</span>
-            <ul>
-                <li>Fourth year BSC Biology student taking Computer Science courses to pursue a BCS degree after
-                    graduation
-                </li>
-                <li>4.0 cumulative GPA</li>
-            </ul>
+                <!--Education-->
+                <section>
+                    <h3 id="education"><br>Education</h3>
+                    <div class="section-content">
+                        <!--The span tag creates an inline element (no automatic line break)-->
+                        <div class="entry">
+                            <span class="entry-title">
+                                <span class="name">University of New Brunswick</span>, Fredericton, NB
+                                <span class="entry-time-period">September 2018 - Present</span>
+                            </span>
+                            <ul class="entry-content">
+                                <li>Fourth year BSC Biology student taking Computer Science courses to pursue a BCS
+                                    degree
+                                    after
+                                    graduation
+                                </li>
+                                <li>4.0 cumulative GPA</li>
+                            </ul>
+                        </div>
 
-            <span class="subsection">Kennebecasis Valley High School</span><span>, Quispamsis, NB</span>
-            <span class="applicable_period">September 2014 - June 2018</span>
+                        <div class="entry">
+                            <span class="entry-title">
+                                <span class="entry-title">Kennebecasis Valley High School</span>, Quispamsis, NB
+                                <span class="entry-time-period">September 2014 - June 2018</span>
+                            </span>
+                        </div>
+                    </div>
+                </section>
 
-            <!--Work Experience-->
-            <h3 id="work-experience"><br>Work Experience</h3>
+                <!--Work Experience-->
+                <section>
+                    <h3 id="work-experience"><br>Work Experience</h3>
+                    <div class="section-content">
+                        <div class="entry">
+                            <span class="entry-title">
+                                <span class="name">Tim Hortons Restaurant</span>, Calgary, AB
+                                <span class="entry-time-period">July 2021 - August 2021</span>
+                            </span>
+                            <p class="work-role">Restaurant Team Member</p>
+                            <ul class="entry-content">
+                                <li>Provided enthusiastic & professional service</li>
+                                <li>Maintained efficiency & accuracy in filling customer orders while working in a
+                                    fast-paced workenvironment</li>
+                                <li>Upheld customer service & stringent cleanliness standards during the pandemic</li>
+                                <li>Consistently worked well under pressure and contributed as a member of a team</li>
+                            </ul>
+                        </div>
 
-            <span class="subsection">Tim Hortons Restaurant</span><span>, Calgary, AB</span>
-            <span class="applicable-period">July 2021 - August 2021</span>
-            <p class="work-role">Restaurant Team Member</p>
-            <ul>
-                <li>Provided enthusiastic & professional service</li>
-                <li>Maintained efficiency & accuracy in filling customer orders while working in a fast-paced work
-                    environment
-                </li>
-                <li>Upheld customer service & stringent cleanliness standards during the pandemic</li>
-                <li>Consistently worked well under pressure and contributed as a member of a team</li>
-            </ul>
+                        <div class="entry">
+                            <span class="entry-title">
+                                <span class="name">Pur & Simple Restaurant</span>, Saint John, NB
+                                <span class="entry-time-period">June 2019 - August 2021</span>
+                            </span>
+                            <p class="work-role">Host, Busser, & Dishwasher</p>
+                            <ul class="entry-content">
+                                <li>Provided enthusiastic & professional service</li>
+                                <li>Maintained a keen organizational mind necessary to most efficiently seat customers
+                                </li>
+                                <li>Consistently worked well under pressure and contributed as a member of a team</li>
+                                <li>Served as my introduction to a fast-paced & team-oriented work environment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
 
-            <span class="subsection">Pur & Simple Restaurant</span><span>, Saint John, NB</span>
-            <span class="applicable-period">June 2019 - August 2021</span>
-            <p class="work-role">Host, Busser, & Dishwasher</p>
-            <ul>
-                <li>Provided enthusiastic & professional service</li>
-                <li>Maintained a keen organizational mind necessary to most efficiently seat customers</li>
-                <li>Consistently worked well under pressure and contributed as a member of a team</li>
-                <li>Served as my introduction to a fast-paced & team-oriented work environment</li>
-            </ul>
+                <!--School Experience-->
+                <section>
+                    <h3 id="school-experience"><br>School Experience</h3>
+                    <div class="section-content">
+                        <div class="entry">
+                            <span class="entry-title">
+                                <span class="name">CS2063: Intro. to Mobile App. Development</span>
+                                <span class="entry-time-period">January 2022-April 2022</span>
+                            </span>
+                            <ul class="entry-content">
+                                <li>Introduces fundamentals of Android mobile application development, with a focus on
+                                    design
+                                    principles
+                                    &
+                                    programming common application functionalities</li>
+                                <li>Includes a team-based mobile application development project, which requires
+                                    implementation of
+                                    Android
+                                    application development best practices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
 
-            <!--School Experience-->
-            <h3 id="school-experience"><br>School Experience</h3>
+                <!--Skills-->
+                <section>
+                    <h3 id="skills"><br>Skills</h3>
+                    <div class="section-content">
+                        <div class="entry">
+                            <span class="name">Skills: </span>
+                            <span class="entry-content">Java, C, MATLAB, R</span>
+                        </div>
 
-            <span class="subsection">CS2063: Intro. to Mobile App. Development</span>
-            <span class="applicable-period">January 2022-present</span>
-            <ul>
-                <li>Introduces fundamentals of Android mobile application development, with a focus on design principles
-                    &
-                    programming common application functionalities</li>
-                <li>Includes a team-based mobile application development project, which requires implementation of
-                    Android
-                    application development best practices</li>
-            </ul>
+                        <div class="entry">
+                            <span class="name">Operating Systems: </span>
+                            <span class="entry-content">Windows, Mac OSX</span>
+                        </div>
+                    </div>
+                </section>
 
-            <!--Skills-->
-            <h3 id="skills"><br>Skills</h3>
-
-            <span class="subsection">Skills:</span><span> Java, C, MATLAB, R</span>
-            <span class="subsection"><br>Operating Systems:</span><span> Windows, Mac OSX</span>
-
-            <!--Hobbies-->
-            <h3 id="hobbies"><br>Hobbies</h3>
-            <ul>
-                <li>Online gaming</li>
-                <li>Creative writing</li>
-                <li>Reading</li>
-                <li>Programming</li>
-                <li>Badminton</li>
-            </ul>
-        </main>
+                <!--Hobbies-->
+                <section>
+                    <h3 id="hobbies"><br>Hobbies</h3>
+                    <div class="section-content">
+                        <ul>
+                            <li>Online gaming</li>
+                            <li>Creative writing</li>
+                            <li>Reading</li>
+                            <li>Programming</li>
+                            <li>Badminton</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
 
         <footer>
             <p>©Copyright 2050 by nobody. All rights reversed.</p>
