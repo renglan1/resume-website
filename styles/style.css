@@ -96,6 +96,7 @@ aside{
 footer{
     grid-area: e;
     font-size: 10px;
+    text-align: center;
 }
 
 #headshot{
