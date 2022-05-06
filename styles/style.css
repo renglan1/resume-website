@@ -30,7 +30,7 @@ h1{
     text-align: center;
 }
 
-#main-subheading{
+.main-subheading{
     margin: 5px;
     font-weight: 300;
     text-align: center;
@@ -70,11 +70,37 @@ nav{
     font-size: 14px;
 }
 
-.main-wrapper{
+.container{
     display: grid;
-    grid-gap: 1em;
+    grid-template-areas: 
+        "a b"
+        "c d"
+        "e e";
+    grid-template-columns: 1fr 5fr;
+    gap: 20px;
+}
+
+.main-content{
+    grid-area: d;
+}
+
+header{
+    grid-area: b;
+    height: fit-content;
+}
+
+aside{
+    grid-area: c;
 }
 
 footer{
+    grid-area: e;
     font-size: 10px;
 }
+
+#headshot{
+    grid-area: a;
+    width: 130px;
+    border-radius: 3px;
+}
+
