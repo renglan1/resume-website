@@ -7,10 +7,7 @@ html{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 
-    padding-left: 50px;
-    padding-right: 50px; 
-
-    /*line-height: 18px;*/
+    box-sizing: border-box;
 }
 
 li{
@@ -42,8 +39,7 @@ h3{
 }
 
 .root{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
 }
 
 .subsection {
@@ -72,36 +68,48 @@ nav{
 
 .container{
     display: grid;
-    grid-template-areas: 
-        "a b"
-        "c d"
-        "e e";
-    grid-template-columns: 1fr 5fr;
-    gap: 20px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
 }
 
 .main-content{
-    grid-area: d;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 header{
-    grid-area: b;
+    grid-column: 2;
+    grid-row: 1;
     height: fit-content;
 }
 
-aside{
-    grid-area: c;
+.sidebar{
+    grid-column: 1;
+    grid-row-start: span 2;
+    grid-row-end: 3;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-inner{
+    position: sticky;
+    top: 50px;
+}
+
+.sidebar-nav{
+    text-align: left;
+}
+
+.headshot{
+    width: 250px;
+    border-radius: 3px; 
 }
 
 footer{
-    grid-area: e;
+    grid-column: 2;
+    grid-row: 3;
     font-size: 10px;
     text-align: center;
 }
-
-#headshot{
-    grid-area: a;
-    width: 130px;
-    border-radius: 3px;
-}
-

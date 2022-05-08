@@ -8,6 +8,10 @@
     <!--Description metadata is used in search engines to help people find your page-->
     <meta name="author" content="Rob England">
     <meta name="description" content="Resume for Rob England">
+
+    <!---This declaration allows us to maniuplate the page's dimensions and scaling, allowing for responsive web design-->
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
     <!--Linking our custom style.css stylesheet to this page-->
     <link href="styles/style.css" rel="stylesheet">
 
@@ -28,7 +32,7 @@
                 <h2 class="main-subheading">Faculty of Computer Science Co-op Program</h2>
                 <!--The div tag is a container for a block of elements-->
                 <!--The class attribute can be styled by CSS in the same way as a normal element (e.g. can style .subsection)-->
-                <nav>
+                <nav class="main-nav">
                     <span>
                         Home |
                         <a href="https://www.linkedin.com/in/robert-england-1a648922b/" title="View my LinkedIn!"
@@ -40,18 +44,22 @@
                 <hr>
             </header>
 
-            <!--The aside tag is reserved for the sidebar of a website-->
-            <img id="headshot" src="images/rob-england-headshot.png" alt="Picture of Rob England">
-            <aside>
-                <h2>Table of Contents</h2>
-                <ul>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#work-experience">Work Experience</a></li>
-                    <li><a href="#school-experience">School Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                </ul>
-            </aside>
+            <div class="sidebar">
+                <div class="sidebar-inner">
+                    <img class="headshot" src="images/rob-england-headshot.png" alt="Picture of Rob England">
+                    <nav class="sidebar-nav">
+                        <h2>Table of Contents</h2>
+                        <div class="sidebar-links">
+                            <p>&gt <a href="#education">Education</a></p>
+                            <p>&gt <a href="#work-experience">Work Experience</a></p>
+                            <p>&gt <a href="#school-experience">School Experience</a></p>
+                            <p>&gt <a href="#skills">Skills</a></p>
+                            <p>&gt <a href="#hobbies">Hobbies</a></p>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
             <main class="main-content">
                 <!--Education-->
                 <section>
