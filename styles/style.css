@@ -63,7 +63,6 @@ hr{
 .container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
     column-gap: 4vw;
 }
 
