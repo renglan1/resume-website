@@ -11,6 +11,11 @@ html{
     box-sizing: border-box;
 }
 
+/*This allows all elements to inherit the alternative box model declared in the html rule*/
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 .root{
     padding: 2.5vw 2.5vw;
 }
@@ -19,8 +24,6 @@ html{
 /*Element rules*/
 h1{
     margin: 0.5vw;
-    font-weight: bold;
-    min-width: fit-content;
     text-align: center;
 }
 
@@ -49,6 +52,10 @@ footer{
 ul {
     margin-left: 2em; 
     padding-left: 0;
+}
+
+hr{
+    margin: 0;
 }
 
 
@@ -161,34 +168,49 @@ ul.entry-desc{
     text-align: left;
 }
 
-.sidebar-nav .sidebar-title{
+.sidebar-title{
     font-weight: bold;
-    font-size: 1.3vw;
+    font-size: 1.8vw;
     margin-top: 1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0;
 }
 
-.sidebar-nav .sidebar-links{
-    line-height: 10%;
-    padding-left: 0em;
+.sidebar-nav {
     margin: 0;
-    list-style: none;
 }
 
-.sidebar-links > li:before{
-    content: ">";
-    padding-right: 0.25em;
-}
-
-.sidebar-links > li{
-    margin: 0.25em;
-    width: 100%;
+.sidebar-link{
+    display: inline-block;
     font-size: 1vw;
+    background-color: #f1f1f1;
+    color: #181818;
+    text-decoration: none;
+    padding: 0.5em;
+    width: 100%;
+    border: 1px solid #181818;
+    margin: 0.2vw 0;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.sidebar-link:hover{
+    background-color: #181818;
+    color: #f1f1f1;
+    border-right-color: #f1f1f1;
+    border-bottom-color: #f1f1f1;
+}
+
+.sidebar-link-wrapper:hover{
+    border-color: #181818;
 }
 
 .headshot{
     width: 100%;
     border-radius: 3px; 
+}
+
+.sidebar-hr{
+    margin-bottom: 1vw;
 }
 
 nav{
