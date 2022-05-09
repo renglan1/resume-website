@@ -1,0 +1,38 @@
+/*General*/
+.entry{
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-content > li{
+    margin: 0.1em 0;
+}
+
+.entry-name{
+    font-weight: bold;
+}
+
+.entry-work-role{
+    margin: 0;
+}
+
+.entry-time-period{
+    font-weight: bold;
+}
+
+ul.entry-desc{
+    width: 50vw;
+    padding-left: 3.5%;
+}
+
+
+/*Tablet*/
+@media screen and (min-width: 600px){
+
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 768px){
+
+}

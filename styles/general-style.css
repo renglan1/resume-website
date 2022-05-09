@@ -1,0 +1,121 @@
+/*Global rules*/
+html{
+    height: 100%; 
+    background-color: #f1f1f1;
+
+    color: #181818;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+    box-sizing: border-box;
+}
+
+/*This allows all elements to inherit the alternative box model declared in the html rule*/
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.root{
+    padding: 2.5vw 2.5vw;
+}
+
+
+/*Element rules*/
+h1{
+    margin: 0.5vw;
+    text-align: center;
+}
+
+a{
+    line-height:normal;
+}
+
+h3{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+header{
+    grid-column: 1 / 13;
+    grid-row: 1;
+    height: fit-content;
+}
+
+.main-content{
+    grid-column: 1 / 13;
+    grid-row: 2;
+}
+
+/*Tablet*/
+@media screen and (min-width: 600px){
+    header{
+        grid-column: 3 / 13;
+    }
+
+    .main-content{
+        grid-column: 3 / 13;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 768px){
+    header{
+        grid-column: 4 / 13;
+    }
+
+    .main-content{
+        grid-column: 4 / 13;
+    }
+}
+
+footer{
+    grid-column: 1 / 13;
+    grid-row: 3;
+    font-size: 0.45em;
+    text-align: center;
+}
+
+ul {
+    margin-left: 2em; 
+    padding-left: 0;
+}
+
+hr{
+    margin: 0;
+}
+
+
+/*General rules*/
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 4vw;
+}
+
+.main-subheading{
+    margin: 0.5vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+ul.section-list{
+    margin-top: 0;
+}
+
+/*Section rules*/
+.section-title{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.subsection {
+    font-weight: bold;
+}
+
+nav{
+    margin: 0.5vw;
+    font-weight: 300;
+    text-align: center;
+}
