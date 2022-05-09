@@ -8,15 +8,24 @@
     margin: 0.1em 0;
 }
 
+.entry-title{
+    display: flex;
+    flex-direction: column;
+}
+
 .entry-name{
     font-weight: bold;
 }
 
-.entry-work-role{
+span.entry-location{
+    flex-grow: 2;
+}
+
+span.entry-work-role{
     margin: 0;
 }
 
-.entry-time-period{
+span.entry-time-period{
     font-weight: bold;
 }
 
