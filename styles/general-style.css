@@ -18,6 +18,7 @@ html{
 
 .root{
     padding: 2.5vw 2.5vw;
+    min-height: 100vh;
 }
 
 /*Element rules*/
@@ -91,7 +92,6 @@ hr{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 4vw;
-    min-height: 100vh;
 }
 
 .main-subheading{
