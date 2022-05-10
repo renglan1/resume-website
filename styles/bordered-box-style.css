@@ -1,0 +1,23 @@
+.bordered-box{
+    padding: 0.5em;
+    background-color: #f1f1f1;
+    border: 1px solid #181818;
+    border-right-width: 0.3vw;
+    border-bottom-width: 0.3vw;
+}
+
+.non-applicable-bordered-link{
+    background-color: lightgreen;
+}
+
+.bordered-link{
+    text-decoration: none;
+    color: #181818;
+}
+
+.bordered-link:hover{
+    background-color: #181818;
+    color: #f1f1f1;
+    border-right-color: #f1f1f1;
+    border-bottom-color: #f1f1f1;
+}

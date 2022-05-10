@@ -16,6 +16,8 @@
     <link href="styles/general-style.css" rel="stylesheet">
     <link href="styles/sidebar-style.css" rel="stylesheet">
     <link href="styles/entry-style.css" rel="stylesheet">
+    <link href="styles/nav-style.css" rel="stylesheet">
+    <link href="styles/bordered-box-style.css" rel="stylesheet">
 
     <!--Importing fonts from Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,15 +37,13 @@
                 <!--The div tag is a container for a block of elements-->
                 <!--The class attribute can be styled by CSS in the same way as a normal element (e.g. can style .subsection)-->
                 <nav class="main-nav">
-                    <span>
-                        Home |
+                    <span class="nav-links">
+                        <span class="bordered-box non-applicable-bordered-link">Home</span> 
                         <a href="https://www.linkedin.com/in/robert-england-1a648922b/" title="View my LinkedIn!"
-                            target="_blank">LinkedIn</a>
-                        |
-                        <a href="references.html" title="View my references!">References</a>
+                            class="bordered-box bordered-link" target="_blank">LinkedIn</a>
+                        <a href="references.html" title="View my references!" class="bordered-box bordered-link">References</a>
                     </span>
                 </nav>
-                <hr>
             </header>
 
             <div class="sidebar">
@@ -51,13 +51,12 @@
                     <img class="headshot" src="images/rob-england-headshot.png" alt="Picture of Rob England">
                     <nav class="sidebar-nav">
                         <p class="sidebar-title">Sections</p>
-                        <hr class="sidebar-hr">
                         <div class="sidebar-links">
-                            <a class="sidebar-link" href="#education">Education</a>
-                            <a class="sidebar-link" href="#work-experience">Work Experience</a>
-                            <a class="sidebar-link" href="#school-experience">School Experience</a>
-                            <a class="sidebar-link" href="#skills">Skills</a>
-                            <a class="sidebar-link" href="#hobbies">Hobbies</a>
+                            <a class="bordered-link bordered-box sidebar-link" href="#education">Education</a>
+                            <a class="bordered-link bordered-box sidebar-link" href="#work-experience">Work Experience</a>
+                            <a class="bordered-link bordered-box sidebar-link" href="#school-experience">School Experience</a>
+                            <a class="bordered-link bordered-box sidebar-link" href="#skills">Skills</a>
+                            <a class="bordered-link bordered-box sidebar-link" href="#hobbies">Hobbies</a>
                         </div>
                     </nav>
                 </div>
@@ -67,7 +66,7 @@
                 <!--Education-->
 
                 <section>
-                    <h3 id="education" class="section-title"><br>Education</h3>
+                    <h3 id="education" class="section-title bordered-box">Education</h3>
                     <div class="section-content">
                         <!--The span tag creates an inline element (no automatic line break)-->
                         <div class="entry">
@@ -75,15 +74,15 @@
                                 <span class="entry-name">University of New Brunswick</span>
                                 <span class="entry-location">Fredericton, NB</span>
                                 <span class="entry-time-period">September 2018 - Present</span>
+                                <ul class="entry-desc">
+                                    <li>Fourth year BSC Biology student taking Computer Science courses to pursue a BCS
+                                        degree
+                                        after
+                                        graduation
+                                    </li>
+                                    <li>4.0 cumulative GPA</li>
+                                </ul>
                             </span>
-                            <ul class="entry-desc">
-                                <li>Fourth year BSC Biology student taking Computer Science courses to pursue a BCS
-                                    degree
-                                    after
-                                    graduation
-                                </li>
-                                <li>4.0 cumulative GPA</li>
-                            </ul>
                         </div>
 
                         <div class="entry">
@@ -98,7 +97,7 @@
 
                 <!--Work Experience-->
                 <section>
-                    <h3 id="work-experience" class="section-title"><br>Work Experience</h3>
+                    <h3 id="work-experience" class="section-title bordered-box">Work Experience</h3>
                     <div class="section-content">
                         <div class="entry">
                             <span class="entry-title">
@@ -140,7 +139,7 @@
 
                 <!--School Experience-->
                 <section>
-                    <h3 id="school-experience" class="section-title"><br>School Experience</h3>
+                    <h3 id="school-experience" class="section-title bordered-box">School Experience</h3>
                     <div class="section-content">
                         <div class="entry">
                             <span class="entry-title">
@@ -166,23 +165,27 @@
 
                 <!--Skills-->
                 <section>
-                    <h3 id="skills" class="section-title"><br>Skills</h3>
+                    <h3 id="skills" class="section-title bordered-box">Skills</h3>
                     <div class="section-content">
                         <div class="entry">
-                            <span class="entry-name">Skills: </span>
-                            <span>Java, C, MATLAB, R</span>
+                            <span class="entry-name">Languages</span>
+                            <ul class="entry-desc">
+                                <li>Java, C, MATLAB, R</li>
+                            </ul>
                         </div>
 
                         <div class="entry">
-                            <span class="entry-name">Operating Systems: </span>
-                            <span>Windows, Mac OSX</span>
+                            <span class="entry-name">Operating Systems</span>
+                            <ul class="entry-desc">
+                                <li>Windows, Mac OSX</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
 
                 <!--Hobbies-->
                 <section>
-                    <h3 id="hobbies" class="section-title"><br>Hobbies</h3>
+                    <h3 id="hobbies" class="section-title bordered-box">Hobbies</h3>
                     <div class="section-content">
                         <ul class="section-list">
                             <li>Online gaming</li>
