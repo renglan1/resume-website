@@ -20,7 +20,7 @@ span.entry-location{
 }
 
 p.entry-work-role{
-    margin-top: 0;
+    display: none;
 }
 
 span.entry-time-period{
@@ -36,11 +36,14 @@ ul.entry-desc{
 
 /*Tablet*/
 @media screen and (min-width: 600px){
-
+    
 }
 
 
 /*Desktop*/
 @media screen and (min-width: 768px){
-
+    p.entry-work-role{
+        display: contents;
+        margin-top: 0;
+    }
 }
