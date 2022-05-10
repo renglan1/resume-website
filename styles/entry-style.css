@@ -1,8 +1,4 @@
 /*General*/
-.entry{
-    display: flex;
-    flex-direction: column;
-}
 
 .entry-content > li{
     margin: 0.1em 0;
@@ -10,23 +6,26 @@
 
 .entry-title{
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    width: 100%;
 }
 
 .entry-name{
     font-weight: bold;
+    margin-right: 0.4em;
 }
 
 span.entry-location{
     flex-grow: 2;
 }
 
-span.entry-work-role{
-    margin: 0;
+p.entry-work-role{
+    margin-top: 0;
 }
 
 span.entry-time-period{
     font-weight: bold;
+    align-self: flex-end;
 }
 
 ul.entry-desc{
