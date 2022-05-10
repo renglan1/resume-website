@@ -6,6 +6,13 @@
     <link href="styles/style.css" rel="stylesheet">
 
     <!--Importing fonts from Google Fonts-->
+    <link href="styles/general-style.css" rel="stylesheet">
+    <link href="styles/sidebar-style.css" rel="stylesheet">
+    <link href="styles/entry-style.css" rel="stylesheet">
+    <link href="styles/nav-style.css" rel="stylesheet">
+    <link href="styles/bordered-box-style.css" rel="stylesheet">
+
+    <!--Importing fonts from Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,300&display=swap"
@@ -16,43 +23,46 @@
 
 <body>
     <div class="root">
-        <header>
-            <h1>Robert England</h1>
-            <h2 class="main-subheading">Faculty of Computer Science Co-op Program</h2>
-            <nav>
-                <a href="index.html" title="Take me home!">Home</a>
-                <span> | </span>
-                <a href="https://www.linkedin.com/in/robert-england-1a648922b/" title="View my LinkedIn!"
-                    target="_blank">LinkedIn</a>
-                <span> | References</span>
-            </nav>
-            <hr>
-        </header>
+        <div class="container">
+            <header>
+                <h1>Robert England</h1>
+                <h2 class="main-subheading">Faculty of Computer Science Co-op Program</h2>
+                <!--The div tag is a container for a block of elements-->
+                <!--The class attribute can be styled by CSS in the same way as a normal element (e.g. can style .subsection)-->
+                <nav class="main-nav">
+                    <span class="nav-links">
+                        <a href="index.html" title="Take me home!" class="bordered-box bordered-link">Home</a>
+                        <a href="https://www.linkedin.com/in/robert-england-1a648922b/" title="View my LinkedIn!"
+                            class="bordered-box bordered-link" target="_blank">LinkedIn</a>
+                        <span class="bordered-box non-applicable-bordered-link">References</span>
+                    </span>
+                </nav>
+            </header>
 
-        <div class="main-wrapper">
-            <section>
-                <h3>References</h3>
-                <div class="entry">
-                    <ol class="entry-content">
-                        <li>
-                            <span class="name">Name: </span>Totally R. Name<br>
-                            <span class="name">Contact Information: </span>trn@trwebsite.com<br>
-                            <span class="name">Relationship: </span>Previous professor
-                        </li>
-                        <li>
-                            <span class="name">Name: </span>Also T. Real<br>
-                            <span class="name">Contact Information: </span>(111)-111-1111<br>
-                            <span class="name">Relationship: </span>Previous professor
-                        </li>
-                    </ol>
-                </div>
-            </section>
+            <main class="main-content">
+                <section>
+                    <h3 class="section-title bordered-box">References</h3>
+                    <div class="entry">
+                        <ol class="entry-content">
+                            <li>
+                                <span class="name">Name: </span>Totally R. Name<br>
+                                <span class="name">Contact Information: </span>trn@trwebsite.com<br>
+                                <span class="name">Relationship: </span>Previous professor
+                            </li>
+                            <li>
+                                <span class="name">Name: </span>Also T. Real<br>
+                                <span class="name">Contact Information: </span>(111)-111-1111<br>
+                                <span class="name">Relationship: </span>Previous professor
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <span>©Copyright 2050 by nobody. All rights reversed.</span>
+            </footer>
         </div>
     </div>
-
-    <footer>
-        <span>©Copyright 2050 by nobody. All rights reversed.</span>
-    </footer>
 </body>
 
 </html>

@@ -50,6 +50,7 @@ ul.entry-desc{
 @media screen and (min-width: 768px){
     p.entry-work-role{
         display: contents;
+        font-size: 0.7em;
         margin-top: 0;
     }
 }
