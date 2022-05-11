@@ -8,7 +8,7 @@
     z-index: 100;
 }
 
-.bottom-nav-expand{
+#bottom-nav-expand{
     position: absolute;
     color: #181818;
     cursor: pointer;
@@ -19,12 +19,13 @@
     transform: translateX(-50%);
 }
 
-.bottom-nav-menu{
-    height: 50vh;
+#bottom-nav-menu{
+    display: none; 
+    height: 60vh;
     background-color: #d6ffff;
 }
 
-.bottom-nav-links{
+#bottom-nav-links{
     margin: 2em;
 }
 

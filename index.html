@@ -20,7 +20,6 @@
     <link href="styles/nav-style.css" rel="stylesheet">
     <link href="styles/bordered-box-style.css" rel="stylesheet">
     <link href="styles/bottom-nav-style.css" rel="stylesheet">
-    <link href="styles/bg-color-style.css" rel="stylesheet">
 
     <!--Importing fonts from Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +29,9 @@
 
     <!--Importing FontAwesome kit-->
     <script src="https://kit.fontawesome.com/13a21371a4.js" crossorigin="anonymous"></script>
+
+    <!--Scripts-->
+    <script src="scripts/bottom-nav.js" defer></script>
 
     <title>Robert England</title>
 </head>
@@ -222,9 +224,9 @@
         </div>
         <div class="bottom-nav">
             <i class="fa-solid fa-ankh" id="bottom-nav-icon"></i>
-            <div class="bottom-nav-expand">+ sections</div>
-            <div class="bottom-nav-menu">
-                <div class="bottom-nav-links">
+            <div id="bottom-nav-expand">+ sections</div>
+            <div id="bottom-nav-menu">
+                <div id="bottom-nav-links">
                     <a class="bottom-nav-link" href="#education">
                         <i class="fa-solid fa-angle-right bottom-nav-link-icon"></i>Education<br></a>
                     <a class="bottom-nav-link" href="#work-experience">
