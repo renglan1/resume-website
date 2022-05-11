@@ -7,7 +7,7 @@
 
 .bordered-box-heading{
     padding: 0.5em;
-    background-color: #d6ffff;
+    background-color: #e3e3e3;
     border: 1px solid #181818;
     border-left-width: 0.7vw;
 }
@@ -23,8 +23,8 @@
 }
 
 .tertiary-bg:hover{
-    border-right-color: #d6ffff;
-    border-bottom-color: #d6ffff;
+    border-right-color: #e3e3e3;
+    border-bottom-color: #e3e3e3;
 }
 
 .non-applicable-bordered-link{

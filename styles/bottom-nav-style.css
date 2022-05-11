@@ -4,7 +4,7 @@
     bottom: 0;
     width: 100%;
     min-height: 50px;
-    background-color: #d6ffff;
+    background-color: #e3e3e3;
     z-index: 100;
 }
 
@@ -22,7 +22,6 @@
 #bottom-nav-menu{
     display: none; 
     height: 60vh;
-    background-color: #d6ffff;
 }
 
 #bottom-nav-links{
@@ -33,7 +32,7 @@
     text-decoration: none;
     color: #181818;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 2em;
     white-space: nowrap;
 }

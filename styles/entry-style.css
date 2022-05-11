@@ -33,10 +33,17 @@ span.entry-time-period{
     text-align: justify;
 }
 
+.entry-hr{
+    
+}
+
 ul.entry-desc{
-    width: 70%;
     margin-top: 1em;
     text-align: justify;
+}
+
+ul.entry-desc > li{
+    width: 100%;
 }
 
 

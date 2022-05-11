@@ -6,11 +6,13 @@
     <link href="styles/style.css" rel="stylesheet">
 
     <!--Importing fonts from Google Fonts-->
+    <link href="styles/reset.css" rel="stylesheet">
     <link href="styles/general-style.css" rel="stylesheet">
     <link href="styles/sidebar-style.css" rel="stylesheet">
     <link href="styles/entry-style.css" rel="stylesheet">
     <link href="styles/nav-style.css" rel="stylesheet">
     <link href="styles/bordered-box-style.css" rel="stylesheet">
+    <link href="styles/bottom-nav-style.css" rel="stylesheet">
 
     <!--Importing fonts from Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,16 +26,17 @@
 <body>
     <div class="root">
         <div class="container">
-            <header>
+            <header class="bordered-box-heading">
                 <h1>Robert England</h1>
                 <h2 class="main-subheading">Faculty of Computer Science Co-op Program</h2>
                 <!--The div tag is a container for a block of elements-->
                 <!--The class attribute can be styled by CSS in the same way as a normal element (e.g. can style .subsection)-->
                 <nav class="main-nav">
-                    <span class="nav-links">
-                        <a href="index.html" title="Take me home!" class="bordered-box bordered-link">Home</a>
+                    <span class="main-nav-links">
+                        <a href="index.html" title="Take me home!" 
+                            class="bordered-box bordered-link tertiary-bg">Home</a> 
                         <a href="https://www.linkedin.com/in/robert-england-1a648922b/" title="View my LinkedIn!"
-                            class="bordered-box bordered-link" target="_blank">LinkedIn</a>
+                            class="bordered-box bordered-link tertiary-bg" target="_blank">LinkedIn</a>
                         <span class="bordered-box non-applicable-bordered-link">References</span>
                     </span>
                 </nav>
@@ -41,7 +44,7 @@
 
             <main class="main-content">
                 <section>
-                    <h3 class="section-title bordered-box">References</h3>
+                    <h3 class="section-title bordered-box-heading">References</h3>
                     <div class="entry">
                         <ol class="entry-content">
                             <li>
