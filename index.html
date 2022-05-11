@@ -20,6 +20,7 @@
     <link href="styles/nav-style.css" rel="stylesheet">
     <link href="styles/bordered-box-style.css" rel="stylesheet">
     <link href="styles/bottom-nav-style.css" rel="stylesheet">
+    <link href="styles/bg-color-style.css" rel="stylesheet">
 
     <!--Importing fonts from Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +37,7 @@
 <body>
     <div class="root">
         <div class="container">
-            <header>
+            <header class="bordered-box-heading">
                 <h1>Robert England</h1>
                 <h2 class="main-subheading">Faculty of Computer Science Co-op Program</h2>
                 <!--The div tag is a container for a block of elements-->
@@ -45,8 +46,8 @@
                     <span class="nav-links">
                         <span class="bordered-box non-applicable-bordered-link">Home</span> 
                         <a href="https://www.linkedin.com/in/robert-england-1a648922b/" title="View my LinkedIn!"
-                            class="bordered-box bordered-link" target="_blank">LinkedIn</a>
-                        <a href="references.html" title="View my references!" class="bordered-box bordered-link">References</a>
+                            class="bordered-box bordered-link tertiary-bg" target="_blank">LinkedIn</a>
+                        <a href="references.html" title="View my references!" class="bordered-box bordered-link tertiary-bg">References</a>
                     </span>
                 </nav>
             </header>
@@ -55,13 +56,18 @@
                 <div class="sidebar-inner">
                     <img class="headshot" src="images/rob-england-headshot.png" alt="Picture of Rob England">
                     <nav class="sidebar-nav">
-                        <p class="sidebar-title">Sections</p>
+                        <p class="sidebar-title bordered-box-heading">Sections</p>
                         <div class="sidebar-links">
-                            <a class="bordered-link bordered-box sidebar-link" href="#education">Education</a>
-                            <a class="bordered-link bordered-box sidebar-link" href="#work-experience">Work Experience</a>
-                            <a class="bordered-link bordered-box sidebar-link" href="#school-experience">School Experience</a>
-                            <a class="bordered-link bordered-box sidebar-link" href="#programming-skills">Programming Skills</a>
-                            <a class="bordered-link bordered-box sidebar-link" href="#hobbies">Hobbies</a>
+                            <a class="bordered-link bordered-box sidebar-link secondary-bg" href="#education">
+                                <i class="fa-solid fa-graduation-cap section-icon"></i>Education</a>
+                            <a class="bordered-link bordered-box sidebar-link secondary-bg" href="#work-experience">
+                                <i class="fa-solid fa-briefcase section-icon"></i>Work Experience</a>
+                            <a class="bordered-link bordered-box sidebar-link secondary-bg" href="#school-experience">
+                                <i class="fa-solid fa-pencil section-icon"></i>School Experience</a>
+                            <a class="bordered-link bordered-box sidebar-link secondary-bg" href="#programming-skills">
+                                <i class="fa-solid fa-code section-icon"></i>Programming Skills</a>
+                            <a class="bordered-link bordered-box sidebar-link secondary-bg" href="#hobbies">
+                                <i class="fa-solid fa-dice section-icon"></i>Hobbies</a>
                         </div>
                     </nav>
                 </div>
@@ -71,7 +77,8 @@
                 <!--Education-->
 
                 <section>
-                    <h3 id="education" class="section-title bordered-box"><i class="fa-solid fa-graduation-cap section-icon"></i>Education</h3>
+                    <h3 id="education" class="section-title bordered-box-heading">
+                        <i class="fa-solid fa-graduation-cap section-icon"></i>Education</h3>
                     <div class="section-content">
                         <!--The span tag creates an inline element (no automatic line break)-->
                         <div class="entry">
@@ -101,7 +108,8 @@
 
                 <!--Work Experience-->
                 <section>
-                    <h3 id="work-experience" class="section-title bordered-box"><i class="fa-solid fa-briefcase section-icon"></i>Work Experience</h3>
+                    <h3 id="work-experience" class="section-title bordered-box-heading">
+                        <i class="fa-solid fa-briefcase section-icon"></i>Work Experience</h3>
                     <div class="section-content">
                         <div class="entry">
                             <h4 class="entry-title">
@@ -150,7 +158,8 @@
 
                 <!--School Experience-->
                 <section>
-                    <h3 id="school-experience" class="section-title bordered-box"><i class="fa-solid fa-pencil section-icon"></i>School Experience</h3>
+                    <h3 id="school-experience" class="section-title bordered-box-heading">
+                        <i class="fa-solid fa-pencil section-icon"></i>School Experience</h3>
                     <div class="section-content">
                         <div class="entry">
                             <h4 class="entry-title">
@@ -172,7 +181,8 @@
 
                 <!--Skills-->
                 <section>
-                    <h3 id="programming-skills" class="section-title bordered-box"><i class="fa-solid fa-code section-icon"></i>Programming Skills</h3>
+                    <h3 id="programming-skills" class="section-title bordered-box-heading">
+                        <i class="fa-solid fa-code section-icon"></i>Programming Skills</h3>
                     <div class="section-content">
                         <div class="entry">
                             <h4 class="entry-title">
@@ -196,7 +206,8 @@
 
                 <!--Hobbies-->
                 <section>
-                    <h3 id="hobbies" class="section-title bordered-box"><i class="fa-solid fa-dice section-icon"></i>Hobbies</h3>
+                    <h3 id="hobbies" class="section-title bordered-box-heading">
+                        <i class="fa-solid fa-dice section-icon"></i>Hobbies</h3>
                     <div class="section-content">
                         <ul class="section-list fa-ul">
                             <li><span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>Online gaming</li>

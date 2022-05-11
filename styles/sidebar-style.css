@@ -19,7 +19,7 @@
     font-weight: bold;
     font-size: 1.8vw;
     margin-top: 1em;
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
 }
 
 .sidebar-nav {
@@ -29,10 +29,11 @@
 .sidebar-link{
     display: block;
     
-    width: 100%;
+    width: 100% - 0.7vw;
     margin: 0.2vw 0;
+    margin-left: 0.7vw;
 
-    font-size: 1vw;
+    font-size: 0.9vw;
     color: #181818;
     text-decoration: none;
 }
