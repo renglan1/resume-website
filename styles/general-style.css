@@ -17,7 +17,7 @@ html{
 }
 
 .root{
-    padding: 2.5vw 2.5vw;
+    padding: 2.5vw 2.5vw 50px 2.5vw;
     position: relative;
     min-height: 100vh;
 }
@@ -92,6 +92,11 @@ hr{
 
 /*Tablet*/
 @media only screen and (min-width: 600px){
+    
+}
+
+/*Desktop*/
+@media only screen and (min-width: 768px){
     header{
         grid-column: 3 / 13;
     }
@@ -99,11 +104,6 @@ hr{
     .main-content{
         grid-column: 3 / 13;
     }
-}
-
-/*Desktop*/
-@media only screen and (min-width: 768px){
-    
 }
 
 
