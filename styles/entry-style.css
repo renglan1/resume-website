@@ -1,7 +1,7 @@
 /*General*/
 
 .entry{
-    padding-left: 0.5em;
+    margin-bottom: 4vh;
 }
 
 li{
@@ -35,7 +35,7 @@ span.entry-time-period{
 
 ul.entry-desc{
     width: 70%;
-    margin-top: 0.5em;
+    margin-top: 1em;
     text-align: justify;
 }
 

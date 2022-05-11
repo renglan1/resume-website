@@ -1,0 +1,33 @@
+.bottom-nav{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 50px;
+    background-color: #f1f1f1;
+    border: 0.25vw solid #181818;
+    z-index: 100;
+}
+
+.bottom-nav-expand{
+    position: absolute;
+    color: #181818;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bottom-nav-icon{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+@media only screen and (min-width: 600px){
+    .bottom-nav{
+        display: none;
+    }
+}
