@@ -21,18 +21,19 @@
 
 #bottom-nav-menu{
     display: none; 
-    height: 60vh;
+    height: 90vh;
 }
 
 #bottom-nav-links{
-    margin: 2em;
+    margin: 50px;
+    margin-bottom: 100px;
 }
 
 .bottom-nav-link{
     text-decoration: none;
     color: #181818;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 1.5em;
     line-height: 2em;
     white-space: nowrap;
 }
