@@ -3,30 +3,25 @@
 @use "links";
 
 
-.sidebar{
+#sidebar{
     display: none;
 }
 
-.sidebar-inner{
+#sidebar-inner{
     position: sticky;
     top: 2.5vw;
     min-width: 100%;
 }
 
-.sidebar-nav{
-    width: 100%;
-    text-align: left;
+#sidebar-nav {
+    margin: 0;
 }
 
-.sidebar-title{
+#sidebar-title{
     font-weight: bold;
     font-size: 1.8vw;
     margin-top: 1em;
     margin-bottom: 0.5em;
-}
-
-.sidebar-nav {
-    margin: 0;
 }
 
 .sidebar-link{
@@ -39,14 +34,14 @@
     @include links.undecorated-link(colors.$color-secondary);
 }
 
-.headshot{
+#headshot{
     width: 100%;
     border-radius: 3px; 
 }
 
 /*Desktop*/
 @media only screen and (min-width: 768px){
-    .sidebar{
+    #sidebar{
         display: flex;
         flex-direction: column;
     
