@@ -1,9 +1,10 @@
-@import "colors";
+@use "colors";
+@use "links";
 
 @mixin bordered-container($bg-color){
     padding: 0.5em;
-    border: 1px solid $color-secondary;
-    color: $color-secondary;
+    border: 1px solid colors.$color-secondary;
+    color: colors.$color-secondary;
     background-color: $bg-color;
 } 
 
@@ -16,28 +17,27 @@
 
 @mixin bordered-link($bg-color){
     @include bordered-container-button($bg-color);
-
-    text-decoration: none;
+    @include links.undecorated-link(colors.$color-secondary);
 
     &:hover{
         cursor: pointer;   
-        background-color: $color-secondary;
+        background-color: colors.$color-secondary;
         border-color: $bg-color;
-        color: $color-primary;
+        color: colors.$color-primary;
     }
 }
 
 .bordered-heading{
-    @include bordered-container($color-tertiary);
+    @include bordered-container(colors.$color-tertiary);
     border-left-width: 0.4vw;
 }
 
 .bordered-link-primary-bg{
-    @include bordered-link($color-primary);
+    @include bordered-link(colors.$color-primary);
 }
 
 .bordered-link-tertiary-bg{
-    @include bordered-link($color-tertiary);
+    @include bordered-link(colors.$color-tertiary);
 }
 
 .bordered-link-disabled-tertiary-bg{

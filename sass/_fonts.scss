@@ -1,0 +1,7 @@
+@use "colors";
+@mixin default-font{
+    color: colors.$color-secondary;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
