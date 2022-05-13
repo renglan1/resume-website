@@ -1,5 +1,5 @@
-@use "colors";
-@use "links";
+@use "../base/colors";
+@use "../elements/links";
 
 @mixin bordered-container($bg-color){
     padding: 0.5em;
@@ -9,7 +9,7 @@
 } 
 
 @mixin bordered-container-button($bg-color) {
-    @include bordered-container($bg-color);
+    @include bordered-container($bg-color);  
 
     border-right-width: 0.4vw; 
     border-bottom-width: 0.4vw;

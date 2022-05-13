@@ -1,16 +1,17 @@
 @use "base/colors"; 
-@use 'base/fonts';
+@use "base/fonts";
 @use "base/grid";
 @use "base/index-grid";
 @import "base/reset";
-@import "elements/headings";
+@import "components/sidebar";
+@import "components/main-nav";
+@import "components/entry"; 
+@import "components/bottom-nav";
 @import "components/header";
 @import "components/section";
+@import "components/bordered-container";
 @import "elements/lists";
-@import "elements/sidebar";
-@import "elements/main-nav";
-@import "elements/entry"; 
-@import "elements/bottom-nav";
+@import "elements/headings";
 
 /*Global rules*/  
 html{

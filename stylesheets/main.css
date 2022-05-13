@@ -1,18 +1,488 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @use "base/colors";
- *   | ^^^^^^^^^^^^^^^^^^
- *   '
- *   sass/base/_fonts.scss 1:1  @use
- *   sass/main.scss 2:1         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"base/colors\";\a   \2502  ^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/base/_fonts.scss 1:1  @use\a   sass/main.scss 2:1         root stylesheet";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th,
+td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: none;
+  font: inherit;
+  font-size: 100%;
+}
+
+#sidebar {
+  display: none;
+}
+
+#sidebar-inner {
+  position: sticky;
+  top: 2.5vw;
+  min-width: 100%;
+}
+
+#sidebar-nav {
+  margin: 0;
+}
+
+#sidebar-title {
+  font-weight: bold;
+  font-size: 1.8vw;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.sidebar-link {
+  display: block;
+  width: 100%;
+  margin: 0.2vw 0;
+  font-size: 0.9vw;
+  color: #181818;
+  text-decoration: none;
+}
+
+#headshot {
+  width: 100%;
+  border-radius: 3px;
+}
+
+/*Desktop*/
+@media only screen and (min-width: 768px) {
+  #sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  #sidebar {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+}
+#main-nav-links {
+  font-size: 0.8em;
+  flex: 0 0 100%;
+}
+
+#main-nav {
+  margin: 1em 0;
+}
+
+/*General*/
+.entry {
+  margin-bottom: 4vh;
+}
+
+.entry-title {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.entry-name {
+  font-weight: bold;
+  margin-right: 0.4em;
+}
+
+span.entry-location {
+  flex-grow: 2;
+}
+
+p.entry-work-role {
+  display: none;
+}
+
+span.entry-time-period {
+  font-weight: bold;
+  align-self: flex-end;
+  text-align: justify;
+}
+
+ul.entry-desc {
+  margin-top: 1em;
+  text-align: justify;
+}
+
+ul.entry-desc > li {
+  width: 100%;
+}
+
+/*Tablet*/
+/*Desktop*/
+@media screen and (min-width: 768px) {
+  p.entry-work-role {
+    display: contents;
+    font-size: 0.7em;
+    margin-top: 0;
+  }
+}
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 50px;
+  background-color: #d8d8d8;
+  z-index: 100;
+}
+
+#bottom-nav-expand {
+  position: absolute;
+  color: #181818;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#bottom-nav-menu {
+  display: none;
+  height: 90vh;
+}
+
+#bottom-nav-links {
+  margin: 50px;
+  margin-bottom: 100px;
+}
+
+.bottom-nav-link {
+  text-decoration: none;
+  color: #181818;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 2em;
+  white-space: nowrap;
+}
+
+.bottom-nav-link-icon {
+  margin-right: 0.25em;
+}
+
+#bottom-nav-icon {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .bottom-nav {
+    display: none;
+  }
+}
+#bordered-heading-inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: fit-content;
+}
+
+#main-subheading {
+  margin: 0.25em 0;
+  font-weight: 300;
+  text-align: center;
+  flex: 0 0 100%;
+}
+
+#theme-menu-button {
+  cursor: pointer;
+}
+
+#theme-menu {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+}
+
+#theme-menu-options {
+  display: block;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  width: fit-content;
+  white-space: nowrap;
+  right: 0;
+  z-index: 1;
+}
+
+.theme-menu-option {
+  width: 100%;
+}
+.theme-menu-option:hover {
+  cursor: pointer;
+  background-color: #d8d8d8;
+}
+
+.theme-menu-option-inner {
+  padding: 0.5em;
+}
+
+.theme-menu-option-preview {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+}
+
+.theme-menu-option-preview-section {
+  width: 5px;
+}
+
+#aqua-sec-1 {
+  background-color: #f1f1f1;
+}
+
+#aqua-sec-2 {
+  background-color: #181818;
+}
+
+#aqua-sec-3 {
+  background-color: #d8d8d8;
+}
+
+#rust-sec-1 {
+  background-color: #181818;
+}
+
+#rust-sec-2 {
+  background-color: #f1f1f1;
+}
+
+#rust-sec-3 {
+  background-color: #d8d8d8;
+}
+
+.section-title {
+  width: fit-content;
+  margin-top: 2em;
+}
+
+.section-content {
+  margin-left: 0.7vw;
+}
+
+.section-icon {
+  margin-right: 0.25em;
+}
+
+.subsection {
+  font-weight: bold;
+}
+
+ul.section-list {
+  margin-top: 0;
+}
+
+.bordered-heading {
+  padding: 0.5em;
+  border: 1px solid #181818;
+  color: #181818;
+  background-color: #d8d8d8;
+  border-left-width: 0.4vw;
+}
+
+.bordered-link-primary-bg {
+  padding: 0.5em;
+  border: 1px solid #181818;
+  color: #181818;
+  background-color: #f1f1f1;
+  border-right-width: 0.4vw;
+  border-bottom-width: 0.4vw;
+  color: #181818;
+  text-decoration: none;
+}
+.bordered-link-primary-bg:hover {
+  cursor: pointer;
+  background-color: #181818;
+  border-color: #f1f1f1;
+  color: #f1f1f1;
+}
+
+.bordered-link-tertiary-bg {
+  padding: 0.5em;
+  border: 1px solid #181818;
+  color: #181818;
+  background-color: #d8d8d8;
+  border-right-width: 0.4vw;
+  border-bottom-width: 0.4vw;
+  color: #181818;
+  text-decoration: none;
+}
+.bordered-link-tertiary-bg:hover {
+  cursor: pointer;
+  background-color: #181818;
+  border-color: #d8d8d8;
+  color: #f1f1f1;
+}
+
+.bordered-link-disabled-tertiary-bg {
+  padding: 0.5em;
+  border: 1px solid #181818;
+  color: #181818;
+  background-color: lightgreen;
+  border-right-width: 0.4vw;
+  border-bottom-width: 0.4vw;
+}
+
+ol, ul {
+  margin-left: 40px;
+  padding-left: 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+h1 {
+  margin: 0.25em 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.35em;
+  width: fit-content;
+  flex: 0 0 100%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.85em;
+}
+
+h3 {
+  margin: 0.5em 0;
+  font-weight: bold;
+  font-size: 1.35em;
+}
+
+h4 {
+  font-size: 1.15em;
+}
+
+/*Global rules*/
+html {
+  height: 100%;
+  background-color: #f1f1f1;
+  color: #181818;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+/*This allows all elements to inherit the alternative box model declared in the html rule*/
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.root {
+  padding: 2.5vw 2.5vw 50px 2.5vw;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 4vw;
+}
+
+/*Element rules*/
+a {
+  line-height: normal;
+}
+
+body {
+  max-width: 100vw;
+}
+
+header {
+  grid-column: 1/13;
+  grid-row: 1;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    grid-column: 3/13;
+  }
+}
+
+main {
+  grid-column: 1/13;
+  grid-row: 2;
+  padding-right: 0.4vw;
+}
+@media only screen and (min-width: 768px) {
+  main {
+    grid-column: 3/13;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 2.5vw;
+  width: fit-content;
+  font-size: 0.45em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+hr {
+  margin: 0.5em 0 1em 0;
+}
+
+/*# sourceMappingURL=main.css.map */
