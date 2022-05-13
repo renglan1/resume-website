@@ -1,13 +1,17 @@
-#main-subheading {
-  margin: 0.25em 0;
-  font-weight: 300;
-  text-align: center;
-  flex: 0 0 100%;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use "colors";
+ *   | ^^^^^^^^^^^^^
+ *   '
+ *   sass/header.scss 1:1  root stylesheet */
 
-#theme-button {
-  margin-left: auto;
-  cursor: pointer;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"colors\";\a   \2502  ^^^^^^^^^^^^^\a   \2575 \a   sass/header.scss 1:1  root stylesheet";
 }
-
-/*# sourceMappingURL=header.css.map */

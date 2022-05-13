@@ -1,52 +1,17 @@
-.bordered-heading {
-  padding: 0.5em;
-  border: 1px solid #181818;
-  color: #181818;
-  background-color: #e3e3e3;
-  border-left-width: 0.4vw;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use "colors";
+ *   | ^^^^^^^^^^^^^
+ *   '
+ *   sass/bordered-container.scss 1:1  root stylesheet */
 
-.bordered-link-primary-bg {
-  padding: 0.5em;
-  border: 1px solid #181818;
-  color: #181818;
-  background-color: #f1f1f1;
-  border-right-width: 0.4vw;
-  border-bottom-width: 0.4vw;
-  color: #181818;
-  text-decoration: none;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"colors\";\a   \2502  ^^^^^^^^^^^^^\a   \2575 \a   sass/bordered-container.scss 1:1  root stylesheet";
 }
-.bordered-link-primary-bg:hover {
-  cursor: pointer;
-  background-color: #181818;
-  border-color: #f1f1f1;
-  color: #f1f1f1;
-}
-
-.bordered-link-tertiary-bg {
-  padding: 0.5em;
-  border: 1px solid #181818;
-  color: #181818;
-  background-color: #e3e3e3;
-  border-right-width: 0.4vw;
-  border-bottom-width: 0.4vw;
-  color: #181818;
-  text-decoration: none;
-}
-.bordered-link-tertiary-bg:hover {
-  cursor: pointer;
-  background-color: #181818;
-  border-color: #e3e3e3;
-  color: #f1f1f1;
-}
-
-.bordered-link-disabled-tertiary-bg {
-  padding: 0.5em;
-  border: 1px solid #181818;
-  color: #181818;
-  background-color: lightgreen;
-  border-right-width: 0.4vw;
-  border-bottom-width: 0.4vw;
-}
-
-/*# sourceMappingURL=bordered-container.css.map */

@@ -1,3 +1,14 @@
+@use "colors";
+
+#bordered-heading-inner{
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: center;
+
+    height: fit-content;
+}
+
 #main-subheading{
     margin: 0.25em 0;
     font-weight: 300;
@@ -5,7 +16,72 @@
     flex: 0 0 100%; 
 }
 
-#theme-button{
-    margin-left: auto;
+#theme-menu-button{
     cursor: pointer;
+}
+
+#theme-menu{
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+}
+
+#theme-menu-options{
+    display: block;
+    position: absolute;
+    background-color: colors.$color-primary;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 150px;
+    width: fit-content;
+    white-space: nowrap;
+    right: 0;
+    z-index: 1;
+}
+
+.theme-menu-option{
+    width: 100%;
+    &:hover{
+        cursor: pointer;
+        background-color: colors.$color-tertiary;
+    }
+}
+
+.theme-menu-option-inner{
+    padding: 0.5em;
+}
+
+.theme-menu-option-preview{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+}
+
+.theme-menu-option-preview-section{
+    width: 5px;
+}
+
+#aqua-sec-1{
+    background-color: colors.$color-primary;
+}
+
+#aqua-sec-2{
+    background-color: colors.$color-secondary;
+}
+
+#aqua-sec-3{
+    background-color: colors.$color-tertiary;
+}
+
+#rust-sec-1{
+    background-color: colors.$color-secondary;
+}
+
+#rust-sec-2{
+    background-color: colors.$color-primary;
+}
+
+#rust-sec-3{
+    background-color: colors.$color-tertiary;
 }

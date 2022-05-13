@@ -1,50 +1,17 @@
-#sidebar {
-  display: none;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use "index-grid";
+ *   | ^^^^^^^^^^^^^^^^^
+ *   '
+ *   sass/sidebar.scss 1:1  root stylesheet */
 
-#sidebar-inner {
-  position: sticky;
-  top: 2.5vw;
-  min-width: 100%;
-}
-
-#sidebar-nav {
-  margin: 0;
-}
-
-#sidebar-title {
-  font-weight: bold;
-  font-size: 1.8vw;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-}
-
-.sidebar-link {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  width: 100%;
-  margin: 0.2vw 0;
-  font-size: 0.9vw;
-  color: #181818;
-  text-decoration: none;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"index-grid\";\a   \2502  ^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/sidebar.scss 1:1  root stylesheet";
 }
-
-#headshot {
-  width: 100%;
-  border-radius: 3px;
-}
-
-/*Desktop*/
-@media only screen and (min-width: 768px) {
-  #sidebar {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media only screen and (min-width: 768px) and (min-width: 768px) {
-  #sidebar {
-    grid-column: 1/3;
-    grid-row: 1/3;
-  }
-}
-
-/*# sourceMappingURL=sidebar.css.map */

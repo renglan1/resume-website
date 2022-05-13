@@ -10,7 +10,7 @@
     <meta name="description" content="Resume for Rob England">
 
     <!---This declaration allows us to maniuplate the page's dimensions and scaling, allowing for responsive web design-->
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
 
     <!--Linking our stylesheets-->
     <link href="stylesheets/main.css" rel="stylesheet">
@@ -35,22 +35,46 @@
     <div class="root">
         <div class="container">
             <header class="bordered-heading">
-                <button id="theme-button"><i class="fa-solid fa-brush"></i></button>
-                <div id="">
-
+                <div id="bordered-heading-inner">
+                    <div id="theme-menu">
+                        <button id="theme-menu-button"><i class="fa-solid fa-brush"></i></button>
+                        <div id="theme-menu-options">
+                            <div class="theme-menu-option">
+                                <div class="theme-menu-option-inner">
+                                    <span class="theme-menu-option-preview">
+                                        <div class="theme-menu-option-preview-section" id="aqua-sec-1"></div>
+                                        <div class="theme-menu-option-preview-section" id="aqua-sec-2"></div>
+                                        <div class="theme-menu-option-preview-section" id="aqua-sec-3"></div>
+                                    </span>
+                                    <span class="theme-menu-option-name">Light (default)</span>
+                                </div>
+                            </div>
+                            <div class="theme-menu-option">
+                                <div class="theme-menu-option-inner">
+                                    <span class="theme-menu-option-preview">
+                                        <div class="theme-menu-option-preview-section" id="rust-sec-1"></div>
+                                        <div class="theme-menu-option-preview-section" id="rust-sec-2"></div>
+                                        <div class="theme-menu-option-preview-section" id="rust-sec-3"></div>
+                                    </span>
+                                    <span class="theme-menu-option-name">Dark</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h1>Robert England</h1>
+                    <h2 id="main-subheading">Faculty of Computer Science Co-op Program</h2>
+                    <!--The div tag is a container for a block of elements-->
+                    <!--The class attribute can be styled by CSS in the same way as a normal element (e.g. can style .subsection)-->
+                    <nav id="main-nav">
+                        <span id="main-nav-links">
+                            <span class="bordered-link-disabled-tertiary-bg">Home</span>
+                            <a href="https://www.linkedin.com/in/robert-england-1a648922b/" title="View my LinkedIn!"
+                                class="bordered-link-tertiary-bg" target="_blank">LinkedIn</a>
+                            <a href="references.html" title="View my references!"
+                                class="bordered-link-tertiary-bg">References</a>
+                        </span>
+                    </nav>
                 </div>
-                <h1>Robert England</h1>
-                <h2 id="main-subheading">Faculty of Computer Science Co-op Program</h2>
-                <!--The div tag is a container for a block of elements-->
-                <!--The class attribute can be styled by CSS in the same way as a normal element (e.g. can style .subsection)-->
-                <nav id="main-nav">
-                    <span id="main-nav-links">
-                        <span class="bordered-link-disabled-tertiary-bg">Home</span> 
-                        <a href="https://www.linkedin.com/in/robert-england-1a648922b/" title="View my LinkedIn!"
-                            class="bordered-link-tertiary-bg" target="_blank">LinkedIn</a>
-                        <a href="references.html" title="View my references!" class="bordered-link-tertiary-bg">References</a>
-                    </span>
-                </nav>
             </header>
 
             <div id="sidebar">
@@ -79,7 +103,8 @@
 
                 <section>
                     <h3 id="education" class="section-title bordered-heading">
-                        <i class="fa-solid fa-graduation-cap section-icon"></i>Education</h3>
+                        <i class="fa-solid fa-graduation-cap section-icon"></i>Education
+                    </h3>
                     <div class="section-content">
                         <!--The span tag creates an inline element (no automatic line break)-->
                         <div class="entry">
@@ -94,7 +119,8 @@
                                     Fourth year BSC Biology student taking Computer Science courses to pursue a BCS
                                     degree after graduation
                                 </li>
-                                <li><span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>4.0 cumulative GPA</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>4.0 cumulative GPA
+                                </li>
                             </ul>
                         </div>
 
@@ -112,7 +138,8 @@
                 <!--Work Experience-->
                 <section>
                     <h3 id="work-experience" class="section-title bordered-heading">
-                        <i class="fa-solid fa-briefcase section-icon"></i>Work Experience</h3>
+                        <i class="fa-solid fa-briefcase section-icon"></i>Work Experience
+                    </h3>
                     <div class="section-content">
                         <div class="entry">
                             <h4 class="entry-title">
@@ -164,7 +191,8 @@
                 <!--School Experience-->
                 <section>
                     <h3 id="school-experience" class="section-title bordered-heading">
-                        <i class="fa-solid fa-pencil section-icon"></i>School Experience</h3>
+                        <i class="fa-solid fa-pencil section-icon"></i>School Experience
+                    </h3>
                     <div class="section-content">
                         <div class="entry">
                             <h4 class="entry-title">
@@ -188,14 +216,16 @@
                 <!--Skills-->
                 <section>
                     <h3 id="programming-skills" class="section-title bordered-heading">
-                        <i class="fa-solid fa-code section-icon"></i>Programming Skills</h3>
+                        <i class="fa-solid fa-code section-icon"></i>Programming Skills
+                    </h3>
                     <div class="section-content">
                         <div class="entry">
                             <h4 class="entry-title">
                                 <span class="entry-name">Languages</span>
                             </h4>
                             <ul class="entry-desc fa-ul">
-                                <li><span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>Java, C, MATLAB, R</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>Java, C, MATLAB, R
+                                </li>
                             </ul>
                         </div>
 
@@ -204,7 +234,8 @@
                                 <span class="entry-name">Operating Systems</span>
                             </h4>
                             <ul class="entry-desc fa-ul">
-                                <li><span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>Windows, Mac OSX</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>Windows, Mac OSX
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -213,7 +244,8 @@
                 <!--Hobbies-->
                 <section>
                     <h3 id="hobbies" class="section-title bordered-heading">
-                        <i class="fa-solid fa-dice section-icon"></i>Hobbies</h3>
+                        <i class="fa-solid fa-dice section-icon"></i>Hobbies
+                    </h3>
                     <div class="section-content">
                         <ul class="section-list fa-ul">
                             <li><span class="fa-li"><i class="fa-solid fa-angle-right"></i></span>Online gaming</li>

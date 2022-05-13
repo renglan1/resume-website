@@ -47,14 +47,7 @@ body{
 }
 
 header{
-    display: flex;
-
-    flex-flow: row wrap;
-    justify-content: center;
-
     @include index-grid.placement-header;
-
-    height: fit-content;
 }
 
 main{

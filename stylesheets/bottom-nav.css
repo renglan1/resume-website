@@ -1,57 +1,17 @@
-.bottom-nav {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  min-height: 50px;
-  background-color: #e3e3e3;
-  z-index: 100;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use "colors";
+ *   | ^^^^^^^^^^^^^
+ *   '
+ *   sass/bottom-nav.scss 1:1  root stylesheet */
 
-#bottom-nav-expand {
-  position: absolute;
-  color: #181818;
-  cursor: pointer;
-  text-align: center;
-  font-weight: bold;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"colors\";\a   \2502  ^^^^^^^^^^^^^\a   \2575 \a   sass/bottom-nav.scss 1:1  root stylesheet";
 }
-
-#bottom-nav-menu {
-  display: none;
-  height: 90vh;
-}
-
-#bottom-nav-links {
-  margin: 50px;
-  margin-bottom: 100px;
-}
-
-.bottom-nav-link {
-  text-decoration: none;
-  color: #181818;
-  font-weight: bold;
-  font-size: 1.5em;
-  line-height: 2em;
-  white-space: nowrap;
-}
-
-.bottom-nav-link-icon {
-  margin-right: 0.25em;
-}
-
-#bottom-nav-icon {
-  position: absolute;
-  left: 15px;
-  bottom: 15px;
-}
-
-@media only screen and (min-width: 768px) {
-  .bottom-nav {
-    display: none;
-  }
-}
-
-/*# sourceMappingURL=bottom-nav.css.map */
