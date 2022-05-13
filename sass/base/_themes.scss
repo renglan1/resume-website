@@ -1,0 +1,44 @@
+@use "../base/colors";
+
+@mixin themify($theme, $property, $color, $color-hover, $state){
+  .#{$theme} & {
+    #{$property}: $color;
+
+    @if ($state == hover){
+      &:hover{
+        #{$property}: $color-hover;
+      }
+    }
+  }
+}
+
+@mixin text-color($state: none) {
+  @include themify(light-theme, color, colors.$color-secondary, colors.$color-primary, $state);
+  @include themify(dark-theme, color, colors.$color-secondary-dark, colors.$color-primary-dark, $state);
+}
+
+@mixin background-color($color-type: primary, $state: none) {
+  @if($color-type == primary){
+    @include themify(light-theme, background-color, colors.$color-primary, colors.$color-secondary, $state);
+    @include themify(dark-theme, background-color, colors.$color-primary-dark, colors.$color-secondary-dark, $state);
+  }
+  @else if($color-type == tertiary){
+    @include themify(light-theme, background-color, colors.$color-tertiary, colors.$color-secondary, $state);
+    @include themify(dark-theme, background-color, colors.$color-tertiary-dark, colors.$color-secondary-dark, $state);
+  }
+}
+
+@mixin border-color($bg-color: primary, $state: none) {
+  
+  border-color: colors.$color-secondary;
+  @if($state == hover) {
+    @if($bg-color == primary) {
+      border-color: colors.$color-primary;
+    }
+
+    @else if($bg-color == tertiary) {
+      border-color: colors.$color-tertiary;
+    }
+  }
+
+}

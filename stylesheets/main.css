@@ -332,17 +332,21 @@ ul.section-list {
 
 .bordered-heading {
   padding: 0.5em;
-  border: 1px solid #181818;
-  color: #181818;
-  background-color: #d8d8d8;
+  border: 1px solid red;
+  border-color: #181818;
   border-left-width: 0.4vw;
+}
+.light-theme .bordered-heading {
+  background-color: #d8d8d8;
+}
+.dark-theme .bordered-heading {
+  background-color: #323232;
 }
 
 .bordered-link-primary-bg {
   padding: 0.5em;
-  border: 1px solid #181818;
-  color: #181818;
-  background-color: #f1f1f1;
+  border: 1px solid red;
+  border-color: #181818;
   border-right-width: 0.4vw;
   border-bottom-width: 0.4vw;
   color: #181818;
@@ -350,16 +354,31 @@ ul.section-list {
 }
 .bordered-link-primary-bg:hover {
   cursor: pointer;
-  background-color: #181818;
-  border-color: #f1f1f1;
+  border-color: #181818;
+}
+.light-theme .bordered-link-primary-bg:hover {
+  color: #181818;
+}
+.light-theme .bordered-link-primary-bg:hover:hover {
   color: #f1f1f1;
+}
+.dark-theme .bordered-link-primary-bg:hover {
+  color: #f1f1f1;
+}
+.dark-theme .bordered-link-primary-bg:hover:hover {
+  color: #181818;
+}
+.light-theme .bordered-link-primary-bg {
+  background-color: #f1f1f1;
+}
+.dark-theme .bordered-link-primary-bg {
+  background-color: #181818;
 }
 
 .bordered-link-tertiary-bg {
   padding: 0.5em;
-  border: 1px solid #181818;
-  color: #181818;
-  background-color: #d8d8d8;
+  border: 1px solid red;
+  border-color: #181818;
   border-right-width: 0.4vw;
   border-bottom-width: 0.4vw;
   color: #181818;
@@ -367,16 +386,31 @@ ul.section-list {
 }
 .bordered-link-tertiary-bg:hover {
   cursor: pointer;
-  background-color: #181818;
-  border-color: #d8d8d8;
+  border-color: #181818;
+}
+.light-theme .bordered-link-tertiary-bg:hover {
+  color: #181818;
+}
+.light-theme .bordered-link-tertiary-bg:hover:hover {
   color: #f1f1f1;
+}
+.dark-theme .bordered-link-tertiary-bg:hover {
+  color: #f1f1f1;
+}
+.dark-theme .bordered-link-tertiary-bg:hover:hover {
+  color: #181818;
+}
+.light-theme .bordered-link-tertiary-bg {
+  background-color: #d8d8d8;
+}
+.dark-theme .bordered-link-tertiary-bg {
+  background-color: #323232;
 }
 
 .bordered-link-disabled-tertiary-bg {
   padding: 0.5em;
-  border: 1px solid #181818;
-  color: #181818;
-  background-color: lightgreen;
+  border: 1px solid red;
+  border-color: #181818;
   border-right-width: 0.4vw;
   border-bottom-width: 0.4vw;
 }
@@ -417,12 +451,23 @@ h4 {
 /*Global rules*/
 html {
   height: 100%;
-  background-color: #f1f1f1;
-  color: #181818;
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  background-color: red;
   box-sizing: border-box;
+}
+.light-theme html {
+  color: #181818;
+}
+.dark-theme html {
+  color: #f1f1f1;
+}
+.light-theme html {
+  background-color: #f1f1f1;
+}
+.dark-theme html {
+  background-color: #181818;
 }
 
 /*This allows all elements to inherit the alternative box model declared in the html rule*/

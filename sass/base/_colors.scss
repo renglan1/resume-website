@@ -1,3 +1,14 @@
+// Default Light theme
 $color-primary: #f1f1f1;
 $color-secondary: #181818;
 $color-tertiary: darken($color-primary, 10%);
+
+// Dark theme
+$color-primary-dark: #181818;
+$color-secondary-dark: #f1f1f1;
+$color-tertiary-dark: lighten($color-primary-dark, 10%);
+
+// Rust theme
+$color-primary-rust: #ffb09e;
+$color-secondary-rust: #181818;
+$color-tertiary-rust: darken($color-primary-dark, 30%);

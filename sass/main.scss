@@ -2,6 +2,7 @@
 @use "base/fonts";
 @use "base/grid";
 @use "base/index-grid";
+@use "base/themes";
 @import "base/reset";
 @import "components/sidebar";
 @import "components/main-nav";
@@ -16,9 +17,11 @@
 /*Global rules*/  
 html{
     height: 100%; 
-    background-color: colors.$color-primary;
-
+ 
     @include fonts.default-font;
+    @include themes.text-color(none);
+    background-color: red;
+    @include themes.background-color(primary);
 
     box-sizing: border-box;
 }
