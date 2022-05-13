@@ -1,9 +1,10 @@
 /* Error: Can't find stylesheet to import.
  *   ,
- * 1 | @use "colors";
- *   | ^^^^^^^^^^^^^
+ * 1 | @use "base/colors";
+ *   | ^^^^^^^^^^^^^^^^^^
  *   '
- *   sass/main.scss 1:1  root stylesheet */
+ *   sass/base/_fonts.scss 1:1  @use
+ *   sass/main.scss 2:1         root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"colors\";\a   \2502  ^^^^^^^^^^^^^\a   \2575 \a   sass/main.scss 1:1  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"base/colors\";\a   \2502  ^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/base/_fonts.scss 1:1  @use\a   sass/main.scss 2:1         root stylesheet";
 }

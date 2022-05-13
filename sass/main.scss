@@ -1,18 +1,18 @@
-@use "colors";
-@use "fonts";
-@use "grid";
-@use "index-grid";
-@import "reset";
-@import "headings";
-@import "header";
-@import "section";
-@import "lists";
-@import "sidebar";
-@import "main-nav";
-@import "entry";
-@import "bottom-nav";
+@use "base/colors"; 
+@use 'base/fonts';
+@use "base/grid";
+@use "base/index-grid";
+@import "base/reset";
+@import "elements/headings";
+@import "components/header";
+@import "components/section";
+@import "elements/lists";
+@import "elements/sidebar";
+@import "elements/main-nav";
+@import "elements/entry"; 
+@import "elements/bottom-nav";
 
-/*Global rules*/
+/*Global rules*/  
 html{
     height: 100%; 
     background-color: colors.$color-primary;

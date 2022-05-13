@@ -1,6 +1,6 @@
-@use "index-grid";
+@use "base/index-grid";
 @use "colors";
-@use "links";
+@use "elements/links";
 
 
 #sidebar{
@@ -11,7 +11,7 @@
     position: sticky;
     top: 2.5vw;
     min-width: 100%;
-}
+} 
 
 #sidebar-nav {
     margin: 0;
