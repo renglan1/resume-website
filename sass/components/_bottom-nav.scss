@@ -1,4 +1,6 @@
 @use "../base/colors";
+@use "../base/themes";
+@use "../elements/links";
 
 .bottom-nav{
     position: fixed;
@@ -6,13 +8,12 @@
     bottom: 0;
     width: 100%;
     min-height: 50px;
-    background-color: colors.$color-tertiary;
+    @include themes.background-color(tertiary);
     z-index: 100;
 }
 
 #bottom-nav-expand{
     position: absolute;
-    color: colors.$color-secondary;
     cursor: pointer;
     text-align: center;
     font-weight: bold;
@@ -32,8 +33,7 @@
 }
 
 .bottom-nav-link{
-    text-decoration: none;
-    color: colors.$color-secondary;
+    @include links.undecorated-link();
     font-weight: bold;
     font-size: 1.5em;
     line-height: 2em;

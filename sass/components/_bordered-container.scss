@@ -16,7 +16,7 @@
 
 @mixin bordered-link($color-type){
     @include bordered-container-button();
-    @include links.undecorated-link(colors.$color-secondary);
+    @include links.undecorated-link();
     
     @include themes.text-color(hover);
     @include themes.background-color($color-type, hover);

@@ -91,7 +91,7 @@ button {
   width: 100%;
   margin: 0.2vw 0;
   font-size: 0.9vw;
-  color: #181818;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -176,13 +176,32 @@ ul.entry-desc > li {
   bottom: 0;
   width: 100%;
   min-height: 50px;
-  background-color: #d8d8d8;
   z-index: 100;
+}
+.light-theme .bottom-nav {
+  background-color: #d8d8d8;
+}
+.dark-theme .bottom-nav {
+  background-color: #252525;
+}
+.corroded-theme .bottom-nav {
+  background-color: #8a8b4f;
+}
+.arctic-theme .bottom-nav {
+  background-color: #e3f6ff;
+}
+.tropical-theme .bottom-nav {
+  background-color: #f52664;
+}
+.neptune-theme .bottom-nav {
+  background-color: #2251fc;
+}
+.rust-theme .bottom-nav {
+  background-color: #be4f4f;
 }
 
 #bottom-nav-expand {
   position: absolute;
-  color: #181818;
   cursor: pointer;
   text-align: center;
   font-weight: bold;
@@ -202,8 +221,8 @@ ul.entry-desc > li {
 }
 
 .bottom-nav-link {
+  color: inherit;
   text-decoration: none;
-  color: #181818;
   font-weight: bold;
   font-size: 1.5em;
   line-height: 2em;
@@ -555,7 +574,7 @@ ul.section-list {
   border: 1px solid blue;
   border-right-width: 0.4vw;
   border-bottom-width: 0.4vw;
-  color: #181818;
+  color: inherit;
   text-decoration: none;
 }
 .light-theme .bordered-link-primary-bg {
@@ -693,7 +712,7 @@ ul.section-list {
   border: 1px solid blue;
   border-right-width: 0.4vw;
   border-bottom-width: 0.4vw;
-  color: #181818;
+  color: inherit;
   text-decoration: none;
 }
 .light-theme .bordered-link-tertiary-bg {

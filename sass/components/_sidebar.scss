@@ -31,7 +31,7 @@
     margin: 0.2vw 0;
 
     font-size: 0.9vw;
-    @include links.undecorated-link(colors.$color-secondary);
+    @include links.undecorated-link();
 }
 
 #headshot{
