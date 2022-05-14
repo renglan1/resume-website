@@ -19,10 +19,7 @@ html{
     height: 100%; 
  
     @include fonts.default-font;
-    @include themes.text-color(none);
-    background-color: red;
-    @include themes.background-color(primary);
-
+    
     box-sizing: border-box;
 }
 
@@ -35,6 +32,9 @@ html{
     padding: 2.5vw 2.5vw 50px 2.5vw;
     position: relative;
     min-height: 100vh;
+
+    @include themes.text-color();
+    @include themes.background-color(primary);
 }
 
 .container{

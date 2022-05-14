@@ -4,8 +4,7 @@
 
 @mixin bordered-container(){
     padding: 0.5em;
-    border: 1px solid red;
-    @include themes.border-color();
+    border: 1px solid blue;
 } 
 
 @mixin bordered-container-button() {
@@ -15,34 +14,36 @@
     border-bottom-width: 0.4vw;
 }
 
-@mixin bordered-link(){
+@mixin bordered-link($color-type){
     @include bordered-container-button();
     @include links.undecorated-link(colors.$color-secondary);
+    
+    @include themes.text-color(hover);
+    @include themes.background-color($color-type, hover);
+    @include themes.border-color($color-type, hover);
 
     &:hover{
         cursor: pointer;   
-        @include themes.text-color(hover);
-        @include themes.background-color(hover);
-        @include themes.border-color(hover);
     }
 }
 
 .bordered-heading{
     @include bordered-container();
+    @include themes.text-color();
     @include themes.background-color(tertiary);
+    @include themes.border-color(tertiary);
     border-left-width: 0.4vw;
 }
 
 .bordered-link-primary-bg{
-    @include bordered-link();
-    @include themes.background-color(primary);
+    @include bordered-link(primary);
 }
 
 .bordered-link-tertiary-bg{
-    @include bordered-link();
-    @include themes.background-color(tertiary);
+    @include bordered-link(tertiary);
 }
 
 .bordered-link-disabled-tertiary-bg{
     @include bordered-container-button();
+    @include themes.border-color(tertiary);
 }

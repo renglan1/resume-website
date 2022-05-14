@@ -28,17 +28,13 @@
   }
 }
 
-@mixin border-color($bg-color: primary, $state: none) {
-  
-  border-color: colors.$color-secondary;
-  @if($state == hover) {
-    @if($bg-color == primary) {
-      border-color: colors.$color-primary;
-    }
-
-    @else if($bg-color == tertiary) {
-      border-color: colors.$color-tertiary;
-    }
+@mixin border-color($color-type: primary, $state: none) {
+  @if($color-type == primary){
+    @include themify(light-theme, border-color, colors.$color-secondary, colors.$color-primary, $state);
+    @include themify(dark-theme, border-color, colors.$color-secondary-dark, colors.$color-primary-dark, $state);
   }
-
+  @else if($color-type == tertiary){
+    @include themify(light-theme, border-color, colors.$color-secondary, colors.$color-tertiary, $state);
+    @include themify(dark-theme, border-color, colors.$color-secondary-dark, colors.$color-tertiary-dark, $state);
+  } 
 }
