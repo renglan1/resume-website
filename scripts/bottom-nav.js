@@ -1,18 +1,19 @@
-let bottomNavExpand = document.querySelector("#bottom-nav-expand");
-let bottomNavMenu = document.querySelector("#bottom-nav-menu"); 
+const bottomNavExpand = document.querySelector("#bottom-nav-expand");
+const bottomNavMenu = document.querySelector("#bottom-nav-menu"); 
 const bottomNavLinks = document.querySelectorAll(".bottom-nav-link");
 
+// Allows each link to automatically close the menu when selected
 bottomNavLinks.forEach(navLink => {
     navLink.addEventListener("click", function(){
-        expandHideMenu();
+        showBottomNavMenu();
     });
 });
 
 bottomNavExpand.onclick = () => {
-    expandHideMenu();
+    showBottomNavMenu();
 }
 
-function expandHideMenu(){
+function showBottomNavMenu(){
     if(isHidden(bottomNavMenu)){
         bottomNavMenu.style.display = "contents";
         bottomNavExpand.innerHTML = "- sections"

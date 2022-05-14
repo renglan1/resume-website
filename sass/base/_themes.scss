@@ -12,6 +12,20 @@
   }
 }
 
+@mixin theme-preview($theme-name, $theme-color-primary, $theme-color-secondary, $theme-color-tertiary){
+  ##{$theme-name}-sec-1{
+      background-color: $theme-color-primary;
+  }
+
+  ##{$theme-name}-sec-2{
+    background-color: $theme-color-tertiary;
+  }
+
+  ##{$theme-name}-sec-3{
+    background-color: $theme-color-secondary;
+  }
+}
+
 @mixin text-color($state: none) {
   @include themify(light-theme, color, colors.$color-secondary, colors.$color-primary, $state);
   @include themify(dark-theme, color, colors.$color-secondary-dark, colors.$color-primary-dark, $state);

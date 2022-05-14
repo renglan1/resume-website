@@ -256,7 +256,7 @@ ul.entry-desc > li {
 }
 
 #theme-menu-options {
-  display: block;
+  display: none;
   position: absolute;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   min-width: 150px;
@@ -313,28 +313,24 @@ ul.entry-desc > li {
   width: 5px;
 }
 
-#aqua-sec-1 {
+.light-preview #light-sec-1 {
   background-color: #f1f1f1;
 }
-
-#aqua-sec-2 {
+.light-preview #light-sec-2 {
+  background-color: #d8d8d8;
+}
+.light-preview #light-sec-3 {
   background-color: #181818;
 }
 
-#aqua-sec-3 {
-  background-color: #d8d8d8;
-}
-
-#rust-sec-1 {
+.dark-preview #dark-sec-1 {
   background-color: #181818;
 }
-
-#rust-sec-2 {
-  background-color: #f1f1f1;
+.dark-preview #dark-sec-2 {
+  background-color: #252525;
 }
-
-#rust-sec-3 {
-  background-color: #d8d8d8;
+.dark-preview #dark-sec-3 {
+  background-color: #f1f1f1;
 }
 
 .section-title {

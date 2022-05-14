@@ -29,7 +29,7 @@
 }
 
 #theme-menu-options{
-    display: block;
+    display: none;
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     min-width: 150px;
@@ -64,26 +64,10 @@
     width: 5px;
 }
 
-#aqua-sec-1{
-    background-color: colors.$color-primary;
+.light-preview{
+    @include themes.theme-preview(light, colors.$color-primary, colors.$color-secondary, colors.$color-tertiary);
 }
 
-#aqua-sec-2{
-    background-color: colors.$color-secondary;
-}
-
-#aqua-sec-3{
-    background-color: colors.$color-tertiary;
-}
-
-#rust-sec-1{
-    background-color: colors.$color-secondary;
-}
-
-#rust-sec-2{
-    background-color: colors.$color-primary;
-}
-
-#rust-sec-3{
-    background-color: colors.$color-tertiary;
+.dark-preview{
+    @include themes.theme-preview(dark, colors.$color-primary-dark, colors.$color-secondary-dark, colors.$color-tertiary-dark);
 }
