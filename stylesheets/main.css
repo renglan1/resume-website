@@ -241,6 +241,7 @@ ul.entry-desc > li {
 
 #theme-menu-button {
   cursor: pointer;
+  z-index: 1;
 }
 .light-theme #theme-menu-button {
   color: #181818;

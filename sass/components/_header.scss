@@ -19,6 +19,7 @@
 
 #theme-menu-button{
     cursor: pointer;
+    z-index: 1;
     @include themes.text-color();
 }
 

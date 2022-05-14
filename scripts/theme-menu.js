@@ -1,10 +1,14 @@
 // Hide/show functionality of menu
 const themeMenuButton = document.querySelector("#theme-menu-button");
-const themeMenuOptions = document.querySelector("#theme-menu-options")
+const themeMenuOptions = document.querySelector("#theme-menu-options");
 
 themeMenuButton.onclick = () =>{
     showThemeMenuOptions();
 }
+
+themeMenuButton.addEventListener("click", event =>{
+    event.stopPropagation();
+});
 
 function showThemeMenuOptions(){
     if(isHidden(themeMenuOptions)){
