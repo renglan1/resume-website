@@ -12,7 +12,7 @@
 
 #main-subheading{
     margin: 0.25em 0;
-    font-weight: 300;
+    font-weight: bold;
     text-align: center;
     flex: 0 0 100%; 
 }
@@ -36,6 +36,7 @@
     width: fit-content;
     white-space: nowrap;
     right: 0;
+    font-size: 0.8em;
     z-index: 1;
 }
 
@@ -55,13 +56,13 @@
 .theme-menu-option-preview{
     display: inline-flex;
     flex-flow: row nowrap;
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
     border: 1px solid black;
 }
 
 .theme-menu-option-preview-section{
-    width: 5px;
+    width: 4px;
 }
 
 .light-preview{
@@ -70,4 +71,24 @@
 
 .dark-preview{
     @include themes.theme-preview(dark, colors.$color-primary-dark, colors.$color-secondary-dark, colors.$color-tertiary-dark);
+}
+
+.corroded-preview{
+    @include themes.theme-preview(corroded, colors.$color-primary-corroded, colors.$color-secondary-corroded, colors.$color-tertiary-corroded);
+}
+
+.arctic-preview{
+    @include themes.theme-preview(arctic, colors.$color-primary-arctic, colors.$color-secondary-arctic, colors.$color-tertiary-arctic);
+}
+
+.tropical-preview{
+    @include themes.theme-preview(tropical, colors.$color-primary-tropical, colors.$color-secondary-tropical, colors.$color-tertiary-tropical);
+}
+
+.neptune-preview{
+    @include themes.theme-preview(neptune, colors.$color-primary-neptune, colors.$color-secondary-neptune, colors.$color-tertiary-neptune);
+}
+
+.rust-preview{
+    @include themes.theme-preview(rust, colors.$color-primary-rust, colors.$color-secondary-rust, colors.$color-tertiary-rust);
 }

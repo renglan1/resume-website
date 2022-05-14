@@ -46,4 +46,5 @@
 .bordered-link-disabled-tertiary-bg{
     @include bordered-container-button();
     @include themes.border-color(tertiary);
+    @include themes.background-color(primary);
 }

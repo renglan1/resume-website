@@ -29,5 +29,10 @@ for(let i = 0; i < themeMenuOptionList.length; i++){
         let themeName = themeMenuOptionNameTextContent.split(" ")[0];
         
         document.querySelector("html").className = themeName + "-theme";
+        setTheme(themeName);
     });
+}
+
+function setTheme(themeName){
+    localStorage.setItem("themeName", themeName);
 }

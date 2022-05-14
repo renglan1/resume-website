@@ -27,28 +27,58 @@
 }
 
 @mixin text-color($state: none) {
+  //@include themify({theme-name}-theme, color, colors.$color-secondary-{theme-name}, colors.$color-primary-{theme-name}, $state);
   @include themify(light-theme, color, colors.$color-secondary, colors.$color-primary, $state);
   @include themify(dark-theme, color, colors.$color-secondary-dark, colors.$color-primary-dark, $state);
+  @include themify(corroded-theme, color, colors.$color-secondary-corroded, colors.$color-primary-corroded, $state);
+  @include themify(arctic-theme, color, colors.$color-secondary-arctic, colors.$color-primary-arctic, $state);
+  @include themify(tropical-theme, color, colors.$color-secondary-tropical, colors.$color-primary-tropical, $state);
+  @include themify(neptune-theme, color, colors.$color-secondary-neptune, colors.$color-primary-neptune, $state);
+  @include themify(rust-theme, color, colors.$color-secondary-rust, colors.$color-primary-rust, $state);
 }
 
 @mixin background-color($color-type: primary, $state: none) {
   @if($color-type == primary){
+    //@include themify({theme-name}-theme, background-color, colors.$color-primary-{theme-name}, colors.$color-secondary-{theme-name}, $state);
     @include themify(light-theme, background-color, colors.$color-primary, colors.$color-secondary, $state);
     @include themify(dark-theme, background-color, colors.$color-primary-dark, colors.$color-secondary-dark, $state);
+    @include themify(corroded-theme, background-color, colors.$color-primary-corroded, colors.$color-secondary-corroded, $state);
+    @include themify(arctic-theme, background-color, colors.$color-primary-arctic, colors.$color-secondary-arctic, $state);
+    @include themify(tropical-theme, background-color, colors.$color-primary-tropical, colors.$color-secondary-tropical, $state);
+    @include themify(neptune-theme, background-color, colors.$color-primary-neptune, colors.$color-secondary-neptune, $state);
+    @include themify(rust-theme, background-color, colors.$color-primary-rust, colors.$color-secondary-rust, $state);
   }
   @else if($color-type == tertiary){
+    //@include themify({theme-name}-theme, background-color, colors.$color-tertiary-{theme-name}, colors.$color-secondary-{theme-name}, $state);
     @include themify(light-theme, background-color, colors.$color-tertiary, colors.$color-secondary, $state);
     @include themify(dark-theme, background-color, colors.$color-tertiary-dark, colors.$color-secondary-dark, $state);
+    @include themify(corroded-theme, background-color, colors.$color-tertiary-corroded, colors.$color-secondary-corroded, $state);
+    @include themify(arctic-theme, background-color, colors.$color-tertiary-arctic, colors.$color-secondary-arctic, $state);
+    @include themify(tropical-theme, background-color, colors.$color-tertiary-tropical, colors.$color-secondary-tropical, $state);
+    @include themify(neptune-theme, background-color, colors.$color-tertiary-neptune, colors.$color-secondary-neptune, $state);
+    @include themify(rust-theme, background-color, colors.$color-tertiary-rust, colors.$color-secondary-rust, $state);
   }
 }
 
 @mixin border-color($color-type: primary, $state: none) {
   @if($color-type == primary){
+    //@include themify({theme-name}-theme, border-color, colors.$color-secondary-{theme-name}, colors.$color-primary-{theme-name}, $state);
     @include themify(light-theme, border-color, colors.$color-secondary, colors.$color-primary, $state);
     @include themify(dark-theme, border-color, colors.$color-secondary-dark, colors.$color-primary-dark, $state);
+    @include themify(corroded-theme, border-color, colors.$color-secondary-corroded, colors.$color-primary-corroded, $state);
+    @include themify(arctic-theme, border-color, colors.$color-secondary-arctic, colors.$color-primary-arctic, $state);
+    @include themify(tropical-theme, border-color, colors.$color-secondary-tropical, colors.$color-primary-tropical, $state);
+    @include themify(neptune-theme, border-color, colors.$color-secondary-neptune, colors.$color-primary-neptune, $state);
+    @include themify(rust-theme, border-color, colors.$color-secondary-rust, colors.$color-primary-rust, $state);
   }
   @else if($color-type == tertiary){
+    //@include themify({theme-name}-theme, border-color, colors.$color-secondary-{theme-name}, colors.$color-tertiary-{theme-name}, $state);
     @include themify(light-theme, border-color, colors.$color-secondary, colors.$color-tertiary, $state);
     @include themify(dark-theme, border-color, colors.$color-secondary-dark, colors.$color-tertiary-dark, $state);
+    @include themify(corroded-theme, border-color, colors.$color-secondary-corroded, colors.$color-tertiary-corroded, $state);
+    @include themify(arctic-theme, border-color, colors.$color-secondary-arctic, colors.$color-tertiary-arctic, $state);
+    @include themify(tropical-theme, border-color, colors.$color-secondary-tropical, colors.$color-tertiary-tropical, $state);
+    @include themify(neptune-theme, border-color, colors.$color-secondary-neptune, colors.$color-tertiary-neptune, $state);
+    @include themify(rust-theme, border-color, colors.$color-secondary-rust, colors.$color-tertiary-rust, $state);
   } 
 }
