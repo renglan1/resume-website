@@ -2,8 +2,7 @@
     .#{$theme-name} {
 
         // Loop through each of the keys (sections)
-        @each $section,
-        $map in $theme-map {
+        @each $section, $map in $theme-map {
             @if ($section == bordered-link-primary-bg or $section == bordered-link-tertiary-bg) {
                 .#{$section} {
                     background-color: map-get($map, bg);

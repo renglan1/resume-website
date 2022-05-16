@@ -354,6 +354,16 @@ ul.entry-desc > li {
   background-color: #fae5e5;
 }
 
+.ugly-preview #ugly-sec-1 {
+  background-color: red;
+}
+.ugly-preview #ugly-sec-2 {
+  background-color: yellow;
+}
+.ugly-preview #ugly-sec-3 {
+  background-color: blue;
+}
+
 .section-title {
   width: fit-content;
   margin-top: 2em;
@@ -835,6 +845,52 @@ hr {
 }
 .rust-theme #theme-menu-options {
   background-color: #be4f4f;
+}
+
+.ugly-theme .root {
+  background-color: red;
+  color: blue;
+  border-color: none;
+}
+.ugly-theme .bottom-nav {
+  background-color: yellow;
+  color: inherit;
+  border-color: inherit;
+}
+.ugly-theme .theme-menu-option:hover {
+  background-color: blue;
+  color: red;
+}
+.ugly-theme .bordered-heading {
+  background-color: yellow;
+  color: inherit;
+  border-color: blue;
+}
+.ugly-theme .bordered-link-primary-bg {
+  background-color: red;
+  border-color: blue;
+}
+.ugly-theme .bordered-link-primary-bg:hover {
+  background-color: blue;
+  color: red;
+  border-color: red;
+}
+.ugly-theme .bordered-link-tertiary-bg {
+  background-color: yellow;
+  border-color: blue;
+}
+.ugly-theme .bordered-link-tertiary-bg:hover {
+  background-color: blue;
+  color: red;
+  border-color: yellow;
+}
+.ugly-theme .bordered-link-disabled {
+  background-color: red;
+  color: inherit;
+  border-color: inherit;
+}
+.ugly-theme #theme-menu-options {
+  background-color: yellow;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -11,6 +11,7 @@
 @use "themes/tropical-theme.scss";
 @use "themes/neptune-theme";
 @use "themes/rust-theme";
+@use "themes/ugly-theme";
 
 @import "base/reset";
 
@@ -92,3 +93,4 @@ hr{
 @include theme-utils.themify(tropical-theme, tropical-theme.$tropical-theme);
 @include theme-utils.themify(neptune-theme, neptune-theme.$neptune-theme);
 @include theme-utils.themify(rust-theme, rust-theme.$rust-theme);
+@include theme-utils.themify(ugly-theme, ugly-theme.$ugly-theme);

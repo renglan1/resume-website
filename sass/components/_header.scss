@@ -91,3 +91,7 @@
 .rust-preview{
     @include theme-utils.theme-preview(rust, colors.$color-primary-rust, colors.$color-secondary-rust, colors.$color-tertiary-rust);
 }
+
+.ugly-preview{
+    @include theme-utils.theme-preview(ugly, colors.$color-primary-ugly, colors.$color-secondary-ugly, colors.$color-tertiary-ugly);
+}
