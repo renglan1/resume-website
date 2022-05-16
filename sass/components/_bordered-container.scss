@@ -1,21 +1,21 @@
 @use "../base/colors";
 @use "../elements/links";
 
-@mixin bordered-container(){
+@mixin bordered-container{
     padding: 0.5em;
     border: 1px solid blue;
 } 
 
-@mixin bordered-container-button() {
-    @include bordered-container();  
+@mixin bordered-container-button {
+    @include bordered-container;  
 
     border-right-width: 0.4vw; 
     border-bottom-width: 0.4vw;
 }
 
 @mixin bordered-link{
-    @include bordered-container-button();
-    @include links.undecorated-link();
+    @include bordered-container-button;
+    @include links.undecorated-link;
 
     &:hover{
         cursor: pointer;   
@@ -23,12 +23,12 @@
 }
 
 .bordered-heading{
-    @include bordered-container();
+    @include bordered-container;
     border-left-width: 0.4vw;
 }
 
 .bordered-link-disabled{
-    @include bordered-container-button();
+    @include bordered-container-button;
 }
 
 .bordered-link-primary-bg{

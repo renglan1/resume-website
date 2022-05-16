@@ -87,12 +87,12 @@ button {
 }
 
 .sidebar-link {
+  color: inherit;
+  text-decoration: none;
   display: block;
   width: 100%;
   margin: 0.2vw 0;
   font-size: 0.9vw;
-  color: inherit;
-  text-decoration: none;
 }
 
 #headshot {

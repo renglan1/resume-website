@@ -25,13 +25,14 @@
 }
 
 .sidebar-link{
+    @include links.undecorated-link();
+    
     display: block;
     
     width: 100%;
     margin: 0.2vw 0;
 
     font-size: 0.9vw;
-    @include links.undecorated-link();
 }
 
 #headshot{
