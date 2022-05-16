@@ -65,33 +65,33 @@
 }
 
 .light-preview{
-    @include theme-utils.theme-preview(light, colors.$color-primary, colors.$color-secondary, colors.$color-tertiary);
+    @include theme-utils.theme-preview(light, colors.$light-theme-colors);
 }
 
 .dark-preview{
-    @include theme-utils.theme-preview(dark, colors.$color-primary-dark, colors.$color-secondary-dark, colors.$color-tertiary-dark);
+    @include theme-utils.theme-preview(dark, colors.$dark-theme-colors);
 }
 
 .corroded-preview{
-    @include theme-utils.theme-preview(corroded, colors.$color-primary-corroded, colors.$color-secondary-corroded, colors.$color-tertiary-corroded);
+    @include theme-utils.theme-preview(corroded, colors.$corroded-theme-colors);
 }
 
 .arctic-preview{
-    @include theme-utils.theme-preview(arctic, colors.$color-primary-arctic, colors.$color-secondary-arctic, colors.$color-tertiary-arctic);
+    @include theme-utils.theme-preview(arctic, colors.$arctic-theme-colors);
 }
 
 .tropical-preview{
-    @include theme-utils.theme-preview(tropical, colors.$color-primary-tropical, colors.$color-secondary-tropical, colors.$color-tertiary-tropical);
+    @include theme-utils.theme-preview(tropical, colors.$tropical-theme-colors);
 }
 
 .neptune-preview{
-    @include theme-utils.theme-preview(neptune, colors.$color-primary-neptune, colors.$color-secondary-neptune, colors.$color-tertiary-neptune);
+    @include theme-utils.theme-preview(neptune, colors.$neptune-theme-colors);
 }
 
 .rust-preview{
-    @include theme-utils.theme-preview(rust, colors.$color-primary-rust, colors.$color-secondary-rust, colors.$color-tertiary-rust);
+    @include theme-utils.theme-preview(rust, colors.$rust-theme-colors);
 }
 
 .ugly-preview{
-    @include theme-utils.theme-preview(ugly, colors.$color-primary-ugly, colors.$color-secondary-ugly, colors.$color-tertiary-ugly);
+    @include theme-utils.theme-preview(ugly, colors.$ugly-theme-colors);
 }

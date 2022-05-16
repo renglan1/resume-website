@@ -1,3 +1,5 @@
+@use "sass:list";
+
 @mixin themify($theme-name, $theme-map) {
     .#{$theme-name} {
 
@@ -38,16 +40,16 @@
     }
 }
 
-@mixin theme-preview($theme-name, $theme-color-primary, $theme-color-secondary, $theme-color-tertiary){
+@mixin theme-preview($theme-name, $color-list){
     ##{$theme-name}-sec-1{
-        background-color: $theme-color-primary;
+        background-color: list.nth($color-list, 1);
     }
   
     ##{$theme-name}-sec-2{
-      background-color: $theme-color-tertiary;
+      background-color: list.nth($color-list, 3);
     }
   
     ##{$theme-name}-sec-3{
-      background-color: $theme-color-secondary;
+      background-color: list.nth($color-list, 2);
     }
 }
