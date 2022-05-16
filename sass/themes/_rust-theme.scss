@@ -1,0 +1,29 @@
+@use "theme-templates";
+@use "../base/colors";
+
+$rust-theme: (
+   root: (
+       theme-templates.root-template(colors.$rust-theme-colors)
+   ),
+   bottom-nav: (
+       theme-templates.bottom-nav-template(colors.$rust-theme-colors)
+   ),
+   theme-menu-option: (
+       theme-templates.theme-menu-option-template(colors.$rust-theme-colors)
+   ),
+   bordered-heading: (
+       theme-templates.bordered-heading-template(colors.$rust-theme-colors)
+   ),
+   bordered-link-primary-bg: (
+       theme-templates.bordered-link-template(colors.$rust-theme-colors, 1)
+   ),
+   bordered-link-tertiary-bg: (
+       theme-templates.bordered-link-template(colors.$rust-theme-colors, 3)
+   ),
+   bordered-link-disabled: (
+       theme-templates.bordered-link-disabled-template(colors.$rust-theme-colors)
+   ),
+   theme-menu-options: (
+       theme-templates.theme-menu-options-template(colors.$rust-theme-colors)
+   )
+);

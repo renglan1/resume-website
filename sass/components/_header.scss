@@ -1,5 +1,5 @@
 @use "../base/colors";
-@use "../base/themes";
+@use "../themes/theme-utils";
 
 #bordered-heading-inner{
     display: flex;
@@ -19,8 +19,7 @@
 
 #theme-menu-button{
     cursor: pointer;
-    z-index: 1;
-    @include themes.text-color();
+    color: inherit;
 }
 
 #theme-menu{
@@ -43,11 +42,10 @@
 
 .theme-menu-option{
     width: 100%;
-    @include themes.background-color(tertiary, hover);
-    @include themes.text-color(hover);
     &:hover{
         cursor: pointer;
     }
+    z-index: 1;
 }
 
 .theme-menu-option-inner{
@@ -67,29 +65,29 @@
 }
 
 .light-preview{
-    @include themes.theme-preview(light, colors.$color-primary, colors.$color-secondary, colors.$color-tertiary);
+    @include theme-utils.theme-preview(light, colors.$color-primary, colors.$color-secondary, colors.$color-tertiary);
 }
 
 .dark-preview{
-    @include themes.theme-preview(dark, colors.$color-primary-dark, colors.$color-secondary-dark, colors.$color-tertiary-dark);
+    @include theme-utils.theme-preview(dark, colors.$color-primary-dark, colors.$color-secondary-dark, colors.$color-tertiary-dark);
 }
 
 .corroded-preview{
-    @include themes.theme-preview(corroded, colors.$color-primary-corroded, colors.$color-secondary-corroded, colors.$color-tertiary-corroded);
+    @include theme-utils.theme-preview(corroded, colors.$color-primary-corroded, colors.$color-secondary-corroded, colors.$color-tertiary-corroded);
 }
 
 .arctic-preview{
-    @include themes.theme-preview(arctic, colors.$color-primary-arctic, colors.$color-secondary-arctic, colors.$color-tertiary-arctic);
+    @include theme-utils.theme-preview(arctic, colors.$color-primary-arctic, colors.$color-secondary-arctic, colors.$color-tertiary-arctic);
 }
 
 .tropical-preview{
-    @include themes.theme-preview(tropical, colors.$color-primary-tropical, colors.$color-secondary-tropical, colors.$color-tertiary-tropical);
+    @include theme-utils.theme-preview(tropical, colors.$color-primary-tropical, colors.$color-secondary-tropical, colors.$color-tertiary-tropical);
 }
 
 .neptune-preview{
-    @include themes.theme-preview(neptune, colors.$color-primary-neptune, colors.$color-secondary-neptune, colors.$color-tertiary-neptune);
+    @include theme-utils.theme-preview(neptune, colors.$color-primary-neptune, colors.$color-secondary-neptune, colors.$color-tertiary-neptune);
 }
 
 .rust-preview{
-    @include themes.theme-preview(rust, colors.$color-primary-rust, colors.$color-secondary-rust, colors.$color-tertiary-rust);
+    @include theme-utils.theme-preview(rust, colors.$color-primary-rust, colors.$color-secondary-rust, colors.$color-tertiary-rust);
 }

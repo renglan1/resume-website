@@ -2,33 +2,40 @@
 $color-primary: #f1f1f1;
 $color-secondary: #181818;
 $color-tertiary: darken($color-primary, 10%);
+$light-theme-colors: $color-primary $color-secondary $color-tertiary;
 
 // Dark theme
 $color-primary-dark: #181818;
 $color-secondary-dark: #f1f1f1;
 $color-tertiary-dark: lighten($color-primary-dark, 5%);
+$dark-theme-colors: $color-primary-dark $color-secondary-dark $color-tertiary-dark;
 
 // Corroded theme
 $color-primary-corroded: #72644F;
 $color-secondary-corroded: #ffffff;
 $color-tertiary-corroded: #8a8b4f;
+$corroded-theme-colors: $color-primary-corroded $color-secondary-corroded $color-tertiary-corroded;
 
 // Arctic
 $color-primary-arctic: #8cc2ff;
 $color-secondary-arctic: #262c38;
 $color-tertiary-arctic: #e3f6ff;
+$arctic-theme-colors: $color-primary-arctic $color-secondary-arctic $color-tertiary-arctic;
 
 // Tropical
 $color-primary-tropical: #23b665;
 $color-secondary-tropical: #ffd3e0;
 $color-tertiary-tropical: #f52664;
+$tropical-theme-colors: $color-primary-tropical $color-secondary-tropical $color-tertiary-tropical;
 
 // Neptune
 $color-primary-neptune: #021146;
 $color-secondary-neptune: #ffd8a6;
 $color-tertiary-neptune: #2251fc;
+$neptune-theme-colors: $color-primary-neptune $color-secondary-neptune $color-tertiary-neptune;
 
 // Rust
 $color-primary-rust: #4d0000;
 $color-secondary-rust: #fae5e5;
 $color-tertiary-rust: #be4f4f;
+$rust-theme-colors: $color-primary-rust $color-secondary-rust $color-tertiary-rust;

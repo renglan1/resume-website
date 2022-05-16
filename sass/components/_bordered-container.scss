@@ -1,6 +1,5 @@
 @use "../base/colors";
 @use "../elements/links";
-@use "../base/themes";
 
 @mixin bordered-container(){
     padding: 0.5em;
@@ -14,13 +13,9 @@
     border-bottom-width: 0.4vw;
 }
 
-@mixin bordered-link($color-type){
+@mixin bordered-link{
     @include bordered-container-button();
     @include links.undecorated-link();
-
-    @include themes.text-color(hover);
-    @include themes.background-color($color-type, hover);
-    @include themes.border-color($color-type, hover);
 
     &:hover{
         cursor: pointer;   
@@ -29,22 +24,17 @@
 
 .bordered-heading{
     @include bordered-container();
-    @include themes.text-color();
-    @include themes.background-color(tertiary);
-    @include themes.border-color(tertiary);
     border-left-width: 0.4vw;
 }
 
+.bordered-link-disabled{
+    @include bordered-container-button();
+}
+
 .bordered-link-primary-bg{
-    @include bordered-link(primary);
+    @include bordered-link;
 }
 
 .bordered-link-tertiary-bg{
-    @include bordered-link(tertiary);
-}
-
-.bordered-link-disabled-tertiary-bg{
-    @include bordered-container-button();
-    @include themes.border-color(tertiary);
-    @include themes.background-color(primary);
+    @include bordered-link;
 }

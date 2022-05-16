@@ -178,27 +178,6 @@ ul.entry-desc > li {
   min-height: 50px;
   z-index: 100;
 }
-.light-theme .bottom-nav {
-  background-color: #d8d8d8;
-}
-.dark-theme .bottom-nav {
-  background-color: #252525;
-}
-.corroded-theme .bottom-nav {
-  background-color: #8a8b4f;
-}
-.arctic-theme .bottom-nav {
-  background-color: #e3f6ff;
-}
-.tropical-theme .bottom-nav {
-  background-color: #f52664;
-}
-.neptune-theme .bottom-nav {
-  background-color: #2251fc;
-}
-.rust-theme .bottom-nav {
-  background-color: #be4f4f;
-}
 
 #bottom-nav-expand {
   position: absolute;
@@ -260,28 +239,7 @@ ul.entry-desc > li {
 
 #theme-menu-button {
   cursor: pointer;
-  z-index: 1;
-}
-.light-theme #theme-menu-button {
-  color: #181818;
-}
-.dark-theme #theme-menu-button {
-  color: #f1f1f1;
-}
-.corroded-theme #theme-menu-button {
-  color: #ffffff;
-}
-.arctic-theme #theme-menu-button {
-  color: #262c38;
-}
-.tropical-theme #theme-menu-button {
-  color: #ffd3e0;
-}
-.neptune-theme #theme-menu-button {
-  color: #ffd8a6;
-}
-.rust-theme #theme-menu-button {
-  color: #fae5e5;
+  color: inherit;
 }
 
 #theme-menu {
@@ -304,90 +262,7 @@ ul.entry-desc > li {
 
 .theme-menu-option {
   width: 100%;
-}
-.light-theme .theme-menu-option {
-  background-color: #d8d8d8;
-}
-.light-theme .theme-menu-option:hover {
-  background-color: #181818;
-}
-.dark-theme .theme-menu-option {
-  background-color: #252525;
-}
-.dark-theme .theme-menu-option:hover {
-  background-color: #f1f1f1;
-}
-.corroded-theme .theme-menu-option {
-  background-color: #8a8b4f;
-}
-.corroded-theme .theme-menu-option:hover {
-  background-color: #ffffff;
-}
-.arctic-theme .theme-menu-option {
-  background-color: #e3f6ff;
-}
-.arctic-theme .theme-menu-option:hover {
-  background-color: #262c38;
-}
-.tropical-theme .theme-menu-option {
-  background-color: #f52664;
-}
-.tropical-theme .theme-menu-option:hover {
-  background-color: #ffd3e0;
-}
-.neptune-theme .theme-menu-option {
-  background-color: #2251fc;
-}
-.neptune-theme .theme-menu-option:hover {
-  background-color: #ffd8a6;
-}
-.rust-theme .theme-menu-option {
-  background-color: #be4f4f;
-}
-.rust-theme .theme-menu-option:hover {
-  background-color: #fae5e5;
-}
-.light-theme .theme-menu-option {
-  color: #181818;
-}
-.light-theme .theme-menu-option:hover {
-  color: #f1f1f1;
-}
-.dark-theme .theme-menu-option {
-  color: #f1f1f1;
-}
-.dark-theme .theme-menu-option:hover {
-  color: #181818;
-}
-.corroded-theme .theme-menu-option {
-  color: #ffffff;
-}
-.corroded-theme .theme-menu-option:hover {
-  color: #72644F;
-}
-.arctic-theme .theme-menu-option {
-  color: #262c38;
-}
-.arctic-theme .theme-menu-option:hover {
-  color: #8cc2ff;
-}
-.tropical-theme .theme-menu-option {
-  color: #ffd3e0;
-}
-.tropical-theme .theme-menu-option:hover {
-  color: #23b665;
-}
-.neptune-theme .theme-menu-option {
-  color: #ffd8a6;
-}
-.neptune-theme .theme-menu-option:hover {
-  color: #021146;
-}
-.rust-theme .theme-menu-option {
-  color: #fae5e5;
-}
-.rust-theme .theme-menu-option:hover {
-  color: #4d0000;
+  z-index: 1;
 }
 .theme-menu-option:hover {
   cursor: pointer;
@@ -505,68 +380,12 @@ ul.section-list {
   border: 1px solid blue;
   border-left-width: 0.4vw;
 }
-.light-theme .bordered-heading {
-  color: #181818;
-}
-.dark-theme .bordered-heading {
-  color: #f1f1f1;
-}
-.corroded-theme .bordered-heading {
-  color: #ffffff;
-}
-.arctic-theme .bordered-heading {
-  color: #262c38;
-}
-.tropical-theme .bordered-heading {
-  color: #ffd3e0;
-}
-.neptune-theme .bordered-heading {
-  color: #ffd8a6;
-}
-.rust-theme .bordered-heading {
-  color: #fae5e5;
-}
-.light-theme .bordered-heading {
-  background-color: #d8d8d8;
-}
-.dark-theme .bordered-heading {
-  background-color: #252525;
-}
-.corroded-theme .bordered-heading {
-  background-color: #8a8b4f;
-}
-.arctic-theme .bordered-heading {
-  background-color: #e3f6ff;
-}
-.tropical-theme .bordered-heading {
-  background-color: #f52664;
-}
-.neptune-theme .bordered-heading {
-  background-color: #2251fc;
-}
-.rust-theme .bordered-heading {
-  background-color: #be4f4f;
-}
-.light-theme .bordered-heading {
-  border-color: #181818;
-}
-.dark-theme .bordered-heading {
-  border-color: #f1f1f1;
-}
-.corroded-theme .bordered-heading {
-  border-color: #ffffff;
-}
-.arctic-theme .bordered-heading {
-  border-color: #262c38;
-}
-.tropical-theme .bordered-heading {
-  border-color: #ffd3e0;
-}
-.neptune-theme .bordered-heading {
-  border-color: #ffd8a6;
-}
-.rust-theme .bordered-heading {
-  border-color: #fae5e5;
+
+.bordered-link-disabled {
+  padding: 0.5em;
+  border: 1px solid blue;
+  border-right-width: 0.4vw;
+  border-bottom-width: 0.4vw;
 }
 
 .bordered-link-primary-bg {
@@ -576,132 +395,6 @@ ul.section-list {
   border-bottom-width: 0.4vw;
   color: inherit;
   text-decoration: none;
-}
-.light-theme .bordered-link-primary-bg {
-  color: #181818;
-}
-.light-theme .bordered-link-primary-bg:hover {
-  color: #f1f1f1;
-}
-.dark-theme .bordered-link-primary-bg {
-  color: #f1f1f1;
-}
-.dark-theme .bordered-link-primary-bg:hover {
-  color: #181818;
-}
-.corroded-theme .bordered-link-primary-bg {
-  color: #ffffff;
-}
-.corroded-theme .bordered-link-primary-bg:hover {
-  color: #72644F;
-}
-.arctic-theme .bordered-link-primary-bg {
-  color: #262c38;
-}
-.arctic-theme .bordered-link-primary-bg:hover {
-  color: #8cc2ff;
-}
-.tropical-theme .bordered-link-primary-bg {
-  color: #ffd3e0;
-}
-.tropical-theme .bordered-link-primary-bg:hover {
-  color: #23b665;
-}
-.neptune-theme .bordered-link-primary-bg {
-  color: #ffd8a6;
-}
-.neptune-theme .bordered-link-primary-bg:hover {
-  color: #021146;
-}
-.rust-theme .bordered-link-primary-bg {
-  color: #fae5e5;
-}
-.rust-theme .bordered-link-primary-bg:hover {
-  color: #4d0000;
-}
-.light-theme .bordered-link-primary-bg {
-  background-color: #f1f1f1;
-}
-.light-theme .bordered-link-primary-bg:hover {
-  background-color: #181818;
-}
-.dark-theme .bordered-link-primary-bg {
-  background-color: #181818;
-}
-.dark-theme .bordered-link-primary-bg:hover {
-  background-color: #f1f1f1;
-}
-.corroded-theme .bordered-link-primary-bg {
-  background-color: #72644F;
-}
-.corroded-theme .bordered-link-primary-bg:hover {
-  background-color: #ffffff;
-}
-.arctic-theme .bordered-link-primary-bg {
-  background-color: #8cc2ff;
-}
-.arctic-theme .bordered-link-primary-bg:hover {
-  background-color: #262c38;
-}
-.tropical-theme .bordered-link-primary-bg {
-  background-color: #23b665;
-}
-.tropical-theme .bordered-link-primary-bg:hover {
-  background-color: #ffd3e0;
-}
-.neptune-theme .bordered-link-primary-bg {
-  background-color: #021146;
-}
-.neptune-theme .bordered-link-primary-bg:hover {
-  background-color: #ffd8a6;
-}
-.rust-theme .bordered-link-primary-bg {
-  background-color: #4d0000;
-}
-.rust-theme .bordered-link-primary-bg:hover {
-  background-color: #fae5e5;
-}
-.light-theme .bordered-link-primary-bg {
-  border-color: #181818;
-}
-.light-theme .bordered-link-primary-bg:hover {
-  border-color: #f1f1f1;
-}
-.dark-theme .bordered-link-primary-bg {
-  border-color: #f1f1f1;
-}
-.dark-theme .bordered-link-primary-bg:hover {
-  border-color: #181818;
-}
-.corroded-theme .bordered-link-primary-bg {
-  border-color: #ffffff;
-}
-.corroded-theme .bordered-link-primary-bg:hover {
-  border-color: #72644F;
-}
-.arctic-theme .bordered-link-primary-bg {
-  border-color: #262c38;
-}
-.arctic-theme .bordered-link-primary-bg:hover {
-  border-color: #8cc2ff;
-}
-.tropical-theme .bordered-link-primary-bg {
-  border-color: #ffd3e0;
-}
-.tropical-theme .bordered-link-primary-bg:hover {
-  border-color: #23b665;
-}
-.neptune-theme .bordered-link-primary-bg {
-  border-color: #ffd8a6;
-}
-.neptune-theme .bordered-link-primary-bg:hover {
-  border-color: #021146;
-}
-.rust-theme .bordered-link-primary-bg {
-  border-color: #fae5e5;
-}
-.rust-theme .bordered-link-primary-bg:hover {
-  border-color: #4d0000;
 }
 .bordered-link-primary-bg:hover {
   cursor: pointer;
@@ -715,183 +408,8 @@ ul.section-list {
   color: inherit;
   text-decoration: none;
 }
-.light-theme .bordered-link-tertiary-bg {
-  color: #181818;
-}
-.light-theme .bordered-link-tertiary-bg:hover {
-  color: #f1f1f1;
-}
-.dark-theme .bordered-link-tertiary-bg {
-  color: #f1f1f1;
-}
-.dark-theme .bordered-link-tertiary-bg:hover {
-  color: #181818;
-}
-.corroded-theme .bordered-link-tertiary-bg {
-  color: #ffffff;
-}
-.corroded-theme .bordered-link-tertiary-bg:hover {
-  color: #72644F;
-}
-.arctic-theme .bordered-link-tertiary-bg {
-  color: #262c38;
-}
-.arctic-theme .bordered-link-tertiary-bg:hover {
-  color: #8cc2ff;
-}
-.tropical-theme .bordered-link-tertiary-bg {
-  color: #ffd3e0;
-}
-.tropical-theme .bordered-link-tertiary-bg:hover {
-  color: #23b665;
-}
-.neptune-theme .bordered-link-tertiary-bg {
-  color: #ffd8a6;
-}
-.neptune-theme .bordered-link-tertiary-bg:hover {
-  color: #021146;
-}
-.rust-theme .bordered-link-tertiary-bg {
-  color: #fae5e5;
-}
-.rust-theme .bordered-link-tertiary-bg:hover {
-  color: #4d0000;
-}
-.light-theme .bordered-link-tertiary-bg {
-  background-color: #d8d8d8;
-}
-.light-theme .bordered-link-tertiary-bg:hover {
-  background-color: #181818;
-}
-.dark-theme .bordered-link-tertiary-bg {
-  background-color: #252525;
-}
-.dark-theme .bordered-link-tertiary-bg:hover {
-  background-color: #f1f1f1;
-}
-.corroded-theme .bordered-link-tertiary-bg {
-  background-color: #8a8b4f;
-}
-.corroded-theme .bordered-link-tertiary-bg:hover {
-  background-color: #ffffff;
-}
-.arctic-theme .bordered-link-tertiary-bg {
-  background-color: #e3f6ff;
-}
-.arctic-theme .bordered-link-tertiary-bg:hover {
-  background-color: #262c38;
-}
-.tropical-theme .bordered-link-tertiary-bg {
-  background-color: #f52664;
-}
-.tropical-theme .bordered-link-tertiary-bg:hover {
-  background-color: #ffd3e0;
-}
-.neptune-theme .bordered-link-tertiary-bg {
-  background-color: #2251fc;
-}
-.neptune-theme .bordered-link-tertiary-bg:hover {
-  background-color: #ffd8a6;
-}
-.rust-theme .bordered-link-tertiary-bg {
-  background-color: #be4f4f;
-}
-.rust-theme .bordered-link-tertiary-bg:hover {
-  background-color: #fae5e5;
-}
-.light-theme .bordered-link-tertiary-bg {
-  border-color: #181818;
-}
-.light-theme .bordered-link-tertiary-bg:hover {
-  border-color: #d8d8d8;
-}
-.dark-theme .bordered-link-tertiary-bg {
-  border-color: #f1f1f1;
-}
-.dark-theme .bordered-link-tertiary-bg:hover {
-  border-color: #252525;
-}
-.corroded-theme .bordered-link-tertiary-bg {
-  border-color: #ffffff;
-}
-.corroded-theme .bordered-link-tertiary-bg:hover {
-  border-color: #8a8b4f;
-}
-.arctic-theme .bordered-link-tertiary-bg {
-  border-color: #262c38;
-}
-.arctic-theme .bordered-link-tertiary-bg:hover {
-  border-color: #e3f6ff;
-}
-.tropical-theme .bordered-link-tertiary-bg {
-  border-color: #ffd3e0;
-}
-.tropical-theme .bordered-link-tertiary-bg:hover {
-  border-color: #f52664;
-}
-.neptune-theme .bordered-link-tertiary-bg {
-  border-color: #ffd8a6;
-}
-.neptune-theme .bordered-link-tertiary-bg:hover {
-  border-color: #2251fc;
-}
-.rust-theme .bordered-link-tertiary-bg {
-  border-color: #fae5e5;
-}
-.rust-theme .bordered-link-tertiary-bg:hover {
-  border-color: #be4f4f;
-}
 .bordered-link-tertiary-bg:hover {
   cursor: pointer;
-}
-
-.bordered-link-disabled-tertiary-bg {
-  padding: 0.5em;
-  border: 1px solid blue;
-  border-right-width: 0.4vw;
-  border-bottom-width: 0.4vw;
-}
-.light-theme .bordered-link-disabled-tertiary-bg {
-  border-color: #181818;
-}
-.dark-theme .bordered-link-disabled-tertiary-bg {
-  border-color: #f1f1f1;
-}
-.corroded-theme .bordered-link-disabled-tertiary-bg {
-  border-color: #ffffff;
-}
-.arctic-theme .bordered-link-disabled-tertiary-bg {
-  border-color: #262c38;
-}
-.tropical-theme .bordered-link-disabled-tertiary-bg {
-  border-color: #ffd3e0;
-}
-.neptune-theme .bordered-link-disabled-tertiary-bg {
-  border-color: #ffd8a6;
-}
-.rust-theme .bordered-link-disabled-tertiary-bg {
-  border-color: #fae5e5;
-}
-.light-theme .bordered-link-disabled-tertiary-bg {
-  background-color: #f1f1f1;
-}
-.dark-theme .bordered-link-disabled-tertiary-bg {
-  background-color: #181818;
-}
-.corroded-theme .bordered-link-disabled-tertiary-bg {
-  background-color: #72644F;
-}
-.arctic-theme .bordered-link-disabled-tertiary-bg {
-  background-color: #8cc2ff;
-}
-.tropical-theme .bordered-link-disabled-tertiary-bg {
-  background-color: #23b665;
-}
-.neptune-theme .bordered-link-disabled-tertiary-bg {
-  background-color: #021146;
-}
-.rust-theme .bordered-link-disabled-tertiary-bg {
-  background-color: #4d0000;
 }
 
 ol, ul {
@@ -946,48 +464,6 @@ html {
   position: relative;
   min-height: 100vh;
 }
-.light-theme .root {
-  color: #181818;
-}
-.dark-theme .root {
-  color: #f1f1f1;
-}
-.corroded-theme .root {
-  color: #ffffff;
-}
-.arctic-theme .root {
-  color: #262c38;
-}
-.tropical-theme .root {
-  color: #ffd3e0;
-}
-.neptune-theme .root {
-  color: #ffd8a6;
-}
-.rust-theme .root {
-  color: #fae5e5;
-}
-.light-theme .root {
-  background-color: #f1f1f1;
-}
-.dark-theme .root {
-  background-color: #181818;
-}
-.corroded-theme .root {
-  background-color: #72644F;
-}
-.arctic-theme .root {
-  background-color: #8cc2ff;
-}
-.tropical-theme .root {
-  background-color: #23b665;
-}
-.neptune-theme .root {
-  background-color: #021146;
-}
-.rust-theme .root {
-  background-color: #4d0000;
-}
 
 .container {
   display: grid;
@@ -1037,6 +513,328 @@ footer {
 hr {
   margin: 0.5em 0 1em 0;
   background: none;
+}
+
+.light-theme .root {
+  background-color: #f1f1f1;
+  color: #181818;
+  border-color: none;
+}
+.light-theme .bottom-nav {
+  background-color: #d8d8d8;
+  color: inherit;
+  border-color: inherit;
+}
+.light-theme .theme-menu-option:hover {
+  background-color: #181818;
+  color: #f1f1f1;
+}
+.light-theme .bordered-heading {
+  background-color: #d8d8d8;
+  color: inherit;
+  border-color: #181818;
+}
+.light-theme .bordered-link-primary-bg {
+  background-color: #f1f1f1;
+  border-color: #181818;
+}
+.light-theme .bordered-link-primary-bg:hover {
+  background-color: #181818;
+  color: #f1f1f1;
+  border-color: #f1f1f1;
+}
+.light-theme .bordered-link-tertiary-bg {
+  background-color: #d8d8d8;
+  border-color: #181818;
+}
+.light-theme .bordered-link-tertiary-bg:hover {
+  background-color: #181818;
+  color: #f1f1f1;
+  border-color: #d8d8d8;
+}
+.light-theme .bordered-link-disabled {
+  background-color: #f1f1f1;
+  color: inherit;
+  border-color: inherit;
+}
+.light-theme #theme-menu-options {
+  background-color: #d8d8d8;
+}
+
+.dark-theme .root {
+  background-color: #181818;
+  color: #f1f1f1;
+  border-color: none;
+}
+.dark-theme .bottom-nav {
+  background-color: #252525;
+  color: inherit;
+  border-color: inherit;
+}
+.dark-theme .theme-menu-option:hover {
+  background-color: #f1f1f1;
+  color: #181818;
+}
+.dark-theme .bordered-heading {
+  background-color: #252525;
+  color: inherit;
+  border-color: #f1f1f1;
+}
+.dark-theme .bordered-link-primary-bg {
+  background-color: #181818;
+  border-color: #f1f1f1;
+}
+.dark-theme .bordered-link-primary-bg:hover {
+  background-color: #f1f1f1;
+  color: #181818;
+  border-color: #181818;
+}
+.dark-theme .bordered-link-tertiary-bg {
+  background-color: #252525;
+  border-color: #f1f1f1;
+}
+.dark-theme .bordered-link-tertiary-bg:hover {
+  background-color: #f1f1f1;
+  color: #181818;
+  border-color: #252525;
+}
+.dark-theme .bordered-link-disabled {
+  background-color: #181818;
+  color: inherit;
+  border-color: inherit;
+}
+.dark-theme #theme-menu-options {
+  background-color: #252525;
+}
+
+.corroded-theme .root {
+  background-color: #72644F;
+  color: #ffffff;
+  border-color: none;
+}
+.corroded-theme .bottom-nav {
+  background-color: #8a8b4f;
+  color: inherit;
+  border-color: inherit;
+}
+.corroded-theme .theme-menu-option:hover {
+  background-color: #ffffff;
+  color: #72644F;
+}
+.corroded-theme .bordered-heading {
+  background-color: #8a8b4f;
+  color: inherit;
+  border-color: #ffffff;
+}
+.corroded-theme .bordered-link-primary-bg {
+  background-color: #72644F;
+  border-color: #ffffff;
+}
+.corroded-theme .bordered-link-primary-bg:hover {
+  background-color: #ffffff;
+  color: #72644F;
+  border-color: #72644F;
+}
+.corroded-theme .bordered-link-tertiary-bg {
+  background-color: #8a8b4f;
+  border-color: #ffffff;
+}
+.corroded-theme .bordered-link-tertiary-bg:hover {
+  background-color: #ffffff;
+  color: #72644F;
+  border-color: #8a8b4f;
+}
+.corroded-theme .bordered-link-disabled {
+  background-color: #72644F;
+  color: inherit;
+  border-color: inherit;
+}
+.corroded-theme #theme-menu-options {
+  background-color: #8a8b4f;
+}
+
+.arctic-theme .root {
+  background-color: #8cc2ff;
+  color: #262c38;
+  border-color: none;
+}
+.arctic-theme .bottom-nav {
+  background-color: #e3f6ff;
+  color: inherit;
+  border-color: inherit;
+}
+.arctic-theme .theme-menu-option:hover {
+  background-color: #262c38;
+  color: #8cc2ff;
+}
+.arctic-theme .bordered-heading {
+  background-color: #e3f6ff;
+  color: inherit;
+  border-color: #262c38;
+}
+.arctic-theme .bordered-link-primary-bg {
+  background-color: #8cc2ff;
+  border-color: #262c38;
+}
+.arctic-theme .bordered-link-primary-bg:hover {
+  background-color: #262c38;
+  color: #8cc2ff;
+  border-color: #8cc2ff;
+}
+.arctic-theme .bordered-link-tertiary-bg {
+  background-color: #e3f6ff;
+  border-color: #262c38;
+}
+.arctic-theme .bordered-link-tertiary-bg:hover {
+  background-color: #262c38;
+  color: #8cc2ff;
+  border-color: #e3f6ff;
+}
+.arctic-theme .bordered-link-disabled {
+  background-color: #8cc2ff;
+  color: inherit;
+  border-color: inherit;
+}
+.arctic-theme #theme-menu-options {
+  background-color: #e3f6ff;
+}
+
+.tropical-theme .root {
+  background-color: #23b665;
+  color: #ffd3e0;
+  border-color: none;
+}
+.tropical-theme .bottom-nav {
+  background-color: #f52664;
+  color: inherit;
+  border-color: inherit;
+}
+.tropical-theme .theme-menu-option:hover {
+  background-color: #ffd3e0;
+  color: #23b665;
+}
+.tropical-theme .bordered-heading {
+  background-color: #f52664;
+  color: inherit;
+  border-color: #ffd3e0;
+}
+.tropical-theme .bordered-link-primary-bg {
+  background-color: #23b665;
+  border-color: #ffd3e0;
+}
+.tropical-theme .bordered-link-primary-bg:hover {
+  background-color: #ffd3e0;
+  color: #23b665;
+  border-color: #23b665;
+}
+.tropical-theme .bordered-link-tertiary-bg {
+  background-color: #f52664;
+  border-color: #ffd3e0;
+}
+.tropical-theme .bordered-link-tertiary-bg:hover {
+  background-color: #ffd3e0;
+  color: #23b665;
+  border-color: #f52664;
+}
+.tropical-theme .bordered-link-disabled {
+  background-color: #23b665;
+  color: inherit;
+  border-color: inherit;
+}
+.tropical-theme #theme-menu-options {
+  background-color: #f52664;
+}
+
+.neptune-theme .root {
+  background-color: #021146;
+  color: #ffd8a6;
+  border-color: none;
+}
+.neptune-theme .bottom-nav {
+  background-color: #2251fc;
+  color: inherit;
+  border-color: inherit;
+}
+.neptune-theme .theme-menu-option:hover {
+  background-color: #ffd8a6;
+  color: #021146;
+}
+.neptune-theme .bordered-heading {
+  background-color: #2251fc;
+  color: inherit;
+  border-color: #ffd8a6;
+}
+.neptune-theme .bordered-link-primary-bg {
+  background-color: #021146;
+  border-color: #ffd8a6;
+}
+.neptune-theme .bordered-link-primary-bg:hover {
+  background-color: #ffd8a6;
+  color: #021146;
+  border-color: #021146;
+}
+.neptune-theme .bordered-link-tertiary-bg {
+  background-color: #2251fc;
+  border-color: #ffd8a6;
+}
+.neptune-theme .bordered-link-tertiary-bg:hover {
+  background-color: #ffd8a6;
+  color: #021146;
+  border-color: #2251fc;
+}
+.neptune-theme .bordered-link-disabled {
+  background-color: #021146;
+  color: inherit;
+  border-color: inherit;
+}
+.neptune-theme #theme-menu-options {
+  background-color: #2251fc;
+}
+
+.rust-theme .root {
+  background-color: #4d0000;
+  color: #fae5e5;
+  border-color: none;
+}
+.rust-theme .bottom-nav {
+  background-color: #be4f4f;
+  color: inherit;
+  border-color: inherit;
+}
+.rust-theme .theme-menu-option:hover {
+  background-color: #fae5e5;
+  color: #4d0000;
+}
+.rust-theme .bordered-heading {
+  background-color: #be4f4f;
+  color: inherit;
+  border-color: #fae5e5;
+}
+.rust-theme .bordered-link-primary-bg {
+  background-color: #4d0000;
+  border-color: #fae5e5;
+}
+.rust-theme .bordered-link-primary-bg:hover {
+  background-color: #fae5e5;
+  color: #4d0000;
+  border-color: #4d0000;
+}
+.rust-theme .bordered-link-tertiary-bg {
+  background-color: #be4f4f;
+  border-color: #fae5e5;
+}
+.rust-theme .bordered-link-tertiary-bg:hover {
+  background-color: #fae5e5;
+  color: #4d0000;
+  border-color: #be4f4f;
+}
+.rust-theme .bordered-link-disabled {
+  background-color: #4d0000;
+  color: inherit;
+  border-color: inherit;
+}
+.rust-theme #theme-menu-options {
+  background-color: #be4f4f;
 }
 
 /*# sourceMappingURL=main.css.map */
