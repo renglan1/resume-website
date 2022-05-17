@@ -40,3 +40,10 @@ for(let i = 0; i < themeMenuOptionList.length; i++){
 function setTheme(themeName){
     localStorage.setItem("themeName", themeName);
 }
+
+// Automatic hiding of the menu when page clicked
+document.addEventListener("click", function() {
+    if(themeMenuOptions.style.display != "none"){
+        themeMenuOptions.style.display = "none";
+    }
+});

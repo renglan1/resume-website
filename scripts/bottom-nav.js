@@ -4,14 +4,14 @@ const bottomNavLinks = document.querySelectorAll(".bottom-nav-link");
 
 // Allows each link to automatically close the menu when selected
 bottomNavLinks.forEach(navLink => {
-    navLink.addEventListener("click", function(){
+    navLink.addEventListener("click", function() {
         showBottomNavMenu();
     });
 });
 
-bottomNavExpand.onclick = () => {
+bottomNavExpand.addEventListener("click", function() {
     showBottomNavMenu();
-}
+});
 
 function showBottomNavMenu(){
     if(isHidden(bottomNavMenu)){

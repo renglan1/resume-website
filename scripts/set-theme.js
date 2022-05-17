@@ -1,7 +1,7 @@
 const html = document.querySelector("html");
 
-window.onload = () =>{
+window.addEventListener("load", function(){
     if(localStorage.getItem("themeName")){
         html.className = localStorage.getItem("themeName") + "-theme";
     }
-}
+});
