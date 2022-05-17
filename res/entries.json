@@ -1,0 +1,120 @@
+[
+    {
+        "entrySection": "Education",
+        "entryTitle": "University of New Brunswick",
+        "entrySubtitle": "",
+        "entryLocation": {
+            "city": "Fredericton",
+            "province": "NB"
+        },
+        "entryPeriod": {
+            "periodStart": "September 2018",
+            "periodEnd": "Present"
+        },
+        "entryDesc": [
+            "Fourth year BSC Biology student taking Computer Science courses to pursue a BCS degree after graduation",
+            "4.0 cumulative GPA"
+        ]
+    },
+    {
+        "entrySection": "Education",
+        "entryTitle": "Kennebecasis Valley High School",
+        "entrySubtitle": "",
+        "entryLocation": {
+            "city": "Quispamsis",
+            "province": "NB"
+        },
+        "entryPeriod": {
+            "periodStart": "September 2014",
+            "periodEnd": "June 2018"
+        },
+        "entryDesc": []
+    },
+    {
+        "entrySection": "Work Experience",
+        "entryTitle": "Tim Horton's Restaurant",
+        "entrySubtitle": "Restaurant Team Member",
+        "entryLocation": {
+            "city": "Calgary",
+            "province": "AB"
+        },
+        "entryPeriod": {
+            "periodStart": "July 2021",
+            "periodEnd": "August 2021"
+        },
+        "entryDesc": [
+            "Provided enthusiastic & professional service",
+            "Maintained efficiency & accuracy in filling customer orders while working in a fast-paced work environment",
+            "Upheld customer service & stringent cleanliness standards during the pandemic",
+            "Consistently worked well under pressure and contributed as a member of a team"
+        ]
+    },
+    {
+        "entrySection": "Work Experience",
+        "entryTitle": "Pur & Simple Restaurant",
+        "entrySubtitle": "Host, Busser, & Dishwasher",
+        "entryLocation": {
+            "city": "Saint John",
+            "province": "NB"
+        },
+        "entryPeriod": {
+            "periodStart": "June 2019",
+            "periodEnd": "July 2021"
+        },
+        "entryDesc": [
+            "Provided enthusiastic & professional service",
+            "Maintained a keen organizational mind necessary to most efficiently seat customers",
+            "Consistently worked well under pressure and contributed as a member of a team",
+            "Served as my introduction to a fast-paced & team-oriented work environment"
+        ]
+    },
+    {
+        "entrySection": "School Experience",
+        "entryTitle": "CS2063: Intro. to Mobile App. Development",
+        "entrySubtitle": "",
+        "entryLocation": {
+            "city": "",
+            "province": ""
+        },
+        "entryPeriod": {
+            "periodStart": "January 2022",
+            "periodEnd": "April 2022"
+        },
+        "entryDesc": [
+            "Introduces fundamentals of Android mobile application development, with a focus on design principles & programming common application functionalities",
+            "Includes a team-based mobile application development project, which requires implementation of Android application development best practices"
+        ]
+    },
+    {
+        "entrySection": "Programming Skills",
+        "entryTitle": "Languages",
+        "entrySubtitle": "",
+        "entryLocation": {
+            "city": "",
+            "province": ""
+        },
+        "entryPeriod": {
+            "periodStart": "",
+            "periodEnd": ""
+        },
+        "entryDesc": [
+            "Java, C, MATLAB, R"
+        ]
+    },
+    {
+        "entrySection": "Programming Skills",
+        "entryTitle": "Operating Systems",
+        "entrySubtitle": "",
+        "entryLocation": {
+            "city": "",
+            "province": ""
+        },
+        "entryPeriod": {
+            "periodStart": "",
+            "periodEnd": ""
+        },
+        "entryDesc": [
+            "Windows, Mac OSX"
+        ]
+    }
+]
