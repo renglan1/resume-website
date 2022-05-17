@@ -1,31 +1,6 @@
-@use "../base/colors";
-@use "../utils/theme-utils";
-
-#bordered-heading-inner{
-    display: flex;
-
-    flex-flow: row wrap;
-    justify-content: center;
-
-    height: fit-content;
-}
-
-#main-subheading{
-    margin: 0.25em 0;
-    font-weight: bold;
-    text-align: center;
-    flex: 0 0 100%; 
-}
-
-#theme-menu-button{
-    cursor: pointer;
-    color: inherit;
-}
-
 #theme-menu{
     position: relative;
     display: inline-block;
-    margin-left: auto;
 }
 
 #theme-menu-options{
