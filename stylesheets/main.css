@@ -1,3 +1,4 @@
+/*Basis for this design comes from: https://www.toptal.com/sass/theming-scss-tutorial*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -223,6 +224,7 @@ ul.entry-desc > li {
     display: none;
   }
 }
+/*Basis for this design comes from: https://www.toptal.com/sass/theming-scss-tutorial*/
 #theme-menu {
   position: relative;
   display: inline-block;

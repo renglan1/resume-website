@@ -1,5 +1,6 @@
 @use "sass:list";
 
+/*Basis for this design comes from: https://www.toptal.com/sass/theming-scss-tutorial*/
 @mixin themify($theme-name, $theme-map) {
     .#{$theme-name} {
 
