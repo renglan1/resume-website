@@ -2,28 +2,5 @@
 @use "../base/colors";
 
 $ugly-theme: (
-   root: (
-       theme-templates.root-template(colors.$ugly-theme-colors)
-   ),
-   bottom-nav: (
-       theme-templates.bottom-nav-template(colors.$ugly-theme-colors)
-   ),
-   theme-menu-option: (
-       theme-templates.theme-menu-option-template(colors.$ugly-theme-colors)
-   ),
-   bordered-heading: (
-       theme-templates.bordered-heading-template(colors.$ugly-theme-colors)
-   ),
-   bordered-link-primary-bg: (
-       theme-templates.bordered-link-template(colors.$ugly-theme-colors, 1)
-   ),
-   bordered-link-tertiary-bg: (
-       theme-templates.bordered-link-template(colors.$ugly-theme-colors, 3)
-   ),
-   bordered-link-disabled: (
-       theme-templates.bordered-link-disabled-template(colors.$ugly-theme-colors)
-   ),
-   theme-menu-options: (
-       theme-templates.theme-menu-options-template(colors.$ugly-theme-colors)
-   )
+    theme-templates.generate-theme(colors.$ugly-theme-colors)
 );

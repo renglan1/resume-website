@@ -48,3 +48,32 @@
         bg: list.nth($color-list, 3)
     );
 }
+
+@function generate-theme($color-list){
+    @return(
+        root: (
+            root-template($color-list)
+        ),
+        bottom-nav: (
+            bottom-nav-template($color-list)
+        ),
+        theme-menu-option: (
+            theme-menu-option-template($color-list)
+        ),
+        bordered-heading: (
+            bordered-heading-template($color-list)
+        ),
+        bordered-link-primary-bg: (
+            bordered-link-template($color-list, 1)
+        ),
+        bordered-link-tertiary-bg: (
+            bordered-link-template($color-list, 3)
+        ),
+        bordered-link-disabled: (
+            bordered-link-disabled-template($color-list)
+        ),
+        theme-menu-options: (
+            theme-menu-options-template($color-list)
+        )
+    );
+}
