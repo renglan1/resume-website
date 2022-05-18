@@ -22,9 +22,9 @@ function populateMain(entries){
     console.log(entries);
     for(const entry of entries){
         const articleID = entry["entryArticle"];
-        console.log(articleID);
+        console.log("articleID: " + articleID);
         const article = main.querySelector(`article#${articleID}`);
-        console.log("article: " + article);
+        console.log(article);
     }
 }
 
