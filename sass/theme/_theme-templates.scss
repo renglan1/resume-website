@@ -49,7 +49,7 @@
     );
 }
 
-@function generate-theme($color-list){
+@function generate-theme-map($color-list){
     @return(
         root: (
             root-template($color-list)

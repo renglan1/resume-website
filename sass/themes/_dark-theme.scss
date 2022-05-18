@@ -1,6 +1,0 @@
-@use "theme-templates";
-@use "../base/colors";
-
-$dark-theme: (
-    theme-templates.generate-theme(colors.$dark-theme-colors)
-);

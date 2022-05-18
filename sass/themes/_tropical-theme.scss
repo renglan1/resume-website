@@ -1,6 +1,0 @@
-@use "theme-templates";
-@use "../base/colors";
-
-$tropical-theme: (
-    theme-templates.generate-theme(colors.$tropical-theme-colors)
-);

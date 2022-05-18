@@ -4,14 +4,7 @@
 @use "base/index-grid";
 
 @use "utils/theme-utils";
-@use "themes/light-theme";
-@use "themes/dark-theme";
-@use "themes/corroded-theme";
-@use "themes/arctic-theme";
-@use "themes/tropical-theme.scss";
-@use "themes/neptune-theme";
-@use "themes/rust-theme";
-@use "themes/ugly-theme";
+@use "theme/themes";
 
 @import "base/reset";
 
@@ -90,11 +83,12 @@ hr{
 }
 
 //Themes
-@include theme-utils.themify(light-theme, light-theme.$light-theme);
-@include theme-utils.themify(dark-theme, dark-theme.$dark-theme);
-@include theme-utils.themify(corroded-theme, corroded-theme.$corroded-theme);
-@include theme-utils.themify(arctic-theme, arctic-theme.$arctic-theme);
-@include theme-utils.themify(tropical-theme, tropical-theme.$tropical-theme);
-@include theme-utils.themify(neptune-theme, neptune-theme.$neptune-theme);
-@include theme-utils.themify(rust-theme, rust-theme.$rust-theme);
-@include theme-utils.themify(ugly-theme, ugly-theme.$ugly-theme);
+@include theme-utils.themify(light-theme, themes.$light-theme);
+@include theme-utils.themify(dark-theme, themes.$dark-theme);
+@include theme-utils.themify(corroded-theme, themes.$corroded-theme);
+@include theme-utils.themify(arctic-theme, themes.$arctic-theme);
+@include theme-utils.themify(tropical-theme, themes.$tropical-theme);
+@include theme-utils.themify(neptune-theme, themes.$neptune-theme);
+@include theme-utils.themify(rust-theme, themes.$rust-theme);
+@include theme-utils.themify(ugly-theme, themes.$ugly-theme);
+@include theme-utils.themify(intern-theme, themes.$intern-theme);

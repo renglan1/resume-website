@@ -344,6 +344,16 @@ ul.entry-desc > li {
   background-color: blue;
 }
 
+.intern-preview #intern-sec-1 {
+  background-color: blue;
+}
+.intern-preview #intern-sec-2 {
+  background-color: purple;
+}
+.intern-preview #intern-sec-3 {
+  background-color: cornflowerblue;
+}
+
 #bordered-heading-inner {
   display: flex;
   flex-flow: row wrap;
@@ -900,6 +910,52 @@ hr {
 }
 .ugly-theme #theme-menu-options {
   background-color: yellow;
+}
+
+.intern-theme .root {
+  background-color: blue;
+  color: cornflowerblue;
+  border-color: none;
+}
+.intern-theme .bottom-nav {
+  background-color: purple;
+  color: inherit;
+  border-color: inherit;
+}
+.intern-theme .theme-menu-option:hover {
+  background-color: cornflowerblue;
+  color: blue;
+}
+.intern-theme .bordered-heading {
+  background-color: purple;
+  color: inherit;
+  border-color: cornflowerblue;
+}
+.intern-theme .bordered-link-primary-bg {
+  background-color: blue;
+  border-color: cornflowerblue;
+}
+.intern-theme .bordered-link-primary-bg:hover {
+  background-color: cornflowerblue;
+  color: blue;
+  border-color: blue;
+}
+.intern-theme .bordered-link-tertiary-bg {
+  background-color: purple;
+  border-color: cornflowerblue;
+}
+.intern-theme .bordered-link-tertiary-bg:hover {
+  background-color: cornflowerblue;
+  color: blue;
+  border-color: purple;
+}
+.intern-theme .bordered-link-disabled {
+  background-color: blue;
+  color: inherit;
+  border-color: inherit;
+}
+.intern-theme #theme-menu-options {
+  background-color: purple;
 }
 
 /*# sourceMappingURL=main.css.map */

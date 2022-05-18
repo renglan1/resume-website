@@ -1,6 +1,0 @@
-@use "theme-templates";
-@use "../base/colors";
-
-$corroded-theme: (
-    theme-templates.generate-theme(colors.$corroded-theme-colors)
-);

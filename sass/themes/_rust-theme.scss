@@ -1,6 +1,0 @@
-@use "theme-templates";
-@use "../base/colors";
-
-$rust-theme: (
-    theme-templates.generate-theme(colors.$rust-theme-colors)
-);

@@ -1,6 +1,0 @@
-@use "theme-templates";
-@use "../base/colors";
-
-$arctic-theme: (
-    theme-templates.generate-theme(colors.$arctic-theme-colors)
-);

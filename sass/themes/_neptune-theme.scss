@@ -1,6 +1,0 @@
-@use "theme-templates";
-@use "../base/colors";
-
-$neptune-theme: (
-   theme-templates.generate-theme(colors.$neptune-theme-colors)
-);

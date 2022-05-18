@@ -1,6 +1,0 @@
-@use "theme-templates";
-@use "../base/colors";
-
-$ugly-theme: (
-    theme-templates.generate-theme(colors.$ugly-theme-colors)
-);

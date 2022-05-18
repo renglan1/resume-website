@@ -70,3 +70,7 @@
 .ugly-preview{
     @include theme-utils.theme-preview(ugly, colors.$ugly-theme-colors);
 }
+
+.intern-preview{
+    @include theme-utils.theme-preview(intern, colors.$intern-theme-colors);
+}

@@ -1,0 +1,38 @@
+@use "theme-templates";
+@use "../base/colors";
+
+$light-theme: (
+    theme-templates.generate-theme-map(colors.$light-theme-colors)
+);
+
+$dark-theme: (
+    theme-templates.generate-theme-map(colors.$dark-theme-colors)
+);
+
+$corroded-theme: (
+    theme-templates.generate-theme-map(colors.$corroded-theme-colors)
+);
+
+$arctic-theme: (
+    theme-templates.generate-theme-map(colors.$arctic-theme-colors)
+);
+
+$tropical-theme: (
+    theme-templates.generate-theme-map(colors.$tropical-theme-colors)
+);
+
+$neptune-theme: (
+    theme-templates.generate-theme-map(colors.$neptune-theme-colors)
+);
+
+$rust-theme: (
+    theme-templates.generate-theme-map(colors.$rust-theme-colors)
+);
+
+$ugly-theme: (
+    theme-templates.generate-theme-map(colors.$ugly-theme-colors)
+);
+
+$intern-theme: (
+    theme-templates.generate-theme-map(colors.$intern-theme-colors)
+);
