@@ -98,7 +98,10 @@
             "periodEnd": ""
         },
         "entryDesc": [
-            "Java, C, MATLAB, R"
+            "Java", 
+            "C", 
+            "MATLAB", 
+            "R"
         ]
     },
     {
@@ -114,7 +117,8 @@
             "periodEnd": ""
         },
         "entryDesc": [
-            "Windows, Mac OSX"
+            "Windows", 
+            "Mac OSX"
         ]
     }
 ]
