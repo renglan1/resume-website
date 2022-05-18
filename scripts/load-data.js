@@ -21,13 +21,24 @@ async function populateDocument(requestURLs, loadedContent){
 function populateMain(entries){
     console.log(entries);
     for(const entry of entries){
-        const articleID = entry["entryArticle"];
-        console.log("articleID: " + articleID);
-        const article = main.querySelector(`article#${articleID}`);
-        console.log(article);
+        appendEntry(entry);
     }
 }
 
-function appendEntry(article, entry){
+function appendEntry(entry){
+    const articleID = entry["entryArticle"];
+    articleContent = main.querySelector(`article#${articleID} > div.article-content`);
+    buildEntry(articleContent, entry);
+}
 
+function buildEntry(articleContent, entry){
+    entryTitle = document.createElement("h4");
+    entryTitle.className = "entry-title";
+    console.log(entryTitle);
+    buildEntryTitle(articleContent, entryTitle, entry);
+}
+
+function buildEntryTitle(articleContent, entryTitle, entry){
+    entryName = document.createElement("span");
+    entryName.className = "entry-name";
 }

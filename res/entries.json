@@ -1,16 +1,18 @@
 [
     {
         "entryArticle": "education",
-        "entryTitle": "University of New Brunswick",
+        "entryTitle": {
+            "entryName": "University of New Brunswick",
+            "entryLocation": {
+                "city": "Fredericton",
+                "province": "NB"
+            },
+            "entryPeriod": {
+                "periodStart": "September 2018",
+                "periodEnd": "Present"
+            }
+        },
         "entrySubtitle": "",
-        "entryLocation": {
-            "city": "Fredericton",
-            "province": "NB"
-        },
-        "entryPeriod": {
-            "periodStart": "September 2018",
-            "periodEnd": "Present"
-        },
         "entryDesc": [
             "Fourth year BSC Biology student taking Computer Science courses to pursue a BCS degree after graduation",
             "4.0 cumulative GPA"
@@ -18,30 +20,34 @@
     },
     {
         "entryArticle": "education",
-        "entryTitle": "Kennebecasis Valley High School",
+        "entryTitle": {
+            "entryName": "Kennebecasis Valley High School",
+            "entryLocation": {
+                "city": "Quispamsis",
+                "province": "NB"
+            },
+            "entryPeriod": {
+                "periodStart": "September 2014",
+                "periodEnd": "June 2018"
+            }
+        },
         "entrySubtitle": "",
-        "entryLocation": {
-            "city": "Quispamsis",
-            "province": "NB"
-        },
-        "entryPeriod": {
-            "periodStart": "September 2014",
-            "periodEnd": "June 2018"
-        },
         "entryDesc": []
     },
     {
         "entryArticle": "work-experience",
-        "entryTitle": "Tim Horton's Restaurant",
+        "entryTitle": {
+            "entryName": "Tim Horton's Restaurant",
+            "entryLocation": {
+                "city": "Calgary",
+                "province": "AB"
+            },
+            "entryPeriod": {
+                "periodStart": "July 2021",
+                "periodEnd": "August 2021"
+            }
+        },
         "entrySubtitle": "Restaurant Team Member",
-        "entryLocation": {
-            "city": "Calgary",
-            "province": "AB"
-        },
-        "entryPeriod": {
-            "periodStart": "July 2021",
-            "periodEnd": "August 2021"
-        },
         "entryDesc": [
             "Provided enthusiastic & professional service",
             "Maintained efficiency & accuracy in filling customer orders while working in a fast-paced work environment",
@@ -51,16 +57,18 @@
     },
     {
         "entryArticle": "work-experience",
-        "entryTitle": "Pur & Simple Restaurant",
+        "entryTitle": {
+            "entryName": "Pur & Simple Restaurant",
+            "entryLocation": {
+                "city": "Saint John",
+                "province": "NB"
+            },
+            "entryPeriod": {
+                "periodStart": "June 2019",
+                "periodEnd": "July 2021"
+            }
+        },
         "entrySubtitle": "Host, Busser, & Dishwasher",
-        "entryLocation": {
-            "city": "Saint John",
-            "province": "NB"
-        },
-        "entryPeriod": {
-            "periodStart": "June 2019",
-            "periodEnd": "July 2021"
-        },
         "entryDesc": [
             "Provided enthusiastic & professional service",
             "Maintained a keen organizational mind necessary to most efficiently seat customers",
@@ -70,16 +78,18 @@
     },
     {
         "entryArticle": "school-experience",
-        "entryTitle": "CS2063: Intro. to Mobile App. Development",
+        "entryTitle": {
+            "entryName": "CS2063: Intro. to Mobile App. Development",
+            "entryLocation": {
+                "city": "",
+                "province": ""
+            },
+            "entryPeriod": {
+                "periodStart": "January 2022",
+                "periodEnd": "April 2022"
+            }
+        },
         "entrySubtitle": "",
-        "entryLocation": {
-            "city": "",
-            "province": ""
-        },
-        "entryPeriod": {
-            "periodStart": "January 2022",
-            "periodEnd": "April 2022"
-        },
         "entryDesc": [
             "Introduces fundamentals of Android mobile application development, with a focus on design principles & programming common application functionalities",
             "Includes a team-based mobile application development project, which requires implementation of Android application development best practices"
@@ -87,37 +97,41 @@
     },
     {
         "entryArticle": "programming-skills",
-        "entryTitle": "Languages",
+        "entryTitle": {
+            "entryName": "Languages",
+            "entryLocation": {
+                "city": "",
+                "province": ""
+            },
+            "entryPeriod": {
+                "periodStart": "",
+                "periodEnd": ""
+            }
+        },
         "entrySubtitle": "",
-        "entryLocation": {
-            "city": "",
-            "province": ""
-        },
-        "entryPeriod": {
-            "periodStart": "",
-            "periodEnd": ""
-        },
         "entryDesc": [
-            "Java", 
-            "C", 
-            "MATLAB", 
+            "Java",
+            "C",
+            "MATLAB",
             "R"
         ]
     },
     {
         "entryArticle": "programming-skills",
-        "entryTitle": "Operating Systems",
+        "entryTitle": {
+            "entryName": "Operating Systems",
+            "entryLocation": {
+                "city": "",
+                "province": ""
+            },
+            "entryPeriod": {
+                "periodStart": "",
+                "periodEnd": ""
+            }
+        },
         "entrySubtitle": "",
-        "entryLocation": {
-            "city": "",
-            "province": ""
-        },
-        "entryPeriod": {
-            "periodStart": "",
-            "periodEnd": ""
-        },
         "entryDesc": [
-            "Windows", 
+            "Windows",
             "Mac OSX"
         ]
     }
