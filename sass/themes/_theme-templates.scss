@@ -1,56 +1,50 @@
 @use "sass:list";
 
-@function root-template($color-list){
+@function root-template($color-list) {
     @return(
         bg: list.nth($color-list, 1),
         color: list.nth($color-list, 2),
-        border-color: none 
-    );
-};
+        border-color: none);
+}
 
-@function bottom-nav-template($color-list){
+@function bottom-nav-template($color-list) {
     @return(
         bg: list.nth($color-list, 3),
         color: inherit,
-        border-color: inherit
-    );
-};
+        border-color: inherit);
+}
 
-@function theme-menu-option-template($color-list){
+@function theme-menu-option-template($color-list) {
     @return(
-       hover-bg-color: list.nth($color-list, 2),
-       hover-color: list.nth($color-list, 1)
-    );
-};
+        hover-bg-color: list.nth($color-list, 2),
+        hover-color: list.nth($color-list, 1));
+}
 
-@function bordered-heading-template($color-list){
+@function bordered-heading-template($color-list) {
     @return(
-       bg: list.nth($color-list, 3),
-       color: inherit,
-       border-color: list.nth($color-list, 2)
-    );
-};
+        bg: list.nth($color-list, 3),
+        color: inherit,
+        border-color: list.nth($color-list, 2));
+}
 
-@function bordered-link-template($color-list, $bg-color-index){
+@function bordered-link-template($color-list, $bg-color-index) {
     @return(
         bg: list.nth($color-list, $bg-color-index),
         border-color: list.nth($color-list, 2),
         hover-bg-color: list.nth($color-list, 2),
         hover-color: list.nth($color-list, 1),
-        hover-border-color: list.nth($color-list, $bg-color-index)
-    );
+        hover-border-color: list.nth($color-list, $bg-color-index));
 }
 
-@function bordered-link-disabled-template($color-list){
+@function bordered-link-disabled-template($color-list) {
     @return(
         bg: list.nth($color-list, 1),
-        color: inherit, 
-        border-color: inherit
-    );
+        color: inherit,
+        border-color: inherit);
 }
 
-@function theme-menu-options-template($color-list){
+@function theme-menu-options-template($color-list) {
     @return(
-        bg: list.nth($color-list, 3), 
+        bg: list.nth($color-list, 3)
     );
-};
+}
