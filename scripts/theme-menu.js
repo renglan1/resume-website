@@ -33,11 +33,11 @@ for(let i = 0; i < themeMenuOptionList.length; i++){
         let themeName = themeMenuOptionNameTextContent.split(" ")[0];
         
         document.querySelector("html").className = themeName + "-theme";
-        setTheme(themeName);
+        storeTheme(themeName);
     });
 }
 
-function setTheme(themeName){
+function storeTheme(themeName){
     localStorage.setItem("themeName", themeName);
 }
 

@@ -4,4 +4,4 @@ window.addEventListener("load", function(){
     if(localStorage.getItem("themeName")){
         html.className = localStorage.getItem("themeName") + "-theme";
     }
-});
+}); 
