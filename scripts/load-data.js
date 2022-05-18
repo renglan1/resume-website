@@ -1,3 +1,4 @@
+const main = document.querySelector("main");
 const entryRequestURL = "https://github.com/renglan1/resume-website/blob/master/res/entries.json";
 const requestURLs = [entryRequestURL];
 const loadedContent = [];
@@ -15,9 +16,9 @@ async function populateDocument(requestURLs, loadedContent){
 populateMain();
 
 function populateMain(entries){
-    const articles = document.querySelectorAll("section.content > article");
-    console.log(articles.length);
-    for(const article of articles){
-        console.log(article);
+    let article;
+    for(const entry of entries){
+        const articleID = entry["entryArticle"];
+        console.log(articleID);
     }
 }

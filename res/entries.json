@@ -1,6 +1,6 @@
 [
     {
-        "entrySection": "Education",
+        "entryArticle": "Education",
         "entryTitle": "University of New Brunswick",
         "entrySubtitle": "",
         "entryLocation": {
@@ -17,7 +17,7 @@
         ]
     },
     {
-        "entrySection": "Education",
+        "entryArticle": "Education",
         "entryTitle": "Kennebecasis Valley High School",
         "entrySubtitle": "",
         "entryLocation": {
@@ -31,7 +31,7 @@
         "entryDesc": []
     },
     {
-        "entrySection": "Work Experience",
+        "entryArticle": "Work Experience",
         "entryTitle": "Tim Horton's Restaurant",
         "entrySubtitle": "Restaurant Team Member",
         "entryLocation": {
@@ -50,7 +50,7 @@
         ]
     },
     {
-        "entrySection": "Work Experience",
+        "entryArticle": "Work Experience",
         "entryTitle": "Pur & Simple Restaurant",
         "entrySubtitle": "Host, Busser, & Dishwasher",
         "entryLocation": {
@@ -69,7 +69,7 @@
         ]
     },
     {
-        "entrySection": "School Experience",
+        "entryArticle": "School Experience",
         "entryTitle": "CS2063: Intro. to Mobile App. Development",
         "entrySubtitle": "",
         "entryLocation": {
@@ -86,7 +86,7 @@
         ]
     },
     {
-        "entrySection": "Programming Skills",
+        "entryArticle": "Programming Skills",
         "entryTitle": "Languages",
         "entrySubtitle": "",
         "entryLocation": {
@@ -105,7 +105,7 @@
         ]
     },
     {
-        "entrySection": "Programming Skills",
+        "entryArticle": "Programming Skills",
         "entryTitle": "Operating Systems",
         "entrySubtitle": "",
         "entryLocation": {
