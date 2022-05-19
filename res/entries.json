@@ -35,6 +35,26 @@
         "entryDesc": []
     },
     {
+        
+        "entryArticle": "work-experience",
+        "entryTitle": {
+            "entryName": "Sedin Technologies",
+            "entryLocation": {
+                "city": "Fredericton",
+                "province": "NB"
+            },
+            "entryPeriod": {
+                "periodStart": "May 2022",
+                "periodEnd": "August 2022"
+            }
+        },
+        "entrySubtitle": "Software Developer",
+        "entryDesc": [
+            "Will do something (eventually)"
+        ]
+    },
+    {
+        
         "entryArticle": "work-experience",
         "entryTitle": {
             "entryName": "Tim Horton's Restaurant",
