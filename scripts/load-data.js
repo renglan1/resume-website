@@ -8,11 +8,19 @@ populateDocument(requestURLs, loadedContent);
 async function populateDocument(requestURLs, loadedContent){
     for(const requestURL of requestURLs){
         console.log(`url: ${requestURL}`);
-        const request = new Request(requestURL);
-        const response = await fetch(request);
-        const content = await response.json();
+        try{
+            const response = await fetch(requestURL);
 
-        loadedContent.push(content);
+            if(!response.ok){
+                throw new Error(`HTTP error: ${response.status}`);
+            }
+
+            const content = await response.json();
+            loadedContent.push(content);
+        }
+        catch(error){
+            console.error(`Could not fetch data from "${requestURL}": ${error}`)
+        }
     }
 
     populateMain(loadedContent[0]);

@@ -510,6 +510,7 @@ body {
 header {
   grid-column: 1/13;
   grid-row: 1;
+  min-width: 250px;
 }
 @media only screen and (min-width: 768px) {
   header {
