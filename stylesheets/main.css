@@ -224,6 +224,64 @@ ul.entry-desc > li {
     display: none;
   }
 }
+.article-title {
+  width: fit-content;
+  margin-top: 2em;
+}
+
+.article-content {
+  margin-left: 0.7vw;
+}
+
+.article-icon {
+  margin-right: 0.25em;
+}
+
+.subsection {
+  font-weight: bold;
+}
+
+ul.article-list {
+  margin-top: 0;
+}
+
+.bordered-heading {
+  padding: 0.5em;
+  border: 1px solid blue;
+  border-left-width: 0.4vw;
+}
+
+.bordered-link-disabled {
+  padding: 0.5em;
+  border: 1px solid blue;
+  border-right-width: 0.4vw;
+  border-bottom-width: 0.4vw;
+}
+
+.bordered-link-primary-bg {
+  padding: 0.5em;
+  border: 1px solid blue;
+  border-right-width: 0.4vw;
+  border-bottom-width: 0.4vw;
+  color: inherit;
+  text-decoration: none;
+}
+.bordered-link-primary-bg:hover {
+  cursor: pointer;
+}
+
+.bordered-link-tertiary-bg {
+  padding: 0.5em;
+  border: 1px solid blue;
+  border-right-width: 0.4vw;
+  border-bottom-width: 0.4vw;
+  color: inherit;
+  text-decoration: none;
+}
+.bordered-link-tertiary-bg:hover {
+  cursor: pointer;
+}
+
 /*Basis for this design comes from: https://www.toptal.com/sass/theming-scss-tutorial*/
 #theme-menu {
   position: relative;
@@ -260,6 +318,7 @@ ul.entry-desc > li {
   height: 12px;
   width: 12px;
   border: 1px solid black;
+  margin-right: 0.3em;
 }
 
 .theme-menu-option-preview-section {
@@ -379,64 +438,6 @@ ul.entry-desc > li {
 #menu-container button {
   color: inherit;
   margin-left: 0.5em;
-}
-
-.article-title {
-  width: fit-content;
-  margin-top: 2em;
-}
-
-.article-content {
-  margin-left: 0.7vw;
-}
-
-.article-icon {
-  margin-right: 0.25em;
-}
-
-.subsection {
-  font-weight: bold;
-}
-
-ul.article-list {
-  margin-top: 0;
-}
-
-.bordered-heading {
-  padding: 0.5em;
-  border: 1px solid blue;
-  border-left-width: 0.4vw;
-}
-
-.bordered-link-disabled {
-  padding: 0.5em;
-  border: 1px solid blue;
-  border-right-width: 0.4vw;
-  border-bottom-width: 0.4vw;
-}
-
-.bordered-link-primary-bg {
-  padding: 0.5em;
-  border: 1px solid blue;
-  border-right-width: 0.4vw;
-  border-bottom-width: 0.4vw;
-  color: inherit;
-  text-decoration: none;
-}
-.bordered-link-primary-bg:hover {
-  cursor: pointer;
-}
-
-.bordered-link-tertiary-bg {
-  padding: 0.5em;
-  border: 1px solid blue;
-  border-right-width: 0.4vw;
-  border-bottom-width: 0.4vw;
-  color: inherit;
-  text-decoration: none;
-}
-.bordered-link-tertiary-bg:hover {
-  cursor: pointer;
 }
 
 ol, ul {
