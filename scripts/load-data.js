@@ -54,7 +54,7 @@ function buildEntry(entryData, articleID){
         entry.appendChild(entrySubtitle);
     }
 
-    if(hasLocation(entryData)){
+    if(hasPeriod(entryData)){
         const entryHR = document.createElement("hr");
         entryHR.className = "entry-hr";
         entry.appendChild(entryHR);
@@ -76,13 +76,18 @@ function buildEntryTitle(entryData){
     entryNameSpan.textContent = entryName;
     entryTitle.appendChild(entryNameSpan);
     
+    const entryLocation = entryData["entryTitle"]["entryLocation"];
+    const entryLocationSpan = document.createElement("span");
+    entryLocationSpan.className = "entry-location";
+
     if(hasLocation(entryData)){
-        const entryLocation = entryData["entryTitle"]["entryLocation"];
-        const entryLocationSpan = document.createElement("span");
-        entryLocationSpan.className = "entry-location";
-        entryLocationSpan.textContent = `${entryLocation["city"]}, ${entryLocation["province"]}`;
-        entryTitle.appendChild(entryLocationSpan);
+        entryLocationSpan.textContent = `${entryLocation["city"]}, ${entryLocation["province"]}`;    
     }
+    else{
+        entryLocationSpan.textContent = "";
+    }
+
+    entryTitle.appendChild(entryLocationSpan);
 
     if(hasPeriod(entryData)){
         const entryPeriod = entryData["entryTitle"]["entryPeriod"];

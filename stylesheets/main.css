@@ -545,7 +545,8 @@ button {
 
 hr {
   margin: 0.5em 0 1em 0;
-  background: none;
+  height: 0.05em;
+  border: none;
 }
 
 .light-theme .root {
@@ -593,6 +594,9 @@ hr {
 .light-theme #theme-menu-options {
   background-color: #d8d8d8;
 }
+.light-theme hr {
+  background-color: #181818;
+}
 
 .dark-theme .root {
   background-color: #181818;
@@ -638,6 +642,9 @@ hr {
 }
 .dark-theme #theme-menu-options {
   background-color: #252525;
+}
+.dark-theme hr {
+  background-color: #f1f1f1;
 }
 
 .corroded-theme .root {
@@ -685,6 +692,9 @@ hr {
 .corroded-theme #theme-menu-options {
   background-color: #8a8b4f;
 }
+.corroded-theme hr {
+  background-color: #ffffff;
+}
 
 .arctic-theme .root {
   background-color: #8cc2ff;
@@ -730,6 +740,9 @@ hr {
 }
 .arctic-theme #theme-menu-options {
   background-color: #e3f6ff;
+}
+.arctic-theme hr {
+  background-color: #262c38;
 }
 
 .tropical-theme .root {
@@ -777,6 +790,9 @@ hr {
 .tropical-theme #theme-menu-options {
   background-color: #f52664;
 }
+.tropical-theme hr {
+  background-color: #ffd3e0;
+}
 
 .neptune-theme .root {
   background-color: #021146;
@@ -822,6 +838,9 @@ hr {
 }
 .neptune-theme #theme-menu-options {
   background-color: #2251fc;
+}
+.neptune-theme hr {
+  background-color: #ffd8a6;
 }
 
 .rust-theme .root {
@@ -869,6 +888,9 @@ hr {
 .rust-theme #theme-menu-options {
   background-color: #be4f4f;
 }
+.rust-theme hr {
+  background-color: #fae5e5;
+}
 
 .ugly-theme .root {
   background-color: red;
@@ -915,6 +937,9 @@ hr {
 .ugly-theme #theme-menu-options {
   background-color: yellow;
 }
+.ugly-theme hr {
+  background-color: blue;
+}
 
 .intern-theme .root {
   background-color: blue;
@@ -960,6 +985,9 @@ hr {
 }
 .intern-theme #theme-menu-options {
   background-color: purple;
+}
+.intern-theme hr {
+  background-color: cornflowerblue;
 }
 
 /*# sourceMappingURL=main.css.map */

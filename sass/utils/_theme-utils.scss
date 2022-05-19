@@ -30,6 +30,11 @@
                     background-color: map-get($map, bg);
                 }
             }
+            @else if($section == hr){
+                hr{
+                    background-color: map-get($map, bg);
+                }
+            }
             @else { 
                 .#{$section} {
                     background-color: map-get($map, bg);
