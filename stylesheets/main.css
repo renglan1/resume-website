@@ -255,7 +255,7 @@ ul.article-list {
   cursor: pointer;
 }
 
-.disabled-link:hover {
+.bordered-link[aria-disabled=true]:hover {
   cursor: default;
 }
 
@@ -557,18 +557,23 @@ hr {
   border-color: #181818;
 }
 .light-theme .bordered-link {
-  background-color: #f1f1f1;
+  background-color: #d8d8d8;
   color: #181818;
   border-color: inherit;
 }
 .light-theme .bordered-link:hover {
   background-color: #181818;
-  color: #f1f1f1;
-  border-color: #f1f1f1;
+  color: #d8d8d8;
+  border-color: #d8d8d8;
 }
-.light-theme .disabled-link {
+.light-theme .bordered-link-primary-bg {
+  background-color: #f1f1f1;
+  color: #181818;
+  border-color: inherit;
+}
+.light-theme .bordered-link[aria-disabled=true] {
   background-color: #181818;
-  color: #f1f1f1;
+  color: #d8d8d8;
   border-color: inherit;
 }
 .light-theme #theme-menu-options {
@@ -608,18 +613,23 @@ hr {
   border-color: #f1f1f1;
 }
 .dark-theme .bordered-link {
-  background-color: #181818;
+  background-color: #252525;
   color: #f1f1f1;
   border-color: inherit;
 }
 .dark-theme .bordered-link:hover {
   background-color: #f1f1f1;
-  color: #181818;
-  border-color: #181818;
+  color: #252525;
+  border-color: #252525;
 }
-.dark-theme .disabled-link {
+.dark-theme .bordered-link-primary-bg {
+  background-color: #181818;
+  color: #f1f1f1;
+  border-color: inherit;
+}
+.dark-theme .bordered-link[aria-disabled=true] {
   background-color: #f1f1f1;
-  color: #181818;
+  color: #252525;
   border-color: inherit;
 }
 .dark-theme #theme-menu-options {
@@ -659,18 +669,23 @@ hr {
   border-color: #ffffff;
 }
 .corroded-theme .bordered-link {
-  background-color: #72644F;
+  background-color: #8a8b4f;
   color: #ffffff;
   border-color: inherit;
 }
 .corroded-theme .bordered-link:hover {
   background-color: #ffffff;
-  color: #72644F;
-  border-color: #72644F;
+  color: #8a8b4f;
+  border-color: #8a8b4f;
 }
-.corroded-theme .disabled-link {
+.corroded-theme .bordered-link-primary-bg {
+  background-color: #72644F;
+  color: #ffffff;
+  border-color: inherit;
+}
+.corroded-theme .bordered-link[aria-disabled=true] {
   background-color: #ffffff;
-  color: #72644F;
+  color: #8a8b4f;
   border-color: inherit;
 }
 .corroded-theme #theme-menu-options {
@@ -710,18 +725,23 @@ hr {
   border-color: #262c38;
 }
 .arctic-theme .bordered-link {
-  background-color: #8cc2ff;
+  background-color: #e3f6ff;
   color: #262c38;
   border-color: inherit;
 }
 .arctic-theme .bordered-link:hover {
   background-color: #262c38;
-  color: #8cc2ff;
-  border-color: #8cc2ff;
+  color: #e3f6ff;
+  border-color: #e3f6ff;
 }
-.arctic-theme .disabled-link {
+.arctic-theme .bordered-link-primary-bg {
+  background-color: #8cc2ff;
+  color: #262c38;
+  border-color: inherit;
+}
+.arctic-theme .bordered-link[aria-disabled=true] {
   background-color: #262c38;
-  color: #8cc2ff;
+  color: #e3f6ff;
   border-color: inherit;
 }
 .arctic-theme #theme-menu-options {
@@ -761,18 +781,23 @@ hr {
   border-color: #ffd3e0;
 }
 .tropical-theme .bordered-link {
-  background-color: #23b665;
+  background-color: #f52664;
   color: #ffd3e0;
   border-color: inherit;
 }
 .tropical-theme .bordered-link:hover {
   background-color: #ffd3e0;
-  color: #23b665;
-  border-color: #23b665;
+  color: #f52664;
+  border-color: #f52664;
 }
-.tropical-theme .disabled-link {
+.tropical-theme .bordered-link-primary-bg {
+  background-color: #23b665;
+  color: #ffd3e0;
+  border-color: inherit;
+}
+.tropical-theme .bordered-link[aria-disabled=true] {
   background-color: #ffd3e0;
-  color: #23b665;
+  color: #f52664;
   border-color: inherit;
 }
 .tropical-theme #theme-menu-options {
@@ -812,18 +837,23 @@ hr {
   border-color: #ffd8a6;
 }
 .neptune-theme .bordered-link {
-  background-color: #021146;
+  background-color: #2251fc;
   color: #ffd8a6;
   border-color: inherit;
 }
 .neptune-theme .bordered-link:hover {
   background-color: #ffd8a6;
-  color: #021146;
-  border-color: #021146;
+  color: #2251fc;
+  border-color: #2251fc;
 }
-.neptune-theme .disabled-link {
+.neptune-theme .bordered-link-primary-bg {
+  background-color: #021146;
+  color: #ffd8a6;
+  border-color: inherit;
+}
+.neptune-theme .bordered-link[aria-disabled=true] {
   background-color: #ffd8a6;
-  color: #021146;
+  color: #2251fc;
   border-color: inherit;
 }
 .neptune-theme #theme-menu-options {
@@ -863,18 +893,23 @@ hr {
   border-color: #fae5e5;
 }
 .rust-theme .bordered-link {
-  background-color: #4d0000;
+  background-color: #be4f4f;
   color: #fae5e5;
   border-color: inherit;
 }
 .rust-theme .bordered-link:hover {
   background-color: #fae5e5;
-  color: #4d0000;
-  border-color: #4d0000;
+  color: #be4f4f;
+  border-color: #be4f4f;
 }
-.rust-theme .disabled-link {
+.rust-theme .bordered-link-primary-bg {
+  background-color: #4d0000;
+  color: #fae5e5;
+  border-color: inherit;
+}
+.rust-theme .bordered-link[aria-disabled=true] {
   background-color: #fae5e5;
-  color: #4d0000;
+  color: #be4f4f;
   border-color: inherit;
 }
 .rust-theme #theme-menu-options {
@@ -914,18 +949,23 @@ hr {
   border-color: blue;
 }
 .ugly-theme .bordered-link {
-  background-color: red;
+  background-color: yellow;
   color: blue;
   border-color: inherit;
 }
 .ugly-theme .bordered-link:hover {
   background-color: blue;
-  color: red;
-  border-color: red;
+  color: yellow;
+  border-color: yellow;
 }
-.ugly-theme .disabled-link {
+.ugly-theme .bordered-link-primary-bg {
+  background-color: red;
+  color: blue;
+  border-color: inherit;
+}
+.ugly-theme .bordered-link[aria-disabled=true] {
   background-color: blue;
-  color: red;
+  color: yellow;
   border-color: inherit;
 }
 .ugly-theme #theme-menu-options {
@@ -965,18 +1005,23 @@ hr {
   border-color: cornflowerblue;
 }
 .intern-theme .bordered-link {
-  background-color: blue;
+  background-color: purple;
   color: cornflowerblue;
   border-color: inherit;
 }
 .intern-theme .bordered-link:hover {
   background-color: cornflowerblue;
-  color: blue;
-  border-color: blue;
+  color: purple;
+  border-color: purple;
 }
-.intern-theme .disabled-link {
+.intern-theme .bordered-link-primary-bg {
+  background-color: blue;
+  color: cornflowerblue;
+  border-color: inherit;
+}
+.intern-theme .bordered-link[aria-disabled=true] {
   background-color: cornflowerblue;
-  color: blue;
+  color: purple;
   border-color: inherit;
 }
 .intern-theme #theme-menu-options {

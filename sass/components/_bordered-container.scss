@@ -15,7 +15,7 @@
     }
 }
 
-.disabled-link{
+.bordered-link[aria-disabled="true"]{
     &:hover{
         cursor: default;
     }

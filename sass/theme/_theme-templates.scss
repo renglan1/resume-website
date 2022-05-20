@@ -10,28 +10,31 @@
 
 @function generate-theme-map($color-list){
     @return(
-        root: (
+        "root": (
             general-template(list.nth($color-list, 1), list.nth($color-list, 2), none)
         ),
-        bottom-nav: (
+        "bottom-nav": (
             general-template(list.nth($color-list, 3), inherit, inherit)
         ),
-        theme-menu-option: (
+        "theme-menu-option": (
             general-template(list.nth($color-list, 3), list.nth($color-list, 2), inherit)
         ),
-        bordered-heading: (
+        "bordered-heading": (
             general-template(list.nth($color-list, 3), inherit, list.nth($color-list, 2))
         ),
-        bordered-link: (
+        "bordered-link": (
+            general-template(list.nth($color-list, 3), list.nth($color-list, 2), inherit)
+        ),
+        "bordered-link-primary-bg": (
             general-template(list.nth($color-list, 1), list.nth($color-list, 2), inherit)
         ),
-        disabled-link: (
-            general-template(list.nth($color-list, 2), list.nth($color-list, 1), inherit)
+        "disabled-link": (
+            general-template(list.nth($color-list, 2), list.nth($color-list, 3), inherit)
         ),
-        theme-menu-options: (
+        "theme-menu-options": (
             general-template(list.nth($color-list, 3), inherit, inherit)
         ),
-        hr: (
+        "hr": (
             general-template(list.nth($color-list, 2), inherit, inherit)
         )
     );
