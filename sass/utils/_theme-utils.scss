@@ -1,7 +1,7 @@
 @use "sass:list";
 
-$htmlTags: "hr"; // This stores a list of html tags that are being styled (they do not have a prefix when styling)
-$ids: "theme-menu-options";
+$htmlTags: "hr"; // This stores a list of html tags that are being directly styled (they do not have a prefix when styling)
+$ids: "theme-menu-options"; // This stores a list of html ids that are being directly styled (use a "#" prefix when styling)
 
 /*Basis for this design comes from: https://www.toptal.com/sass/theming-scss-tutorial*/
 @mixin themify($theme-name, $theme-map) {
