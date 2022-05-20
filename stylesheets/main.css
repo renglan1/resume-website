@@ -254,17 +254,25 @@ ul.article-list {
 .bordered-link-disabled {
   padding: 0.5em;
   border: 1px solid blue;
+  color: inherit;
+  text-decoration: none;
   border-right-width: 0.4vw;
   border-bottom-width: 0.4vw;
+}
+.bordered-link-disabled:hover {
+  cursor: pointer;
+}
+.bordered-link-disabled:hover {
+  cursor: default;
 }
 
 .bordered-link-primary-bg {
   padding: 0.5em;
   border: 1px solid blue;
-  border-right-width: 0.4vw;
-  border-bottom-width: 0.4vw;
   color: inherit;
   text-decoration: none;
+  border-right-width: 0.4vw;
+  border-bottom-width: 0.4vw;
 }
 .bordered-link-primary-bg:hover {
   cursor: pointer;
@@ -273,10 +281,10 @@ ul.article-list {
 .bordered-link-tertiary-bg {
   padding: 0.5em;
   border: 1px solid blue;
-  border-right-width: 0.4vw;
-  border-bottom-width: 0.4vw;
   color: inherit;
   text-decoration: none;
+  border-right-width: 0.4vw;
+  border-bottom-width: 0.4vw;
 }
 .bordered-link-tertiary-bg:hover {
   cursor: pointer;

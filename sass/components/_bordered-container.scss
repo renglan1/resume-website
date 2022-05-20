@@ -6,16 +6,12 @@
     border: 1px solid blue;
 } 
 
-@mixin bordered-container-button {
-    @include bordered-container;  
+@mixin bordered-link{
+    @include bordered-container;
+    @include links.undecorated-link;
 
     border-right-width: 0.4vw; 
     border-bottom-width: 0.4vw;
-}
-
-@mixin bordered-link{
-    @include bordered-container-button;
-    @include links.undecorated-link;
 
     &:hover{
         cursor: pointer;   
@@ -28,7 +24,11 @@
 }
 
 .bordered-link-disabled{
-    @include bordered-container-button;
+    @include bordered-link;
+
+    &:hover{
+        cursor: default;
+    }
 }
 
 .bordered-link-primary-bg{
