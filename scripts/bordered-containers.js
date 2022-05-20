@@ -17,7 +17,7 @@ function styleBorderedLinks(borderedLinks){
 function styleBorderedHeadings(borderedHeadings){
     for(const borderedHeading of borderedHeadings){
         const containerHeight = borderedHeading.offsetHeight;
-        const borderWidth = 0*containerHeight;
+        const borderWidth = 0.01*containerHeight;
         const thickBorderWidth = 0.12*containerHeight;
 
         borderedHeading.style.borderWidth = `${borderWidth}px ${borderWidth}px ${borderWidth}px ${thickBorderWidth}px`;
