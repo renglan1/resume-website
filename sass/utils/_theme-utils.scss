@@ -1,6 +1,7 @@
 @use "sass:list";
 
 $htmlTags: "hr"; // This stores a list of html tags that are being styled (they do not have a prefix when styling)
+$ids: "theme-menu-options";
 
 /*Basis for this design comes from: https://www.toptal.com/sass/theming-scss-tutorial*/
 @mixin themify($theme-name, $theme-map) {
@@ -8,40 +9,36 @@ $htmlTags: "hr"; // This stores a list of html tags that are being styled (they 
 
         // Loop through each of the keys (sections)
         @each $section, $map in $theme-map {
-            @if ($section == bordered-link-primary-bg or $section == bordered-link-tertiary-bg) {
+            @if (($section == bordered-link) or ($section == theme-menu-option)) {
                 .#{$section} {
-                    background-color: map-get($map, bg);
+                    background-color: map-get($map, bg-color);
+                    color: map-get($map, color);
                     border-color: map-get($map, border-color);
+
                     &:hover{
-                        background-color: map-get($map, hover-bg-color);
-                        color: map-get($map, hover-color);
-                        border-color: map-get($map, hover-border-color);
+                        background-color: map-get($map, color);
+                        color: map-get($map, bg-color);
+                        border-color: map-get($map, bg-color);
                     }
                 }
             }
-            @else if ($section == theme-menu-option){
-                .#{$section}{
-                    &:hover{
-                        background-color: map-get($map, hover-bg-color);
-                        color: map-get($map, hover-color);
-                    }
-                }
-            }
-            @else if ($section == theme-menu-options){
-                #theme-menu-options{
-                    background-color: map-get($map, bg);
+            @else if (index($section, $ids)){
+                ##{$section} {
+                    background-color: map-get($map, bg-color);
+                    color: map-get($map, color);
+                    border-color: map-get($map, border-color);
                 }
             }
             @else if (index($section, $htmlTags)){
                 #{$section}{
-                    background-color: map-get($map, bg);
+                    background-color: map-get($map, bg-color);
                     color: map-get($map, color);
                     border-color: map-get($map, border-color);
                 }
             }
             @else { 
                 .#{$section} {
-                    background-color: map-get($map, bg);
+                    background-color: map-get($map, bg-color);
                     color: map-get($map, color);
                     border-color: map-get($map, border-color);
                 }

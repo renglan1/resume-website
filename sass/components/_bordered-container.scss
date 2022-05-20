@@ -6,35 +6,21 @@
     border: 1px solid blue;
 } 
 
-@mixin bordered-link{
+.bordered-link{
     @include bordered-container;
     @include links.undecorated-link;
-
-    border-right-width: 0.4vw; 
-    border-bottom-width: 0.4vw;
 
     &:hover{
         cursor: pointer;   
     }
 }
 
-.bordered-heading{
-    @include bordered-container;
-    border-left-width: 0.4vw;
-}
-
-.bordered-link-disabled{
-    @include bordered-link;
-
+.disabled-link{
     &:hover{
         cursor: default;
     }
 }
 
-.bordered-link-primary-bg{
-    @include bordered-link;
-}
-
-.bordered-link-tertiary-bg{
-    @include bordered-link;
+.bordered-heading{
+    @include bordered-container;
 }
