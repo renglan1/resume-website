@@ -1,5 +1,7 @@
 @use "sass:list";
 
+$htmlTags: "hr"; // This stores a list of html tags that are being styled (they do not have a prefix when styling)
+
 /*Basis for this design comes from: https://www.toptal.com/sass/theming-scss-tutorial*/
 @mixin themify($theme-name, $theme-map) {
     .#{$theme-name} {
@@ -30,9 +32,11 @@
                     background-color: map-get($map, bg);
                 }
             }
-            @else if($section == hr){
-                hr{
+            @else if (index($section, $htmlTags)){
+                #{$section}{
                     background-color: map-get($map, bg);
+                    color: map-get($map, color);
+                    border-color: map-get($map, border-color);
                 }
             }
             @else { 

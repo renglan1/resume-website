@@ -58,6 +58,8 @@
 @function hr-template($color-list){
     @return(
         bg: list.nth($color-list, 2),
+        color: inherit,
+        border-color: inherit
     );
 }
 

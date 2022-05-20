@@ -596,6 +596,8 @@ hr {
 }
 .light-theme hr {
   background-color: #181818;
+  color: inherit;
+  border-color: inherit;
 }
 
 .dark-theme .root {
@@ -645,6 +647,8 @@ hr {
 }
 .dark-theme hr {
   background-color: #f1f1f1;
+  color: inherit;
+  border-color: inherit;
 }
 
 .corroded-theme .root {
@@ -694,6 +698,8 @@ hr {
 }
 .corroded-theme hr {
   background-color: #ffffff;
+  color: inherit;
+  border-color: inherit;
 }
 
 .arctic-theme .root {
@@ -743,6 +749,8 @@ hr {
 }
 .arctic-theme hr {
   background-color: #262c38;
+  color: inherit;
+  border-color: inherit;
 }
 
 .tropical-theme .root {
@@ -792,6 +800,8 @@ hr {
 }
 .tropical-theme hr {
   background-color: #ffd3e0;
+  color: inherit;
+  border-color: inherit;
 }
 
 .neptune-theme .root {
@@ -841,6 +851,8 @@ hr {
 }
 .neptune-theme hr {
   background-color: #ffd8a6;
+  color: inherit;
+  border-color: inherit;
 }
 
 .rust-theme .root {
@@ -890,6 +902,8 @@ hr {
 }
 .rust-theme hr {
   background-color: #fae5e5;
+  color: inherit;
+  border-color: inherit;
 }
 
 .ugly-theme .root {
@@ -939,6 +953,8 @@ hr {
 }
 .ugly-theme hr {
   background-color: blue;
+  color: inherit;
+  border-color: inherit;
 }
 
 .intern-theme .root {
@@ -988,6 +1004,8 @@ hr {
 }
 .intern-theme hr {
   background-color: cornflowerblue;
+  color: inherit;
+  border-color: inherit;
 }
 
 /*# sourceMappingURL=main.css.map */
