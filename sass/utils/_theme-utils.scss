@@ -22,7 +22,7 @@ $ids: "theme-menu-options"; // This stores a list of html ids that are being dir
                     }
                 }
             }
-            @else if($section == disabled-link){
+            @else if($section == "disabled-link"){
                 .bordered-link[aria-disabled="true"]{
                     background-color: map-get($map, bg-color);
                     color: map-get($map, color);

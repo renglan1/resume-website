@@ -25,11 +25,11 @@
         "bordered-link": (
             general-template(list.nth($color-list, 3), list.nth($color-list, 2), inherit)
         ),
-        "bordered-link-primary-bg": (
+        "bordered-link-tertiary-bg": (
             general-template(list.nth($color-list, 1), list.nth($color-list, 2), inherit)
         ),
         "disabled-link": (
-            general-template(list.nth($color-list, 2), list.nth($color-list, 3), inherit)
+            general-template(list.nth($color-list, 2), list.nth($color-list, 1), inherit)
         ),
         "theme-menu-options": (
             general-template(list.nth($color-list, 3), inherit, inherit)
