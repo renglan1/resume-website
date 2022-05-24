@@ -31,8 +31,8 @@ $ids: "theme-menu-options"; // This stores a list of html ids that are being dir
             }
             @else if (index($section, $ids)){
                 ##{$section} {
-                    background-color: map-get($map, bg-color);
-                    color: map-get($map, color);
+                    background-color: map-get($map, bg-color); 
+                    color: map-get($map, color); 
                     border-color: map-get($map, border-color);
                 }
             }
